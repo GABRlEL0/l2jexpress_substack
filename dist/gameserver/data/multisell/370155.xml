@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list maintainEnchantment="true" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../xsd/multisell.xsd">
+
+<!-- Sword 1H Mage -->
+<!-- Dynasty Phantom to Icarus Spirit -->
+            <item>
+                        <ingredient id="9444" count="1"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10217" count="1"/>
+            </item>
+<!-- Icarus Spirit to Vesper Buster -->
+            <item>
+                        <ingredient count="1" id="10217"/>
+                        <ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>
+                        <production count="1" id="13459"/>
+            </item>
+<!-- Vesper Buster to Veniplant Sword -->
+            <item>
+                        <ingredient count="1" id="13459"/>
+<ingredient id="37049" count="6"/>              
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="15567"/>
+            </item>
+<!-- Veniplant Sword to Archangel Sword -->
+            <item>
+                        <ingredient count="1" id="15567"/>
+<ingredient id="37049" count="20"/>              
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="15553"/>
+            </item>
+<!-- Sword 1H Warrior -->
+<!-- Dynasty Sword to Icarus Sawsword -->
+            <item>
+            <ingredient id="9442" count="1" />
+            <ingredient id="37049" count="2"/>             
+            <ingredient id="5575" count="1000000"/>  
+            <production id="10215" count="1" />
+            </item>
+<!-- Icarus Sawsword to Vesper Cutter -->
+            <item>
+                        <ingredient count="1" id="10215"/>
+<ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="13457"/>
+            </item>
+<!-- Vesper Cutter to Periel Sword -->
+            <item>
+                        <ingredient count="1" id="13457"/>
+<ingredient id="37049" count="6"/>              
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="15558"/>
+            </item>
+<!-- Periel Sword to Eternal Core Sword -->
+            <item>
+                        <ingredient count="1" id="15558"/>
+<ingredient id="37049" count="20"/>              
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="15544"/>
+            </item>
+<!-- Sword 2H Warrior -->
+<!-- Dynasty Blade to Icarus Heavy Arms -->
+            <item>
+                        <ingredient id="9443" count="1"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10218" count="1"/>
+            </item>
+<!-- Icarus Heavy Arms to Vesper Slasher -->
+            <item>
+                        <ingredient count="1" id="10218"/>
+                        <ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="13458"/>
+            </item>
+<!-- Vesper Slasher to Feather Eye Blade -->
+            <item>
+                        <ingredient count="1" id="13458"/>
+                        <ingredient id="37049" count="6"/>              
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="15562"/>
+            </item>
+<!-- Feather Eye Blade to Lava Saw -->
+            <item>
+                        <ingredient count="1" id="15562"/>
+                        <ingredient id="37049" count="20"/>              
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="15548"/>
+            </item>
+<!-- Sword 2H Anciend Sword -->
+<!-- Dynasty Anciend Sword to Icarus Wingblade -->
+            <item>
+                        <ingredient id="9380" count="1"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10225" count="1" />
+            </item>
+<!-- Icarus Wingblade to Vesper Nagan -->
+            <item>
+                        <ingredient count="1" id="10225"/>
+                        <ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="13470"/>
+            </item>
+<!-- Vesper Nagan to Finale Blade -->
+            <item>
+                        <ingredient count="1" id="13470"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="15570"/>
+            </item>
+<!-- Finale Blade to Pyseal Blade -->
+            <item>
+                        <ingredient count="1" id="15570"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="15556"/>
+            </item>
+<!--Duals Sword -->
+<!-- Dynasty Dual Sword to Icarus Dual Sword -->
+            <item>
+                        <ingredient count="1" id="10004"/>
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production count="1" id="10415"/>
+            </item>
+<!-- Icarus Dual Sword to Vesper Dual Sword -->
+            <item>
+                        <ingredient count="1" id="10415"/>
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="52"/>
+            </item>
+<!-- Vesper Dual Sword to Periel Dual Sword -->
+            <item>
+                        <ingredient count="1" id="52"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="16154"/>
+            </item>
+<!-- Periel Dual Sword to Eternal Core Dual Sword -->
+            <item>
+                        <ingredient count="1" id="16154"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="16158"/>
+            </item>
+ 
+<!-- Rapier -->
+<!--Dynasty Rapier to Scarus Stinger-->
+            <item>
+                        <ingredient count="1" id="9376"/>
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production count="1" id="10224"/>
+            </item>
+<!-- Icarus Stinger to Vesper Pincer -->
+            <item>
+                        <ingredient count="1" id="10224"/>
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="13468"/>
+            </item>
+<!-- Vesper Pincer to Gemtail Rapier -->
+            <item>
+                        <ingredient count="1" id="13468"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="15569"/>
+            </item>
+<!-- Gemtail Rapier to Heavenstare Rapier -->
+            <item>
+                        <ingredient count="1" id="15569"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="15555"/>
+            </item>
+<!-- Dagger -->
+<!-- Dynasty Knife to icarus Icarus Disperser -->
+            <item>
+                        <ingredient id="9446" count="1" />
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10216" count="1" />
+            </item>
+<!-- Icarus Disperser to Vesper Shaper -->
+            <item>
+                        <ingredient count="1" id="10216"/>
+                        <ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="13460"/>
+            </item>
+<!-- Vesper Shaper to Skull Edge -->
+            <item>
+                        <ingredient count="1" id="13460"/>
+                        <ingredient id="37049" count="6"/>              
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="15559"/>
+            </item>
+<!-- Skull Edge to Mamba Edge -->
+            <item>
+                        <ingredient count="1" id="15559"/>
+                        <ingredient id="37049" count="20"/>              
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="15545"/>
+            </item>
+<!--Dual Daggers -->
+<!-- Dynasty Dual Daggers to Icarus Dual Daggers -->
+            <item>
+                        <ingredient count="1" id="13882"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production count="1" id="13883"/>
+            </item>
+ <!-- Icarus Dual Daggers to Vesper Dual Daggers -->
+            <item>
+                        <ingredient count="1" id="13883"/>
+                        <ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                        <production count="1" id="13884"/>
+            </item>
+<!-- Vesper Dual Daggers to Skull Edge Dual Daggers -->
+            <item>
+                        <ingredient count="1" id="13884"/>
+                        <ingredient id="37049" count="6"/>              
+                        <ingredient id="5575" count="30000000"/>  
+                        <production count="1" id="16152"/>
+            </item>
+<!-- Skull Edge Dual Daggers to Mamba Edge Dual Daggers -->
+            <item>
+                        <ingredient count="1" id="16152"/>
+                        <ingredient id="37049" count="20"/>              
+                        <ingredient id="5575" count="40000000"/>  
+                        <production count="1" id="16156"/>
+            </item>
+<!-- Blunt 1H Mage -->
+<!-- Dynasty Mace to Icarus Hall -->
+            <item>
+                        <ingredient id="9449" count="1" />
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10222" count="1" />
+            </item>
+<!-- Icarus Hall to Vesper Caster -->
+            <item>
+                        <ingredient count="1" id="10222"/>
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000" />  
+                        <production count="1" id="13465"/>
+            </item>
+<!-- Vesper Caster to Rising Star -->
+            <item>
+                        <ingredient count="1" id="13465"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production count="1" id="15565"/>
+            </item>
+<!-- Rising Star to Sacredium -->
+            <item>
+                        <ingredient count="1" id="15565"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production count="1" id="15551"/>
+            </item>
+<!-- Blunt 1H Warrior -->
+<!-- Dynasty Cudgel to Icarus Hammer -->
+            <item>
+                        <ingredient id="9448" count="1" />
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10220" count="1" />
+            </item>
+ 
+ 
+<!-- Icarus Hammer to Vesper Avenger -->
+            <item>
+                        <ingredient count="1" id="10220"/>
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000" />  
+                        <production count="1" id="13463"/>
+            </item>
+<!-- Vesper Avenger to Vigwik Axe  -->
+            <item>
+                        <ingredient count="1" id="13463"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production count="1" id="15560"/>
+            </item>
+<!-- Vigwik Axe  to Eversor Mace -->
+            <item>
+                        <ingredient count="1" id="15560"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production count="1" id="15546"/>
+            </item>
+<!-- Blunt 2H Mage -->
+<!-- Dynasty Staff to Vesper Singer -->
+            <item>
+                        <ingredient count="1" id="10252"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production count="1" id="13466"/>
+            </item>
+<!-- Vesper Singer to Black Visage -->
+            <item>
+                        <ingredient count="1" id="13466"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production count="1" id="15566"/>
+            </item>
+<!-- Black Visage to Cyclic Cane -->
+            <item>
+                        <ingredient count="1" id="15566"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production count="1" id="15552"/>
+            </item>
+<!-- Blunt 2H Warrior -->
+<!-- Dynasty Crusher to Vesper Retributer -->
+            <item>
+                        <ingredient count="1" id="10253"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="21000000" />  
+                        <production count="1" id="13464"/>
+            </item>
+<!-- Vesper Retributer to Devilish Maul -->
+            <item>
+                        <ingredient count="1" id="13464"/>
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production count="1" id="15561"/>
+            </item>
+<!-- Devilish Maul to Contristo Hammer -->
+            <item>
+                        <ingredient count="1" id="15561"/>
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production count="1" id="15547"/>
+            </item>
+<!-- Polearm -->
+<!-- Dynasty Halberd to Icarus Trident -->
+            <item>
+                        <ingredient id="9447" count="1" />
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10219" count="1" />
+            </item>
+<!-- Icarus Trident to Vesper Stormer -->
+            <item>
+                        <ingredient id="10219" count="1" />
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000" />  
+                        <production id="13462" count="1" />
+            </item>
+<!-- Vesper Stormer to Doubletop Spear -->
+            <item>
+                        <ingredient id="13462" count="1" />
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production id="15564" count="1" />
+            </item>
+<!-- Doubletop Spear to Demitelum -->
+            <item>
+                        <ingredient id="15564" count="1" />
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production id="15550" count="1" />
+            </item>
+<!-- Fist -->
+<!-- Dynasty Bagh-Nakh to Icarus Hand -->
+            <item>
+                        <ingredient id="9450" count="1" />
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10221" count="1" />
+            </item>
+<!-- Icarus Hand to Vesper Fighter -->
+            <item>
+                        <ingredient id="10221" count="1" />
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000" />  
+                        <production id="13461" count="1" />
+            </item>
+<!-- Vesper Fighter to Octo Claw -->
+            <item>
+                        <ingredient id="13461" count="1" />
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production id="15563" count="1" />
+            </item>
+<!--Octo Claw to Jade Claw -->
+            <item>
+                        <ingredient id="15563" count="1" />
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production id="15549" count="1" />
+            </item>
+<!-- Bow -->
+<!-- Dynasty Bow to Icarus Spitter -->
+            <item>
+                        <ingredient id="9445" count="1" />
+                        <ingredient id="37049" count="2"/>             
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="10223" count="1" />
+            </item>
+<!-- Icarus Spitter to Vesper Thrower -->
+            <item>
+                        <ingredient id="10223" count="1" />
+                        <ingredient id="37049" count="4"/>             
+                        <ingredient id="5575" count="20000000" />  
+                        <production id="13467" count="1" />
+            </item>
+<!-- Vesper Thrower to Skull Carnium Bow -->
+            <item>
+                        <ingredient id="13467" count="1" />
+                        <ingredient id="37049" count="6"/>             
+                        <ingredient id="5575" count="30000000" />  
+                        <production id="15568" count="1" />
+            </item>
+<!-- Skull Carnium Bow to Recurve Thorne Bow -->
+            <item>
+                        <ingredient id="15568" count="1" />
+                        <ingredient id="37049" count="20"/>             
+                        <ingredient id="5575" count="40000000" />  
+                        <production id="15554" count="1" />
+            </item>
+
+</list>

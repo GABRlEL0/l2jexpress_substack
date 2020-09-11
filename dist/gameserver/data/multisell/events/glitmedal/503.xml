@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- MultiSell_begin	 -->
+<list>
+	<!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+	<!-- ignoreprice не работает с keepencahnted -->
+	<config showall="true" notax="true" keepenchanted="false"/>
+
+    <item>
+        <production id="9914" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9915" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9916" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9917" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9918" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9919" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9920" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9921" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9922" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9923" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9924" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9925" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9926" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9927" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9928" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9929" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9930" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9931" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+	
+</list>

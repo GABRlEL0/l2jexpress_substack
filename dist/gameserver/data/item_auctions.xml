@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<instance id="32320" schedule="0 17 * * 1">
+		<!--SOUL CRYSTALS-->
+		<item auctionItemId="1" itemId="10480" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Red Soul Crystal - Stage 15-->
+		<item auctionItemId="2" itemId="10481" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Blue Soul Crystal - Stage 15-->
+		<item auctionItemId="3" itemId="10482" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Green Soul Crystal - Stage 15-->
+		<item auctionItemId="4" itemId="13071" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Red Soul Crystal - Stage 16-->
+		<item auctionItemId="5" itemId="13072" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Blue Soul Crystal - Stage 16-->
+		<item auctionItemId="6" itemId="13073" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Green Soul Crystal - Stage 16-->
+	</instance>
+	<instance id="32321" schedule="0 17 * * 3">
+		<!--SOUL CRYSTALS-->
+		<item auctionItemId="1" itemId="10480" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Red Soul Crystal - Stage 15-->
+		<item auctionItemId="2" itemId="10481" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Blue Soul Crystal - Stage 15-->
+		<item auctionItemId="3" itemId="10482" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Green Soul Crystal - Stage 15-->
+		<item auctionItemId="4" itemId="13071" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Red Soul Crystal - Stage 16-->
+		<item auctionItemId="5" itemId="13072" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Blue Soul Crystal - Stage 16-->
+		<item auctionItemId="6" itemId="13073" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Green Soul Crystal - Stage 16-->
+	</instance>
+	<instance id="32322" schedule="0 17 * * 5">
+		<!--SOUL CRYSTALS-->
+		<item auctionItemId="1" itemId="10480" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Red Soul Crystal - Stage 15-->
+		<item auctionItemId="2" itemId="10481" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Blue Soul Crystal - Stage 15-->
+		<item auctionItemId="3" itemId="10482" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Green Soul Crystal - Stage 15-->
+		<item auctionItemId="4" itemId="13071" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Red Soul Crystal - Stage 16-->
+		<item auctionItemId="5" itemId="13072" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Blue Soul Crystal - Stage 16-->
+		<item auctionItemId="6" itemId="13073" itemCount="1" altByItem="false" auctionInitBid="500000000" auctionLenght="300"/>	<!--Green Soul Crystal - Stage 16-->
+	</instance>
+</list>

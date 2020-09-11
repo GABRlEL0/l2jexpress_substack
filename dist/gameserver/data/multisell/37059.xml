@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list maintainEnchantment="true" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../xsd/multisell.xsd">
+<!-- Ligth Set -->
+<!-- Casco -->
+<!-- Draconic to Dynasty -->
+            <item>
+                        <ingredient id="6382" count="1"/>
+                        <ingredient id="37049" count="1"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="9429" count="1"/>
+            </item>
+<!-- Dynasty to Morai -->
+            <item>
+                       <ingredient count="1" id="9429"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="2000000"/>
+                       <production count="1" id="15607"/>
+            </item>
+<!-- Morai to Vesper -->
+            <item>
+                       <ingredient count="1" id="15607"/>
+<ingredient id="37049" count="3"/>              
+                        <ingredient id="5575" count="3000000"/>  
+                       <production count="1" id="13138"/>
+            </item>
+<!-- Vesper Noble to Vorpal -->
+            <item>
+                       <ingredient count="1" id="13141"/>
+<ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                       <production count="1" id="15590"/>
+            </item>
+<!-- Vorpal to Elegia -->
+            <item>
+                       <ingredient count="1" id="15590"/>
+<ingredient id="37049" count="5"/>              
+                         
+                       <production count="1" id="15573"/>
+            </item>
+<!-- Pecho -->
+<!-- Draconic to Dynasty -->
+            <item>
+                        <ingredient id="6379" count="1"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="2000000"/>  
+                        <production id="9425" count="1"/>
+<production id="9428" count="1"/>
+            </item>
+<!-- Dynasty to Morai -->
+            <item>
+                       <ingredient count="1" id="9425"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="2000000"/>
+                       <production count="1" id="15610"/>
+            </item>
+<!-- Morai to Vesper -->
+            <item>
+                       <ingredient count="1" id="15610"/>
+<ingredient id="37049" count="3"/>              
+                        <ingredient id="5575" count="3000000"/>  
+                       <production count="1" id="13433"/>
+            </item>
+<!-- Vesper Noble to Vorpal -->
+            <item>
+                       <ingredient count="1" id="13436"/>
+<ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                       <production count="1" id="15593"/>
+            </item>
+<!-- Vorpal to Elegia -->
+            <item>
+                       <ingredient count="1" id="15593"/>
+<ingredient id="37049" count="5"/>              
+                         
+                       <production count="1" id="15576"/>
+            </item>
+<!-- Gaiters -->
+<!-- Dynasty to Morai -->
+            <item>
+                       <ingredient count="1" id="9428"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="2000000"/>
+                       <production count="1" id="15613"/>
+            </item>
+<!-- Morai to Vesper -->
+            <item>
+                       <ingredient count="1" id="15613"/>
+<ingredient id="37049" count="3"/>              
+                        <ingredient id="5575" count="3000000"/>  
+                       <production count="1" id="13441"/>
+            </item>
+<!-- Vesper Noble to Vorpal -->
+            <item>
+                       <ingredient count="1" id="13451"/>
+<ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                       <production count="1" id="15596"/>
+            </item>
+<!-- Vorpal to Elegia -->
+            <item>
+                       <ingredient count="1" id="15596"/>
+<ingredient id="37049" count="5"/>              
+                         
+                       <production count="1" id="15579"/>
+            </item>
+<!-- Gloves -->
+<!-- Draconic to Dynasty -->
+            <item>
+                        <ingredient id="6380" count="1"/>
+                        <ingredient id="37049" count="1"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="9430" count="1"/>
+            </item>
+<!-- Dynasty to Morai -->
+            <item>
+                       <ingredient count="1" id="9430"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="2000000"/>
+                       <production count="1" id="15616"/>
+            </item>
+<!-- Morai to Vesper -->
+            <item>
+                       <ingredient count="1" id="15616"/>
+<ingredient id="37049" count="3"/>              
+                        <ingredient id="5575" count="3000000"/>  
+                       <production count="1" id="13442"/>
+            </item>
+<!-- Vesper Noble to Vorpal -->
+            <item>
+                       <ingredient count="1" id="13452"/>
+<ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                       <production count="1" id="15599"/>
+            </item>
+<!-- Vorpal to Elegia -->
+            <item>
+                       <ingredient count="1" id="15599"/>
+<ingredient id="37049" count="5"/>              
+                         
+                       <production count="1" id="15582"/>
+            </item>
+<!-- Boots -->
+<!-- Draconic to Dynasty -->
+            <item>
+                        <ingredient id="6381" count="1"/>
+                        <ingredient id="37049" count="1"/>              
+                        <ingredient id="5575" count="1000000"/>  
+                        <production id="9431" count="1"/>
+            </item>
+<!-- Dynasty to Morai -->
+            <item>
+                       <ingredient count="1" id="9431"/>
+                        <ingredient id="37049" count="2"/>              
+                        <ingredient id="5575" count="2000000"/>
+                       <production count="1" id="15619"/>
+            </item>
+<!-- Morai to Vesper -->
+            <item>
+                       <ingredient count="1" id="15619"/>
+<ingredient id="37049" count="3"/>              
+                        <ingredient id="5575" count="3000000"/>  
+                       <production count="1" id="13443"/>
+            </item>
+<!-- Vesper Noble to Vorpal -->
+            <item>
+                       <ingredient count="1" id="13453"/>
+<ingredient id="37049" count="4"/>              
+                        <ingredient id="5575" count="20000000"/>  
+                       <production count="1" id="15602"/>
+            </item>
+<!-- Vorpal to Elegia -->
+            <item>
+                       <ingredient count="1" id="15602"/>
+<ingredient id="37049" count="5"/>              
+                         
+                       <production count="1" id="15585"/>
+            </item>
+</list>
+
+
+

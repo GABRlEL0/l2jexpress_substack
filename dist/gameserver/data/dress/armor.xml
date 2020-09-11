@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "armor.dtd">
+<list>
+	<dress id="1" name="Zubei's Breastplate Set">
+		<set chest="357" legs="383" gloves="5710" feet="5726" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="2" name="Avadon Breastplate Set">
+		<set chest="2376" legs="2379" gloves="5714" feet="5730" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="3" name="Zubei's Leather Shirt Set">
+		<set chest="2384" legs="2388" gloves="5711" feet="5727" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="4" name="Avadon Leather Armor Set">
+		<set chest="2390" legs="-1" gloves="5715" feet="5731" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="5" name="Zubei Set">
+		<set chest="2397" legs="2402" gloves="5712" feet="5728" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="6" name="Avadon Robe Set">
+		<set chest="2406" legs="-1" gloves="5716" feet="5732" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="7" name="Blue Wolf Breastplate Set">
+		<set chest="358" legs="2380" gloves="5718" feet="5734" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="8" name="Doom Armor Set">
+		<set chest="2381" legs="-1" gloves="5722" feet="5738" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="9" name="Blue Wolf Leather Armor Set">
+		<set chest="2391" legs="-1" gloves="5719" feet="5735" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="10" name="LeatherDoom Set">
+		<set chest="2392" legs="-1" gloves="5723" feet="5739" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="11" name="Blue Wolf Tunic Set">
+		<set chest="2398" legs="2403" gloves="5720" feet="5736" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="12" name="Doom Set">
+		<set chest="2399" legs="2404" gloves="5724" feet="5740" />
+		<price id="6673" count="400" />
+	</dress>
+	<dress id="13" name="Apella Combat Armor Set">
+		<set chest="14583" legs="-1" gloves="14584" feet="14585" />
+		<price id="6673" count="550" />
+	</dress>
+	<dress id="14" name="Apella Combat Clothes Set">
+		<set chest="14586" legs="-1" gloves="14587" feet="14588" />
+		<price id="6673" count="550" />
+	</dress>
+	<dress id="15" name="Apella Combat Overcoat Set">
+		<set chest="14589" legs="-1" gloves="14590" feet="14591" />
+		<price id="6673" count="550" />
+	</dress>
+	<dress id="16" name="White Assassin">
+		<set chest="80000" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="17" name="Beleth's">
+		<set chest="80001" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="18" name="Robin Hood">
+		<set chest="80002" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="19" name="King">
+		<set chest="80003" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="20" name="CowBoy">
+		<set chest="80004" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="21" name="Oriental">
+		<set chest="80005" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="22" name="Samurai">
+		<set chest="80006" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="23" name="Christmas">
+		<set chest="80010" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="24" name="School Uniform A">
+		<set chest="57000" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="25" name="School Uniform B">
+		<set chest="57001" legs="-1" gloves="-1" feet="-1" />
+		<price id="37000" count="150" />
+	</dress>
+	<dress id="26" name="Formal Wear">
+		<set chest="6408" legs="-1" gloves="-1" feet="-1"  />
+		<price id="37000" count="150" />
+	</dress>
+</list>

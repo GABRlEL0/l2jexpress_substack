@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<config showall="true" notax="true" ignoreprice="true" keepenchanted="false" />
+<!-- Elegia Jewels-->
+	<item>
+		<ingredient id="37047" count="1" />
+		<ingredient id="37049" count="7" />
+		<ingredient id="728" count="500" />
+		<ingredient id="5552" count="2" />
+		<ingredient id="1895" count="1220" />
+		<ingredient id="1887" count="143" />
+		<ingredient id="9628" count="60" />
+		<ingredient id="1462" count="143" />
+		<ingredient id="2134" count="30" />
+		<ingredient id="37018" count="118" />
+		<ingredient id="37019" count="97" />
+		<ingredient id="37020" count="44" />
+		<ingredient id="37021" count="83" />
+		<ingredient id="37022" count="66" />
+		<ingredient id="37023" count="198" />
+		<ingredient id="37024" count="143" />
+		<ingredient id="37025" count="30" />
+		<ingredient id="37026" count="118" />
+		<ingredient id="37027" count="97" />
+		<ingredient id="37028" count="88" />
+		<ingredient id="37029" count="112" />
+		<ingredient id="37017" count="27" />
+		<production id="15760" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37047" count="1" />
+		<ingredient id="37049" count="7" />
+		<ingredient id="728" count="500" />
+		<ingredient id="5552" count="2" />
+		<ingredient id="1895" count="1220" />
+		<ingredient id="1887" count="143" />
+		<ingredient id="9628" count="60" />
+		<ingredient id="1462" count="143" />
+		<ingredient id="2134" count="30" />
+		<ingredient id="37018" count="118" />
+		<ingredient id="37019" count="97" />
+		<ingredient id="37020" count="44" />
+		<ingredient id="37021" count="83" />
+		<ingredient id="37022" count="66" />
+		<ingredient id="37023" count="198" />
+		<ingredient id="37024" count="143" />
+		<ingredient id="37025" count="30" />
+		<ingredient id="37026" count="118" />
+		<ingredient id="37027" count="97" />
+		<ingredient id="37028" count="88" />
+		<ingredient id="37029" count="112" />
+		<ingredient id="37016" count="27" />
+		<production id="15761" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37047" count="1" />
+		<ingredient id="37049" count="9" />
+		<ingredient id="728" count="600" />
+		<ingredient id="5552" count="2" />
+		<ingredient id="1895" count="1220" />
+		<ingredient id="1887" count="143" />
+		<ingredient id="9628" count="60" />
+		<ingredient id="1462" count="143" />
+		<ingredient id="2134" count="30" />
+		<ingredient id="37018" count="628" />
+		<ingredient id="37019" count="789" />
+		<ingredient id="37020" count="590" />
+		<ingredient id="37021" count="672" />
+		<ingredient id="37022" count="740" />
+		<ingredient id="37023" count="520" />
+		<ingredient id="37024" count="698" />
+		<ingredient id="37025" count="767" />
+		<ingredient id="37026" count="535" />
+		<ingredient id="37027" count="692" />
+		<ingredient id="37028" count="488" />
+		<ingredient id="37029" count="212" />
+		<ingredient id="37015" count="27" />
+		<production id="15762" count="1"/>
+	</item>
+<!-- Vorpal Jewels-->
+	<item>
+		<ingredient id="37048" count="1" />
+		<ingredient id="37049" count="7" />
+		<ingredient id="728" count="500" />
+		<ingredient id="5552" count="2" />
+		<ingredient id="1895" count="1220" />
+		<ingredient id="1887" count="143" />
+		<ingredient id="9628" count="60" />
+		<ingredient id="1462" count="143" />
+		<ingredient id="2134" count="30" />
+		<ingredient id="37018" count="118" />
+		<ingredient id="37019" count="97" />
+		<ingredient id="37020" count="44" />
+		<ingredient id="37021" count="83" />
+		<ingredient id="37022" count="66" />
+		<ingredient id="37023" count="198" />
+		<ingredient id="37024" count="143" />
+		<ingredient id="37025" count="30" />
+		<ingredient id="37026" count="118" />
+		<ingredient id="37027" count="97" />
+		<ingredient id="37028" count="88" />
+		<ingredient id="37029" count="112" />
+		<ingredient id="37017" count="27" />
+		<production id="15763" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37048" count="1" />
+		<ingredient id="37049" count="7" />
+		<ingredient id="728" count="500" />
+		<ingredient id="5552" count="2" />
+		<ingredient id="1895" count="1220" />
+		<ingredient id="1887" count="143" />
+		<ingredient id="9628" count="60" />
+		<ingredient id="1462" count="143" />
+		<ingredient id="2134" count="30" />
+		<ingredient id="37018" count="118" />
+		<ingredient id="37019" count="97" />
+		<ingredient id="37020" count="44" />
+		<ingredient id="37021" count="83" />
+		<ingredient id="37022" count="66" />
+		<ingredient id="37023" count="198" />
+		<ingredient id="37024" count="143" />
+		<ingredient id="37025" count="30" />
+		<ingredient id="37026" count="118" />
+		<ingredient id="37027" count="97" />
+		<ingredient id="37028" count="88" />
+		<ingredient id="37029" count="112" />
+		<ingredient id="37016" count="27" />
+		<production id="15764" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37048" count="1" />
+		<ingredient id="37049" count="9" />
+		<ingredient id="728" count="600" />
+		<ingredient id="5552" count="2" />
+		<ingredient id="1895" count="1220" />
+		<ingredient id="1887" count="143" />
+		<ingredient id="9628" count="60" />
+		<ingredient id="1462" count="143" />
+		<ingredient id="2134" count="30" />
+		<ingredient id="37018" count="528" />
+		<ingredient id="37019" count="689" />
+		<ingredient id="37020" count="490" />
+		<ingredient id="37021" count="572" />
+		<ingredient id="37022" count="640" />
+		<ingredient id="37023" count="420" />
+		<ingredient id="37024" count="598" />
+		<ingredient id="37025" count="667" />
+		<ingredient id="37026" count="435" />
+		<ingredient id="37027" count="592" />
+		<ingredient id="37028" count="388" />
+		<ingredient id="37029" count="112" />
+		<ingredient id="37015" count="27" />
+		<production id="15765" count="1"/>
+	</item>
+</list>

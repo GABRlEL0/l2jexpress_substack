@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Black Tears Shop - Consum -->
+
+<list>
+  <config showall="true" notax="true" keepenchanted="false" />
+	<!-- Recipe: Arcana Mace (60%) -->
+	<item id="1">
+		<production id="6899" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Dragon Hunter Axe (60%) -->
+	<item id="2">
+		<production id="6891" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Angel Slayer (60%) -->
+	<item id="3">
+		<production id="6887" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Imperial Staff (60%) -->
+	<item id="4">
+		<production id="6885" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Forgotten Blade (60%) -->
+	<item id="5">
+		<production id="6881" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Demon Splinter (60%) -->
+	<item id="6">
+		<production id="6895" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Saint Spear (60%) -->
+	<item id="7">
+		<production id="6893" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Draconic Bow (60%) -->
+	<item id="8">
+		<production id="7580" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Heavens Divider (60%) -->
+	<item id="9">
+		<production id="6897" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+
+	<!-- Recipe: Basalt Battlehammer (60%) -->
+	<item id="10">
+		<production id="6883" count="1"/>
+		<ingredient id="37009" count="12"/>
+	</item>
+<!--Armadura S-->
+	<item>
+		<production id="13100" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+	<item>
+		<production id="6849" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6851" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6847" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6873" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6875" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6879" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6877" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6861" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6863" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6857" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6855" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6853" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6859" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6867" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6869" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6871" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+	<item>
+		<production id="6865" count="1"/>
+		<ingredient id="37009" count="8"/>
+	</item>
+
+</list>

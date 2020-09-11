@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<config showall="true" notax="true" ignoreprice="true" keepenchanted="false" />
+<!-- Large dragon Skull-->
+	<item>
+		<production id="3882" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+	<item>
+		<production id="3881" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+	<item>
+		<production id="3883" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+	<item>
+		<production id="3877" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+	<item>
+		<production id="3875" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+	<item>
+		<production id="3879" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+	<item>
+		<production id="3888" count="1" />
+		<ingredient id="17249" count="1"/>
+	</item>
+</list>

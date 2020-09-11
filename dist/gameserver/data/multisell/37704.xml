@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<config showall="true" notax="true" ignoreprice="true" keepenchanted="false" />
+<!-- Belt-->
+	<item>
+		<ingredient id="37009" count="50" />
+		<production id="13894" count="1"/>
+	</item>
+<!-- Key of Event-->
+	<item>
+		<ingredient id="37009" count="10" />
+		<production id="31727" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="60" />
+		<ingredient id="37010" count="50" />
+		<production id="17061" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="17051" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="17052" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="17053" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="17054" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="17055" count="1"/>
+	</item>
+<!-- Talisman-->
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="17056" count="1"/>
+	</item>
+<!-- Stone Fragment-->
+	<item>
+		<ingredient id="37009" count="1" />
+		<production id="37017" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="1" />
+		<production id="37016" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="1" />
+		<production id="37015" count="1"/>
+	</item>
+<!-- Recipes-->
+	<item>
+		<ingredient id="37009" count="14" />
+		<production id="37030" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="14" />
+		<production id="37031" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="14" />
+		<production id="37032" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="38" />
+		<production id="37033" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="38" />
+		<production id="37034" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="38" />
+		<production id="37035" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="16" />
+		<production id="37036" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="16" />
+		<production id="37037" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="16" />
+		<production id="37038" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="12" />
+		<production id="37039" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="12" />
+		<production id="37040" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="12" />
+		<production id="37041" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="14" />
+		<production id="37042" count="1"/>
+	</item>	
+	<item>
+		<ingredient id="37009" count="14" />
+		<production id="37043" count="1"/>
+	</item>	
+	<item>
+		<ingredient id="37009" count="14" />
+		<production id="37044" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="37045" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="37046" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="15" />
+		<production id="37047" count="1"/>
+	</item>
+	<item>
+		<ingredient id="37009" count="12" />
+		<production id="37048" count="1"/>
+	</item>
+</list>

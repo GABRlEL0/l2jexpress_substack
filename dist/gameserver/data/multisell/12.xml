@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="21335" count="1"/>
+
+	</item>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="20732" count="1"/>
+
+	</item>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="21986" count="1"/>
+
+	</item>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="17203" count="1"/>
+
+	</item>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="17204" count="1"/>
+
+	</item>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- espadas de zaken  -->
+		<production  id="21165" count="1"/>
+
+	</item>
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="20253" count="1"/>
+
+	</item>
+		<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="20063" count="1"/>
+
+	</item>
+		<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="20008" count="1"/>
+
+	</item>
+		<item>
+		<!-- Donation Coin -->
+		<ingredient count="50" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="20664" count="1"/>
+
+	</item>
+	<!-- Agathion Seal Bracelet - One-Eyed Bat Drove ok -->
+  	<item>
+		<ingredient id="37000" count="50"/>
+    	
+    	<production id="20230" count="1"/>
+  	</item>
+
+  <!-- Agathion Seal Bracelet - Pegasus -->
+  	<item>
+		<ingredient id="37000" count="50"/>
+    	
+    	<production id="20236" count="1"/>
+  	</item>
+
+   <!-- Agathion Seal Bracelet - Great Sumo Match -->
+  	<item>
+		<ingredient id="37000" count="50"/>
+    	
+    	<production id="20301" count="1"/>
+  	</item>
+
+  <!-- Agathion Seal Bracelet - God of Fortune -->
+  	<item>
+		<ingredient id="37000" count="50"/>
+    	
+    	<production id="20307" count="1"/>
+  	</item>
+
+  <!-- Agathion Seal Bracelet - Dryad -->
+  	<item>
+		<ingredient id="37000" count="50"/>
+    	
+    	<production id="20309" count="1"/>
+  	</item>
+	<!--Agathions MinDz-->
+	<item>
+		<!-- Donation Coin -->
+		<ingredient count="300" id="37000" />
+	
+		<!-- Forgotten Book  -->
+		<production  id="80202" count="1"/>
+	</item>
+</list>

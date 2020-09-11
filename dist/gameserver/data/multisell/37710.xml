@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<config showall="true" notax="true" ignoreprice="true" keepenchanted="false" />
+	<item>
+		<ingredient id="37030" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45572" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37031" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45573" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37032" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45574" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37033" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45575" count="1" enchant="8"/>
+	</item>
+	<item>
+		<ingredient id="37034" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45576" count="1" enchant="8"/>
+	</item>
+	<item>
+		<ingredient id="37035" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45577" count="1" enchant="8"/>
+	</item>
+	<item>
+		<ingredient id="37036" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45578" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37037" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45579" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37038" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45580" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37039" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45581" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37040" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45582" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37041" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45583" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37042" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45584" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37043" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45585" count="1" enchant="6"/>
+	</item>
+	<item>
+		<ingredient id="37044" count="1" />
+		<ingredient id="31725" count="10" />
+		<ingredient id="37049" count="5" />
+		<ingredient id="37009" count="20" />
+		<ingredient id="728" count="1000" />
+		<production id="45586" count="1" enchant="6"/>
+	</item>
+
+
+</list>

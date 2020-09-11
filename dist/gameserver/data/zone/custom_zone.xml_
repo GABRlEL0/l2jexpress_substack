@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "zone.dtd">
+<list>
+	<zone name="[Primeval_peace]" type="peace_zone">
+		<polygon>
+			<coords loc="4488 -24424"/>
+			<coords loc="584 -3496"/>
+			<coords loc="31016 -3800"/>
+			<coords loc="30856 -26152"/>
+		</polygon>
+	</zone>	
+</list>

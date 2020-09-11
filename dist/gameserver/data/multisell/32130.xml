@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+	<config showall="true" notax="true" keepenchanted="false" />
+	<!-- Revita-pop -->
+	<item>
+		<ingredient id="-100" count="250" />
+		<production id="20034" count="1" />
+	</item>
+	<!-- Life Stones -->
+	<item>
+		<ingredient id="-100" count="1000" />
+		<production id="9576" count="1" />
+	</item>	
+	<!-- 100kk sp scroll -->
+	<item>
+		<ingredient id="-100" count="2500" />
+		<production id="17277" count="1" />
+	</item>
+	<!-- runa exp -->
+	<item>
+		<ingredient id="-100" count="500" />
+		<production id="20337" count="1" />
+	</item>
+	<!-- euna sp -->
+	<item>
+		<ingredient id="-100" count="500" />
+		<production id="20343" count="1" />
+	</item>
+	<item>
+		<ingredient id="-100" count="400" />
+		<production id="20151" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20152" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20153" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20154" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20155" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20156" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20157" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20158" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20159" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20160" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20161" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20162" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20163" count="1" />
+</item>
+<item>
+		<ingredient id="-100" count="400" />
+		<production id="20164" count="1" />
+</item>
+	
+</list>

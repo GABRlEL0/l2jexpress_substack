@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- S80 Armors / Jewels - Delusion Chamber -->
+<list>
+ <!-- Agathion Seal Bracelet - One-Eyed Bat Drove ok -->
+  <item>
+	<ingredient id="37000" count="50"/>
+    <production id="20230" count="1"/>
+  </item>
+
+  <!-- Agathion Seal Bracelet - Pegasus -->
+  <item>
+	<ingredient id="37000" count="50"/>
+    <production id="20236" count="1"/>
+  </item>
+
+   <!-- Agathion Seal Bracelet - Great Sumo Match -->
+  <item>
+	<ingredient id="37000" count="50"/>
+    <production id="20301" count="1"/>
+  </item>
+
+  <!-- Agathion Seal Bracelet - God of Fortune -->
+  <item>
+	<ingredient id="37000" count="50"/>
+    <production id="20307" count="1"/>
+  </item>
+
+  <!-- Agathion Seal Bracelet - Dryad -->
+  <item>
+	<ingredient id="37000" count="50"/>
+    <production id="20309" count="1"/>
+  </item>
+</list>

@@ -1,0 +1,1006 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+	<config showall="true" notax="true" keepenchanted="false" />
+	<item>
+		<ingredient count="5" id="37002"/>
+		<ingredient count="250" id="-100" /> 
+		<production count="1" id="20337"/> 
+	</item>
+	<item>
+		<ingredient count="5" id="37002"/>
+		<ingredient count="250" id="-100" /> 
+		<production count="1" id="20343"/> 
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="25" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Red Soul Crystal - Stage 13 -->
+		<production count="1" id="5908" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="25" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Green Soul Crystal - Stage 13 -->
+		<production count="1" id="5911" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="25" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Blue Soul Crystal - Stage 13 -->
+		<production count="1" id="5914" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="45" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="750" id="-100" />
+
+		<!-- Red Soul Crystal - Stage 14 -->
+		<production count="1" id="9570" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="45" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="750" id="-100" />
+
+		<!-- Green Soul Crystal - Stage 14 -->
+		<production count="1" id="9572" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="45" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="750" id="-100" />
+
+		<!-- Blue Soul Crystal - Stage 14 -->
+		<production count="1" id="9571" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="70" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="1000" id="-100" />
+
+		<!-- Red Soul Crystal - Stage 15 -->
+		<production count="1" id="10480" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="70" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="1000" id="-100" />
+
+		<!-- Green Soul Crystal - Stage 15 -->
+		<production count="1" id="10482" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="70" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="1000" id="-100" />
+
+		<!-- Blue Soul Crystal - Stage 15 -->
+		<production count="1" id="10481" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="1" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="50" id="-100" />
+
+		<!-- Large Dragon-->
+		<production count="1" id="17248" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="5" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Giant's Codex -->
+		<production count="1" id="6622" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="10" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Giant's Codex - Oblivion -->
+		<production count="1" id="9625" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="50" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Formal Wear -->
+		<production count="1" id="6408" />
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Gludio -->
+		<production id="13731" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Dion -->
+		<production id="13732" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Giran -->
+		<production id="13733" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Oren -->
+		<production id="13734" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Aden -->
+		<production id="13735" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Innadril -->
+		<production id="13736" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Goddard -->
+		<production id="13737" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Rune -->
+		<production id="13738" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Adena -->
+		<ingredient id="37002" count="25"/>
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+		<!-- BSOE  Schutthard -->
+		<production id="13739" count="1"/>
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="35" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- Shirt -->
+		<production count="1" id="10512" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="35" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- Shirt -->
+		<production count="1" id="10513" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="35" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- Shirt -->
+		<production count="1" id="10514" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="10" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- EAA -->
+		<production count="1" id="730" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="10" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- EAB -->
+		<production count="1" id="948" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="25" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="750" id="-100" />
+
+		<!-- LIFE Stones -->
+		<production count="1" id="9575" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="10" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="500" id="-100" />
+
+		<!-- Accessory LS -->
+		<production count="1" id="12821" />
+	</item>
+
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- talisman -->
+		<production count="1" id="9918" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- talisman -->
+		<production count="1" id="10518" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- talisman -->
+		<production count="1" id="9932" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- talisman -->
+		<production count="1" id="10416" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+
+		<!-- talisman -->
+		<production count="1" id="10417" />
+	</item>
+		<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="2000" id="-100" />
+		<!-- talisman -->
+		<production count="1" id="10424" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="30" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="750" id="-100" />
+
+		<!-- neo cry  -->
+		<production count="1" id="14679" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="45" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="1000" id="-100" />
+
+		<!-- neo cry  -->
+		<production count="1" id="14680" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="65" id="37002" />
+		<!-- Pc Points -->
+		<ingredient count="1500" id="-100" />
+
+		<!-- neo cry  -->
+		<production count="1" id="14681" />
+	</item>
+	<!--    ******************************* FORGOTTEN LIBRITOS  *******************************   -->
+			
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10554" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10553" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14179" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14194" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14214" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="1422" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14217" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14225" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14216" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14224" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14199" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10558" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14207" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14183" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14181" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14218" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14210" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14213" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14212" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14173" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="12769" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="12768" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="12770" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10577" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14175" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10560" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14223" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10552" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14208" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14187" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14178" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14182" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14188" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14180" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14177" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14184" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14227" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14171" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14209" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14189" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10579" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10581" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10582" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10580" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10584" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10583" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14186" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14195" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14222" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14219" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14201" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14202" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14191" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10578" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14226" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14174" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10551" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10550" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10549" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14197" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14170" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10576" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14211" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="12771" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14220" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10559" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14198" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="10557" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14172" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14204" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14206" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14205" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14192" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+			<production  id="14193" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+			<production  id="14200" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14196" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14221" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14190" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14203" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14185" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="14176" count="1"/>
+		</item>
+		<item>
+			<!-- Vote Coin -->
+			<ingredient count="2" id="37002" />
+			<!-- Pc Points -->
+			<ingredient count="2000" id="-100" />
+			<!-- Forgotten Book  -->
+		<production  id="17030" count="1"/>
+		</item>
+</list>	

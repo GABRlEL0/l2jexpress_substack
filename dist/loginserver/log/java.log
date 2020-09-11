@@ -1,0 +1,23 @@
+[20.08.20 22:47:14:080]  INFO loginserver.Config: Loaded 127 server names
+[20.08.20 22:47:14:279]  INFO loginserver.Config: Loaded whirlpool2 as default crypt.
+[20.08.20 22:47:14:680]  INFO loginserver.Config: Cached 10 KeyPairs for RSA communication
+[20.08.20 22:47:15:015]  INFO loginserver.Config: Stored 20 keys for Blowfish communication
+[20.08.20 22:47:15:030]  INFO loginserver.GameServerManager: Loaded 1 registered GameServer(s).
+[20.08.20 22:47:15:048]  INFO loginserver.AuthServer: Listening for gameservers on 127.0.0.1:9014
+[20.08.20 22:47:15:048]  INFO loginserver.AuthServer: Listening for clients on 127.0.0.1:2106
+[20.08.20 22:47:15:048]  INFO loginserver.AuthServer: Login Server will automatically restart in 7200 seconds!
+[20.08.20 22:47:39:012]  INFO gspackets.AuthRequest: Trying to register gameserver: 1 [127.0.0.1]
+[20.08.20 22:47:39:013]  INFO gspackets.AuthRequest: Gameserver registration successful.
+[20.08.20 22:51:30:826] ERROR gameservercon.GameServerCommunication: Gameserver I/O error: Se ha forzado la interrupción de una conexión existente por el host remoto
+[20.08.20 22:51:30:826]  INFO gameservercon.GameServerConnection: Connection with gameserver 1 [Bartz] lost.
+[20.08.20 22:51:30:826]  INFO gameservercon.GameServerConnection: Setting gameserver down.
+[20.08.20 22:56:46:100]  INFO gspackets.AuthRequest: Trying to register gameserver: 1 [127.0.0.1]
+[20.08.20 22:56:46:100]  INFO gspackets.AuthRequest: Gameserver registration successful.
+[20.08.20 22:59:09:058] ERROR gameservercon.GameServerCommunication: Gameserver I/O error: Se ha forzado la interrupción de una conexión existente por el host remoto
+[20.08.20 22:59:09:058]  INFO gameservercon.GameServerConnection: Connection with gameserver 1 [Bartz] lost.
+[20.08.20 22:59:09:058]  INFO gameservercon.GameServerConnection: Setting gameserver down.
+[20.08.20 22:59:44:163]  INFO gspackets.AuthRequest: Trying to register gameserver: 1 [127.0.0.1]
+[20.08.20 22:59:44:163]  INFO gspackets.AuthRequest: Gameserver registration successful.
+[20.08.20 23:00:14:866] ERROR gameservercon.GameServerCommunication: Gameserver I/O error: Se ha forzado la interrupción de una conexión existente por el host remoto
+[20.08.20 23:00:14:867]  INFO gameservercon.GameServerConnection: Connection with gameserver 1 [Bartz] lost.
+[20.08.20 23:00:14:867]  INFO gameservercon.GameServerConnection: Setting gameserver down.

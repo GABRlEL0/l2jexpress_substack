@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- MultiSell_begin	[0996_no_crest]	501 -->
+<list>
+	<!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+	<!-- ignoreprice не работает с keepencahnted -->
+	<config showall="true" notax="true" keepenchanted="false"/>
+
+    <item>
+        <production id="9914" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9915" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9916" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9917" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+    <item>
+        <production id="9918" count="1"/>
+        <ingredient count="50" id="6392" />
+    </item>
+
+</list>

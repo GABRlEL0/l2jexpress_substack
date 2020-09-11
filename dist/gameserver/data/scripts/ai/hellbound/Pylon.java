@@ -1,0 +1,41 @@
+package ai.hellbound;
+
+import l2jexpress.gameserver.ai.Fighter;
+import l2jexpress.gameserver.data.xml.holder.NpcHolder;
+import l2jexpress.gameserver.model.SimpleSpawner;
+import l2jexpress.gameserver.model.instances.NpcInstance;
+import l2jexpress.gameserver.utils.Location;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class Pylon extends Fighter
+{
+	private static final Logger LOG = LoggerFactory.getLogger(Pylon.class);
+
+	public Pylon(NpcInstance actor)
+	{
+		super(actor);
+		actor.startImmobilized();
+	}
+
+	@Override
+	protected void onEvtSpawn()
+	{
+		super.onEvtSpawn();
+
+		NpcInstance actor = getActor();
+		for (int i = 0; i < 7; i++)
+			try
+		{
+				SimpleSpawner sp = new SimpleSpawner(NpcHolder.getInstance().getTemplate(22422));
+				sp.setLoc(Location.findPointToStay(actor, 150, 550));
+				sp.doSpawn(true);
+				sp.stopRespawn();
+		}
+		catch (RuntimeException e)
+		{
+			LOG.error("Error on Pylon Spawn", e);
+		}
+	}
+}

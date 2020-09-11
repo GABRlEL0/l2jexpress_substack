@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list maintainEnchantment="true" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="../xsd/multisell.xsd">
+	<item>
+		<!-- Talisman -->
+		<production count="1" id="17061"/>
+		<ingredient count="1" id="17053" />
+		<ingredient count="50" id="37010" />
+	</item>
+	<item>
+		<!-- Talisman -->
+		<production count="1" id="17061"/>
+		<ingredient count="1" id="17052" />
+		<ingredient count="50" id="37010" />
+	</item>
+	<item>
+		<!-- Talisman -->
+		<production count="1" id="17061"/>
+		<ingredient count="1" id="17055" />
+		<ingredient count="50" id="37010" />
+	</item>
+	<item>
+		<!-- Talisman -->
+		<production count="1" id="17061"/>
+		<ingredient count="1" id="17056" />
+		<ingredient count="50" id="37010" />
+	</item>
+	<item>
+		<!-- Talisman -->
+		<production count="1" id="17061"/>
+		<ingredient count="1" id="17051" />
+		<ingredient count="50" id="37010" />
+	</item>
+	<item>
+		<!-- Talisman -->
+		<production count="1" id="17061"/>
+		<ingredient count="1" id="17054" />
+		<ingredient count="50" id="37010" />
+	</item>
+</list>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Noblesse Gate Pass ==> items -->
+
+<list>
+	<!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+	<!-- ignoreprice не работает с keepencahnted -->
+	<config showall="true" notax="false" keepenchanted="false" />
+	<item>
+		<ingredient id="13722" count="30600" /> <!--Olympiad Token-->
+		<production id="13751" count="1" /> <!--Warrior's T-shirt-->
+	</item>
+	<item>
+		<ingredient id="13722" count="22000" /> <!--Olympiad Token-->
+		<production id="13752" count="1" /> <!--Olympiad Warrior's Ring-->
+	</item>
+	<item>
+		<ingredient id="13722" count="44000" /> <!--Olympiad Token-->
+		<production id="13753" count="1" /> <!--Olympiad Warrior's Necklace-->
+	</item>
+	<item>
+		<ingredient id="13722" count="33000" /> <!--Olympiad Token-->
+		<production id="13754" count="1" /> <!--Olympiad Warrior's Earring-->
+	</item>
+
+</list>

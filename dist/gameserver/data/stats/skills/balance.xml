@@ -1,0 +1,2195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+		<!--INICIO BALANCE HUMANOS-->
+	<skill id="35104" levels="1" name="Duelist"><!--Balanace Duelist-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+			<mul order="0x70" stat="pvpPhysSkillDmgBonus" val="0.9"/> <!--  SKILL POWER-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->			
+	<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+		<mul order="0x70" stat="cAtk" val="0.1">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+			</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+	    </for>
+	</skill>
+	<skill id="35105" levels="1" name="Dreadnought"><!--Balanace Dreadnought-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35106" levels="1" name="Phoenix Knight"><!--Balanace Phoenix Knight-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+		   <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>
+		</for>
+	</skill> 
+	<skill id="35107" levels="1" name="Hell Knight"><!--Balanace Hell Knight-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+		   <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>
+		</for>
+	</skill> 
+	<skill id="35108" levels="1" name="Saggitarius"><!--Balanace Saggitarius-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="0.8" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		    <mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>		
+		</for>
+	</skill> 
+	<skill id="35109" levels="1" name="Adventurer"><!--Balanace Adventurer-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="0.9" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>		
+		</for>
+	</skill> 
+	<skill id="35110" levels="1" name="Archmage"><!--Balanace Archmage-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="0.85" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="0.7" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="mCritDamage" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>
+		<mul order="0x70" stat="mAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35111" levels="1" name="Soul Taker"><!--Balanace Soul Taker-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="0.85" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="0.7" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="mCritDamage" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>
+		<mul order="0x70" stat="mAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>			
+		</for>
+	</skill> 
+	<skill id="35112" levels="1" name="Arcana Lord"><!--Balanace Arcana Lord-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<skill id="35113" levels="1" name="Cardinal"><!--Balanace Cardinal-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="0.6" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>	
+		</for>
+	</skill> 
+	<skill id="35114" levels="1" name="Hieropanth"><!--Balanace Hieropanth-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<!--FIN BALANCE HUMANOS-->
+	<!--INICIO BALANCE ELFOS DE LA LUZ-->
+	<skill id="35115" levels="1" name="Evas Templar"><!--Balanace Evas Templar-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35116" levels="1" name="Sword Muse"><!--Balanace Sword Muse-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Pole" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35117" levels="1" name="Wind Rider"><!--Balanace Wind Rider-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>		
+		</for>
+	</skill> 
+	<skill id="35118" levels="1" name="Moonlight Sentinel"><!--Balanace Moonlight Sentinel-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="0.9" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35119" levels="1" name="Mistyc Muse"><!--Balanace Mistyc Muse-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="0.85" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="0.7" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="mCritDamage" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>
+		<mul order="0x70" stat="mAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>			
+		</for>
+	</skill> 
+	<skill id="35120" levels="1" name="Elemental Master"><!--Balanace Elemental Master-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<skill id="35121" levels="1" name="Evas Saint"><!--Balanace Evas Saint-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<!--FIN BALANCE ELFOS DE LA LUZ-->
+	<!--INICIO BALANCE ELFOS OSCUROS-->
+	<skill id="35122" levels="1" name="Shielen Templar"><!--Balanace Shielen Templar-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Dagger, Rapier, Fist, Dual Dagger, Big Sword, Big Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Crossbow, Dagger, Rapier, Fist, Dual Dagger,Big Sword , Big Blunt, Pole" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35123" levels="1" name="Spectral Dancer"><!--Balanace Spectral Dancer-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Big Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		   <using kind="Ancient Sword, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Big Blunt, Pole" />
+		</mul>			
+		</for>
+	</skill> 
+	<skill id="35124" levels="1" name="Ghost Hunter"><!--Balanace Ghost Hunter-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="0.9" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		  <using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35125" levels="1" name="Ghost Sentinel"><!--Balanace Ghost Sentinel-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="0.8" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole, Dual Sword" />
+		</mul>
+		    <mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole, Dual Sword" />
+		</mul>				
+		</for>
+	</skill> 
+	<skill id="35126" levels="1" name="Storm Screamer"><!--Balanace Storm Screamer-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="0.85" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="0.7" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="mCritDamage" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>
+		<mul order="0x70" stat="mAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Pole" />
+		</mul>			
+		</for>
+	</skill> 
+	<skill id="35127" levels="1" name="Spectral Master"><!--Balanace Spectral Master-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<skill id="35128" levels="1" name="Shielen Saint"><!--Balanace Shielen Saint-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<!--FIN BALANCE ELFOS OSCUROS-->
+	<!--INICIO BALANCE ORCOS-->
+
+	<skill id="35129" levels="1" name="Titan"><!--Balanace Titan-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+		</mul>				
+		</for>
+	</skill> 
+	<skill id="35130" levels="1" name="Grand Khauwatary"><!--Balanace grand Khauatary-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+			<mul order="0x70" stat="pvpPhysSkillDmgBonus" val="0.9"/> <!--  SKILL POWER-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Dagger, Crossbow, Rapier, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>				
+		</for>
+	</skill> 
+	<skill id="35131" levels="1" name="Dominator"><!--Balanace Dominator-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<skill id="35132" levels="1" name="DoomCryer"><!--Balanace DoomCryer-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.5">
+				<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger" />
+			</mul>		
+		</for>
+	</skill> 
+	<!--FIN BALANCE ORCOS-->
+	<!--INICIO BALANCE ENANOS-->
+	<skill id="35133" levels="1" name="Fortune Seeker"><!--Balanace Fortune Seeker-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword, Sword, bow, Dual Sword" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword, Sword, bow, Dual Sword" />
+		</mul>				
+		</for>
+	</skill> 
+	<skill id="35134" levels="1" name="Maestro"><!--Balanace Maestro-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword, Sword, bow, Dual Sword" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+		    <using kind="Ancient Sword, Crossbow, Rapier, Fist, Big Sword, Sword, bow, Dual Sword" />
+		</mul>		
+		</for>
+	</skill> 
+	<!--FIN BALANCE ENANOS-->
+	<!--INICIO BALANCE KAMAELS-->
+	<skill id="35135" levels="1" name="Doombringer"><!--Balanace Doombringer-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1.2" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+			<using kind="Dagger, Crossbow, Rapier, Fist, Dual Dagger, Big Sword, Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />	
+		</mul>	
+		</for>
+	</skill> 
+	<skill id="35136" levels="1" name="SoulhoundM"><!--Balanace Maestro-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+			<mul order="0x70" stat="cAtk" val="0.1">
+				<using kind="Ancient Sword, Dagger, Crossbow, Fist, Dual Dagger, Big Sword, Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+			</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+				<using kind="Ancient Sword, Dagger, Crossbow, Fist, Dual Dagger, Big Sword, Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+		</mul>				
+		</for>
+	</skill> 
+	<skill id="35137" levels="1" name="SoulHoundF"><!--Balanace Maestro-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Fist, Dual Dagger, Big Sword, Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Fist, Dual Dagger, Big Sword, Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+		</mul>		
+		</for>
+	</skill> 
+	<skill id="35138" levels="1" name="Trickster"><!--Balanace Maestro-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="0.8" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+				<using kind="Ancient Sword, Dagger, bow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, bow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole" />
+	    </mul>		
+		</for>
+	</skill> 
+	<skill id="35139" levels="1" name="Judicator"><!--Balanace Maestro-->
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="magicLevel" val="76" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+<!-- Fisicas -->
+			<mul order="0x70" stat="maxHp" val="1" /> <!--  Max Hp-->
+			<mul order="0x70" stat="pAtk" val="1" /> <!-- P attack -->
+			<mul order="0x70" stat="pDef" val="1" /> <!-- P Defense -->
+			<mul order="0x70" stat="pAtkSpd" val="1" /> <!-- Att speed -->
+			<mul order="0x70" stat="accCombat" val="1" /> <!-- Accuracy -->
+			<mul order="0x70" stat="rEvas" val="1" /> <!-- Evasion -->
+			<mul order="0x70" stat="runSpd" val="1" /> <!-- Speed -->
+			<mul order="0x70" stat="rCrit" val="1" /> <!-- Crit rate -->
+			<mul order="0x70" stat="cAtk" val="1" /> <!-- Crit power -->
+			<mul order="0x70" stat="critDamRcpt" val="1" /> <!-- Crit recibimiento -->
+			<mul order="0x70" stat="rShld" val="1" /> <!-- Shield rate -->
+			<mul order="0x70" stat="sDef" val="1" /> <!-- Shield defense -->
+			<mul order="0x70" stat="reflectDam" val="1" /> <!--  Reflect-->	
+<!-- Magicas -->
+			<mul order="0x70" stat="mAtk" val="1" /> <!-- M attack -->
+			<mul order="0x70" stat="mDef" val="1" /> <!-- M Def -->
+			<mul order="0x70" stat="mAtkSpd" val="1" /> <!-- Casting -->
+			<mul order="0x70" stat="mCritRate" val="1" /> <!-- Magic Crit Rate -->
+			<mul order="0x70" stat="mCritDamage" val="1" /> <!-- Magic Crit Power -->
+<!-- Resistencias -->
+			<mul order="0x70" stat="rootResist" val="1" /> <!--  Root Resist-->
+			<mul order="0x70" stat="sleepResist" val="1" /> <!--  Sleep Resist-->
+			<mul order="0x70" stat="mentalResist" val="1" /> <!--  Mental Resist -->
+			<mul order="0x70" stat="stunResist" val="1" /> <!-- Stun Resist-->
+			<mul order="0x70" stat="bleedResist" val="1" /> <!--  Resist Bleed-->
+			<mul order="0x70" stat="debuffResist" val="1" /> <!--  Debilidad a debuff-->			
+<!-- Debilidades a armas -->			
+			<add order="0x40" stat="bowWpnVuln" val="0" /> <!--  Debilidad a arco-->
+			<add order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Debilidad a dagas y rapier-->
+			<add order="0x40" stat="dualWpnVuln" val="0" /> <!--  Debilidad a dual sword-->
+			<add order="0x40" stat="swordWpnVuln" val="0" /> <!--  Debilidad a espadas y ancient-->
+			<add order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Debilidad a mazos-->
+			<add order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Debilidad a ballesta-->
+			<add order="0x40" stat="poleWpnVuln" val="0" /> <!--  Debilidad a pole-->
+			<add order="0x40" stat="fistWpnVuln" val="0" /> <!--  Debilidad a fists-->	
+				<!-- Resistencia a armas -->			
+			<sub order="0x40" stat="bowWpnVuln" val="0" /> <!--  Resistencia a arco-->
+			<sub order="0x40" stat="daggerWpnVuln" val="0" /> <!--  Resistencia a dagas y rapier-->
+			<sub order="0x40" stat="dualWpnVuln" val="0" /> <!--  Resistencia a dual sword-->
+			<sub order="0x40" stat="swordWpnVuln" val="0" /> <!--  Resistencia a espadas y ancient-->
+			<sub order="0x40" stat="bluntWpnVuln" val="0" /> <!--  Resistencia a mazos-->
+			<sub order="0x40" stat="crossbowWpnVuln" val="0" /> <!--  Resistencia a ballesta-->
+			<sub order="0x40" stat="poleWpnVuln" val="0" /> <!--  Resistencia a pole-->
+			<sub order="0x40" stat="fistWpnVuln" val="0" /> <!--  Resistencia a fists-->		
+<!--Limitaciones armas -->	
+		<mul order="0x70" stat="cAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+		</mul>
+		<mul order="0x70" stat="pAtk" val="0.1">
+			<using kind="Ancient Sword, Dagger, Crossbow, Rapier, Fist, Dual Dagger,Big Sword,Big Blunt, Sword, Blunt, Pole, bow, Dual Sword" />
+		</mul>		
+		</for>
+	</skill> 
+	<!--FIN BALANCE KAMAELS-->
+</list>

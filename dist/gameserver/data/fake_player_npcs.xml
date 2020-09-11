@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "fake_player_npcs.dtd">
+
+<list>
+  <npc template_id="1" name="Tournament" title="Watch TGL Live!">
+    <name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="orc" sex="male" class_id="44" hair_style="0" hair_color="0" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="45" weapon_glow="true" abnormal="" abnormal2="" hero="true" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15547" shield="" chest="15575" leggings="15578" gloves="15581" boots="15584" cloak="" accessory_head="13234" accessory_face=""/>
+  </npc>
+  <npc template_id="2" name="Tournament" title="Watch TGL Live!">
+    <name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="orc" sex="male" class_id="44" hair_style="0" hair_color="0" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="45" weapon_glow="true" abnormal="" abnormal2="" hero="true" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15548" shield="" chest="15575" leggings="15578" gloves="15581" boots="15584" cloak="" accessory_head="13234" accessory_face=""/>
+  </npc>
+  <npc template_id="3" name="Methadone" title="TGL Winner!">
+    <name pvp_flag="False" karma="0" recommends="235" name_color="16777215" title_color="838620"/>
+    <body race="human" sex="female" class_id="88" hair_style="4" hair_color="3" face="0"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="10" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="16158" shield="" chest="30100" leggings="" gloves="" boots="" cloak="38032" accessory_head="" accessory_face="20678"/>
+  </npc>
+  <npc template_id="4" name="F1POWERPWNZ" title="TGL Winner!">
+    <name pvp_flag="False" karma="0" recommends="232" name_color="16777215" title_color="838620"/>
+    <body race="human" sex="female" class_id="90" hair_style="0" hair_color="0" face="0"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="5" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="16058" shield="13471" chest="13435" leggings="13448" gloves="13449" boots="13450" cloak="38032" accessory_head="" accessory_face="8185"/>
+  </npc>
+  <npc template_id="5" name="TheNobody" title="TGL 2nd Place">
+    <name pvp_flag="False" karma="0" recommends="175" name_color="16777215" title_color="10404806"/>
+    <body race="kamael" sex="male" class_id="131" hair_style="2" hair_color="1" face="1"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="7" weapon_glow="False" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="16097" shield="" chest="13433" leggings="13441" gloves="13442" boots="13443" cloak="" accessory_head="" accessory_face="21893"/>
+  </npc>
+  <npc template_id="6" name="iReckoner" title="TGL 2nd Place">
+    <name pvp_flag="False" karma="0" recommends="195" name_color="16777215" title_color="10404806"/>
+    <body race="human" sex="female" class_id="90" hair_style="0" hair_color="0" face="0"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="7" weapon_glow="False" abnormal="0" abnormal2="0" hero="True" agathion="1513" cubics="" team="NONE"/>
+    <items weapon="13457" shield="15621" chest="15609" leggings="15612" gloves="15615" boots="15618" cloak="21719" accessory_head="" accessory_face=""/>
+  </npc>
+  <npc template_id="7" name="MaryJan3" title="TGL 3rd Place">
+    <name pvp_flag="False" karma="0" recommends="34" name_color="16777215" title_color="1663954"/>
+    <body race="human" sex="female" class_id="88" hair_style="0" hair_color="3" face="0"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="8" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="16159" shield="" chest="6408" leggings="16843" gloves="16846" boots="16849" cloak="21717" accessory_head="" accessory_face="13501"/>
+  </npc>
+  <npc template_id="8" name="d3f3nd3r" title="TGL 3rd Place">
+    <name pvp_flag="False" karma="0" recommends="135" name_color="16777215" title_color="1663954"/>
+    <body race="darkelf" sex="male" class_id="106" hair_style="3" hair_color="1" face="1"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="49" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="21934" shield="641" chest="365" leggings="388" gloves="5765" boots="5777" cloak="21718" accessory_head="" accessory_face=""/>
+  </npc>
+  <npc template_id="9" name="Iridius" title="Master Crafter">
+    <name pvp_flag="False" karma="0" recommends="135" name_color="16777215" title_color="1663954"/>
+    <body race="dwarf" sex="male" class_id="106" hair_style="3" hair_color="1" face="1"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="49" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="21934" shield="15587" chest="45575" leggings="45578" gloves="45581" boots="45584" cloak="21718" accessory_head="" accessory_face=""/>
+  </npc>
+  <npc template_id="10" name="Orodous" title="Master Miner">
+    <name pvp_flag="False" karma="0" recommends="135" name_color="16777215" title_color="1663954"/>
+    <body race="dwarf" sex="male" class_id="106" hair_style="3" hair_color="1" face="1"/>
+    <animation sit="False" run="True" combat="False" dead="False" store="False"/>
+    <effect weapon_enchant="49" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="0" cubics="" team="NONE"/>
+    <items weapon="6365" shield="15587" chest="45575" leggings="45578" gloves="45581" boots="45584" cloak="21718" accessory_head="13513" accessory_face=""/>
+  </npc>
+  <npc template_id="11" name="KarmaKiller" title="AntiPK">
+    <name pvp_flag="False" karma="0" recommends="135" name_color="16777215" title_color="1663954"/>
+    <body race="human" sex="male" class_id="92" hair_style="3" hair_color="1" face="1"/>
+    <animation sit="False" run="True" combat="True" dead="False" store="False"/>
+    <effect weapon_enchant="49" weapon_glow="True" abnormal="0" abnormal2="0" hero="True" agathion="1513" cubics="" team="NONE"/>
+    <items weapon="15901" shield="" chest="45575" leggings="45578" gloves="45581" boots="45584" cloak="21718" accessory_head="" accessory_face="21893"/>
+  </npc>
+  <npc template_id="12" name="Kroatan" title="Feb Top Pk">
+    <name pvp_flag="True" karma="1000" recommends="135" name_color="255" title_color="1663954"/>
+    <body race="kamael" sex="male" class_id="131" hair_style="4" hair_color="0" face="1"/>
+    <animation sit="False" run="false" combat="false" dead="False" store="False"/>
+    <effect weapon_enchant="6" weapon_glow="True" abnormal="0" abnormal2="0" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15556" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="13890" accessory_head="8567" accessory_face=""/>
+  </npc>
+  <npc template_id="13" name="SirLaurens" title="Feb Top PvP">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="human" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="13687" accessory_head="" accessory_face="20016"/>
+  </npc>
+<!-- muestra alas-->
+
+  <npc template_id="14" name="Wings1" title="Pixie">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="human" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40021" accessory_face="20016"/>
+  </npc>
+  <npc template_id="15" name="Wings2" title="Succubus">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40020" accessory_face="20016"/>
+  </npc>
+  <npc template_id="16" name="Wings3" title="Netherworld">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40019" accessory_face="20016"/>
+  </npc>
+  <npc template_id="17" name="Wings4" title="Eva">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40018" accessory_face="20016"/>
+  </npc>
+  <npc template_id="18" name="Wings5" title="Chaos">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="human" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40017" accessory_face="20016"/>
+  </npc>
+  <npc template_id="19" name="Wings6" title="Gargoyle">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40016" accessory_face="20016"/>
+  </npc>
+  <npc template_id="20" name="Wings7" title="Fallen Angel">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40015" accessory_face="20016"/>
+  </npc>
+  <npc template_id="21" name="Wings8" title="Angel">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40014" accessory_face="20016"/>
+  </npc>
+  <npc template_id="22" name="Wings9" title="Valakas">
+	<name pvp_flag="false" karma="99999" recommends="0" name_color="" title_color=""/>
+    <body race="darkelf" sex="male" class_id="92" hair_style="4" hair_color="2" face="0"/>
+    <animation sit="false" run="false" combat="false" dead="false" store="false"/>
+    <effect weapon_enchant="8" weapon_glow="true" abnormal="" abnormal2="" hero="false" agathion="-1" cubics="" team="NONE"/>
+    <items weapon="15554" shield="" chest="15593" leggings="15596" gloves="15599" boots="15601" cloak="" accessory_head="40013" accessory_face="20016"/>
+  </npc>
+
+
+</list>
+

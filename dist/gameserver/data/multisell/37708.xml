@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<config showall="true" notax="true" ignoreprice="true" keepenchanted="false" />
+<!-- S grade Lucky box-->
+	<item>
+		<production id="13991" count="1" />
+		<ingredient id="57" count="100000000"/>
+	</item>
+	<item>
+		<production id="13990" count="1" />
+		<ingredient id="57" count="300000000"/>
+	</item>
+	<item>
+		<production id="13992" count="1" />
+		<ingredient id="57" count="100000000"/>
+	</item>
+</list>

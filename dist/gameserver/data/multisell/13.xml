@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+	<item>
+		<!-- Adena -->
+		<ingredient count="100000" id="57" />
+	
+		<!-- capa Heaven -->
+		<production  id="80101" count="1"/>
+	</item>	
+</list>

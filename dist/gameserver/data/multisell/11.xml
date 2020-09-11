@@ -1,0 +1,1030 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+
+	<item>
+		<!--Adena for essence coin-->
+		<ingredient id="37000" count="2"/>
+		<production id="57" count="1000000"/>
+	</item>
+	<item>
+		<!-- Water Mantra -->
+   		 <ingredient id="37000" count="60"/>
+
+		<!-- cp -->
+		<production count="100" id="5592" />
+	</item>
+	<item>
+		<!-- Water Mantra -->
+   		 <ingredient id="37000" count="100"/>
+
+		<!-- cp -->
+		<production count="1" id="17277" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+		<!-- Shirt -->
+		<production count="1" id="10512" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+		<!-- Shirt -->
+		<production count="1" id="10513" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+		<!-- Shirt -->
+		<production count="1" id="10514" />
+	</item>
+	<item>
+		<!--Adena for essence coin-->
+		<ingredient id="37000" count="75"/>
+		<production id="960" count="1"/>
+	</item>
+	<item>
+		<!--Adena for essence coin-->
+		<ingredient id="37000" count="150"/>
+		<production id="959" count="1"/>
+	</item>
+<!--Aio Duals 
+	<item>
+   		 <ingredient id="37000" count="400"/>
+
+		<production count="1" id="13986" enchant="30" />
+		<production count="1" id="46016"/>
+	</item>
+ -->
+
+	<!-- Special Accesories
+
+	<item>
+		<ingredient count="350" id="37000"/> 
+		<production count="1" id="21949"/> 
+	</item>
+	<item>
+		<ingredient count="350" id="37000"/> 
+		<production count="1" id="21948"/> 
+	</item>
+	<item>
+		<ingredient count="250" id="37000"/> 
+		<production count="1" id="21980"/> 
+	</item>
+	<item>
+		<ingredient count="350" id="37000"/> 
+		<production count="1" id="21928"/> 
+	</item>
+	<item>
+		<ingredient count="350" id="37000"/> 
+		<production count="1" id="21929"/> 
+	</item>
+	<item>
+		<ingredient count="350" id="37000"/> 
+		<production count="1" id="21930"/> 
+	</item>
+	
+	
+	<item>
+		<ingredient count="250" id="37000"/> 
+		<production count="1" id="6659"/> 
+	</item>
+	<item>
+		<ingredient count="450" id="37000"/> 
+		<production count="1" id="21712"/> 
+	</item>
+	
+	<item>
+		<ingredient count="250" id="37000"/> 
+		<production count="1" id="16025"/> 
+	</item>
+	<item>
+		<ingredient count="450" id="37000"/> 
+		<production count="1" id="16026"/> 
+	</item>
+	
+	<item>
+		<ingredient count="200" id="37000"/> 
+		<production count="1" id="8191"/> 
+	</item>
+
+	-->
+	<item>
+		<ingredient count="175" id="37000"/> 
+		<production count="1" id="10210"/> 
+	</item>
+	<!-- Talismans 
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17051"/> 
+	</item>
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17052"/> 
+	</item>
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17053"/> 
+	</item>
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17054"/> 
+	</item>
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17055"/> 
+	</item>
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17056"/> 
+	</item>
+	<item>
+		<ingredient count="700" id="37000"/> 
+		<production count="1" id="17061"/> 
+	</item>
+	-->
+	<item>
+		<!-- Event - Medal -->
+		<ingredient count="20" id="37000" />
+
+		<!-- Elemental Stone -->
+		<production count="5" id="9546" />
+	</item>
+	<item>
+		<!-- Event - Medal -->
+		<ingredient count="20" id="37000" />
+
+		<!-- Elemental Stone -->
+		<production count="5" id="9547" />
+	</item>
+	<item>
+		<!-- Event - Medal -->
+		<ingredient count="20" id="37000" />
+
+		<!-- Elemental Stone -->
+		<production count="5" id="9548" />
+	</item>
+	<item>
+		<!-- Event - Medal -->
+		<ingredient count="20" id="37000" />
+
+		<!-- Elemental Stone -->
+		<production count="5" id="9549" />
+	</item>
+	<item>
+		<!-- Event - Medal -->
+		<ingredient count="20" id="37000" />
+		<!-- Elemental Stone -->
+		<production count="5" id="9550" />
+	</item>
+	<item>
+		<!-- Event - Medal -->
+		<ingredient count="20" id="37000" />
+
+		<!-- Elemental Stone -->
+		<production count="5" id="9551" />
+	</item>
+	
+	<item>
+		<ingredient count="50" id="37000"/> 
+		<production count="1" id="20337"/> 
+	</item>
+	<item>
+		<ingredient count="50" id="37000"/> 
+		<production count="1" id="20343"/> 
+	</item>
+	<item>
+		<ingredient count="400" id="37000"/> 
+		<production count="1" id="14937"/> 
+	</item>
+	<item>
+		<ingredient count="400" id="37000"/> 
+		<production count="1" id="14929"/> 
+	</item>
+	<item>
+		<ingredient count="400" id="37000"/> 
+		<production count="1" id="14957"/> 
+	</item>
+	<item>
+		<ingredient count="400" id="37000"/> 
+		<production count="1" id="14953"/> 
+	</item>
+	<item>
+		<ingredient count="400" id="37000"/> 
+		<production count="1" id="14961" /> 
+	</item>
+	<item>
+		<ingredient count="100" id="37000" />
+		<production count="1" id="9571" />
+	</item>
+	<item>
+		<ingredient count="100" id="37000" />
+		<production count="1" id="9572" />
+	</item>
+	<item>
+		<ingredient count="100" id="37000" />
+		<production count="1" id="9570" />
+	</item>
+	<item>
+		<ingredient count="150" id="37000" />
+		<production count="1" id="10481" />
+	</item>
+	<item>
+		<ingredient count="150" id="37000" />
+		<production count="1" id="10482" />
+	</item>
+	<item>
+		<ingredient count="150" id="37000" />
+		<production count="1" id="10480" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="13072" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="13073" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="13071" />
+	</item>
+	<item>
+		<ingredient count="450" id="37000" />
+		<production count="1" id="15542" />
+	</item>
+	<item>
+		<ingredient count="450" id="37000" />
+		<production count="1" id="15543" />
+	</item>
+	<item>
+		<ingredient count="450" id="37000" />
+		<production count="1" id="15541" />
+	</item>
+	<!--<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="15827" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="15828" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="15826" />
+	</item>-->
+	<item>
+		<!--Giant codex-->
+		<ingredient count="30" id="37000" />
+		<production count="10" id="6622" />
+	</item>
+	<item>
+		<!--Giant codex mastery-->
+		<ingredient count="100" id="37000" />
+		<production count="10" id="9627" />
+	</item>
+	<item>
+		<!--Giant codex wombo-combo-->
+		<ingredient count="120" id="37000" />
+		<production count="30" id="6622" />
+		<production count="10" id="9627" />
+	</item>
+	<item>
+		<ingredient count="100" id="37000" />
+		<production count="500" id="14052" />
+	</item>
+	<item>
+		<ingredient count="100" id="37000" />
+		<production count="10" id="14169" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+
+		<!-- Cloak -->
+		<production count="1" id="21583" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+
+		<!-- Cloak -->
+		<production count="1" id="21587" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+
+		<!-- Cloak -->
+		<production count="1" id="21588" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="150" id="37000" />
+
+		<!-- Cloak -->
+		<production count="1" id="21716" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="150" id="37000" />
+
+		<!-- Cloak -->
+		<production count="1" id="21718" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="200" id="37000" />
+
+		<!-- Cloak -->
+		<production count="1" id="21717" />
+	</item>
+	<item>
+		<ingredient count="300" id="37000" />
+		<production count="1" id="21720" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="21721" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="21719" />
+	</item>
+
+	<item>
+		<ingredient count="150" id="37000" />
+		<production count="1" id="9451" />
+	</item>
+	<item>
+		<ingredient count="300" id="37000" />
+		<production count="1" id="10413" />
+	</item>
+	<item>
+		<ingredient count="100" id="37000" />
+		<production count="1" id="14679" />
+	</item>
+	<item>
+		<ingredient count="125" id="37000" />
+		<production count="1" id="14680" />
+	</item>
+	<item>
+		<ingredient count="175" id="37000" />
+		<production count="1" id="14681" />
+	</item>
+	<item>
+		<ingredient count="250" id="37000" />
+		<production count="1" id="21579" />
+	</item>
+	
+	<item>
+		<!-- Donate Coin-->
+		<ingredient count="200" id="37000" />
+
+		<!-- Red Strider -->
+		<production count="1" id="10308" />
+	</item>
+	<item>
+		<!-- Donate Coin-->
+		<ingredient count="200" id="37000" />
+
+		<!-- Red Strider -->
+		<production count="1" id="10309" />
+	</item>
+	<item>
+		<!-- Donate Coin-->
+		<ingredient count="200" id="37000" />
+
+		<!-- Red Strider -->
+		<production count="1" id="10310" />
+	</item>
+	<item>
+		<!-- Donate Coin-->
+		<ingredient count="200" id="37000" />
+
+		<!-- Dragon Strider -->
+		<production count="1" id="14819" />
+	</item>
+	<item>
+		<!-- Donate Coin-->
+		<ingredient count="100" id="37000" />
+
+		<!-- Fenrir -->
+		<production count="1" id="10426" />
+	</item>
+	<item>
+		<!-- Donate Coin-->
+		<ingredient count="150" id="37000" />
+
+		<!-- Snow Fenrir -->
+		<production count="1" id="10611" />
+	</item>
+	<item>
+		<!-- Vote Coin -->
+		<ingredient count="400" id="37000" />
+
+		<!-- Light Purple-Maned Horse Mount Bracelet -->
+		<production count="1" id="20029" />
+	</item>	
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="150" id="37000" />
+		<!-- QI -->
+		<production count="1" id="8073" />
+	</item>
+	
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="500" id="37000" />
+		<!-- QI -->
+		<production count="1" id="7267" />
+	</item>
+	
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="100" id="37000" />
+		<!-- QI -->
+		<production count="1" id="4295" />
+	</item>
+	<item>
+		<!-- Festival Coin -->
+		<ingredient count="500" id="37000" />
+		<!-- QI -->
+		<production count="1" id="3865" />
+	</item>
+		<item>
+		<!-- Donation Coin -->
+		<ingredient count="7" id="37000" />
+		
+		<!-- Forgotten Book  -->
+		<production  id="10554" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10553" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14179" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14194" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14214" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14215" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14217" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14225" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14216" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14224" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14199" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10558" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14207" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14183" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14181" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14218" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14210" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14213" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14212" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14173" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="12769" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="12768" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="12770" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10577" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14175" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10560" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14223" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10552" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14208" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14187" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14178" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14182" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14188" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14180" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14177" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14184" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14227" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14171" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14209" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14189" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10579" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10581" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10582" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10580" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10584" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10583" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14186" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14195" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14222" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14219" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14201" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14202" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14191" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10578" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14226" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14174" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10551" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10550" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10549" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14197" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14170" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10576" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14211" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="12771" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14220" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10559" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14198" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="10557" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14172" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14204" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14206" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14205" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14192" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14193" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14200" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14196" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14221" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14190" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14203" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14185" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="14176" count="1"/>
+		</item>
+		<item>
+			<!-- Donation Coin -->
+			<ingredient count="7" id="37000" />
+		
+			<!-- Forgotten Book  -->
+		<production  id="17030" count="1"/>
+		</item>
+</list>

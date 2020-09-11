@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+  <!--inicio de costumes-->
+<armor id="80000" name="White Assassin Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+<armor id="80001" name="Beleth Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="80002" name="Robin Hood Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="80003" name="King Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="80004" name="CowBoy Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="80005" name="Oriental Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="80006" name="Samurai Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="80010" name="Christmas Dressme">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <!--hasta aca los costumes-->
+  <armor id="57000" name="School Uniform A">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="57001" name="School Uniform B">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="60115" name="Dark Assassin Suit">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+ <armor id="60120" name="Assassin Set">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+ <armor id="60121" name="Metal Set">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+ <armor id="60122" name="Military Set">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+ <armor id="60123" name="Ninja Set">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+ </armor>
+</list>
