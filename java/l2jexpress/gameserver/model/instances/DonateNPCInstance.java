@@ -81,7 +81,7 @@ public final class DonateNPCInstance extends NpcInstance
 			}
 			else
 			{
-				player.sendMessage("You don't have enough " + Config.DONATOR_NPC_ITEM_NAME +"." );
+				player.sendMessage("You don't have enough required items." );
 			}
 		}
 		else if (command.equalsIgnoreCase("add_clan_reputation"))
@@ -103,7 +103,7 @@ public final class DonateNPCInstance extends NpcInstance
 				}
 				else
 				{
-					player.sendMessage("You don't have enough " + Config.DONATOR_NPC_ITEM_NAME +"." );
+					player.sendMessage("You don't have enough required items." );
 				}
 			}
 			else
@@ -137,7 +137,7 @@ public final class DonateNPCInstance extends NpcInstance
 			}
 			else
 			{
-				player.sendMessage("You don't have enough " + Config.DONATOR_NPC_ITEM_NAME +"." );
+				player.sendMessage("You don't have enough required items." );
 			}
 		}
 		else if (command.equalsIgnoreCase("change_sex"))
@@ -161,7 +161,7 @@ public final class DonateNPCInstance extends NpcInstance
 
 			if (Functions.getItemCount(player, Config.DONATOR_NPC_ITEM) < Config.DONATOR_NPC_COUNT_SEX)
 			{
-				player.sendMessage("You don't have enough " + Config.DONATOR_NPC_ITEM_NAME +"." );
+				player.sendMessage("You don't have enough required items." );
 				return;
 			}
 
@@ -210,7 +210,7 @@ public final class DonateNPCInstance extends NpcInstance
 
 			if (Functions.getItemCount(player, Config.DONATOR_NPC_ITEM) < Config.DONATOR_NPC_COUNT_LEVEL)
 			{
-				player.sendMessage("You don't have enough " + Config.DONATOR_NPC_ITEM_NAME +"." );
+				player.sendMessage("You don't have enough required items." );
 				return;
 			}
 			Functions.removeItem(player, Config.DONATOR_NPC_ITEM, Config.DONATOR_NPC_COUNT_LEVEL, "Removed");
