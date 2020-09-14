@@ -47,9 +47,9 @@ public class NoblessSell extends Functions
 		}
 
 		else if (Config.SERVICES_NOBLESS_SELL_ITEM == 37000)
-			player.sendMessage("You don't have 100 Donator Coins!");
+			player.sendMessage("You don't have enought Donator Coins!");
 		else
-			player.sendMessage("You don't have 100 Donator Coins!");
+			player.sendMessage("You don't have enought required items!");
 	}
 
 	public void makeSubQuests()
