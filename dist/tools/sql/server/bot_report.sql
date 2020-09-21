@@ -5,7 +5,8 @@ CREATE TABLE IF NOT EXISTS `bot_report` (
   `reporter_name` varchar(45) DEFAULT NULL,
   `reporter_objectId` int(10) DEFAULT NULL,
   `date` DECIMAL(20,0) NOT NULL default 0,
-  `read` enum('true','false') DEFAULT 'false' NOT NULL,
   `reportType` varchar(255) NOT NULL,
+  `info` varchar(255) NOT NULL,
+  `read` enum('true','false') DEFAULT 'false' NOT NULL,
   PRIMARY KEY (`report_id`)
 );

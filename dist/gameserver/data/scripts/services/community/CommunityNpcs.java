@@ -103,11 +103,11 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 		if(!cmd.equals("bbsNewSubPage") && !cmd.equals("bbsAddNewSub"))
 			player.deleteQuickVar("SubToRemove");
 
-	/*	if ("bbsgetfav".equals(cmd) || "bbsnpcs".equals(cmd))
+		if ("bbsgetfav".equals(cmd))
 		{
 			sendFileToPlayer(player, "bbs_npcs.htm", true);
 			return;
-		} */
+		} 
 		
 		if ("bbsnpcs".equals(cmd))
 		{
@@ -115,12 +115,12 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 			return;
 		} 
 		
-		if("bbsgetfav".equals(cmd))
+		/*if("bbsgetfav".equals(cmd))
 		{
 			HideBoard p = new HideBoard();
 			player.sendPacket(p);
 			return;
-		}
+		}*/
 
 		if ("bbsgatekeeper".equals(cmd))
 			folder = "gatekeeper";

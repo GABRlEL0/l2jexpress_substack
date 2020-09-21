@@ -9,7 +9,9 @@ import l2jexpress.gameserver.model.Creature;
 import l2jexpress.gameserver.model.Player;
 import l2jexpress.gameserver.model.Zone;
 import l2jexpress.gameserver.model.items.ItemInstance;
-import l2jexpress.gameserver.network.serverpackets.components.CustomMessage;
+import l2jexpress.gameserver.network.serverpackets.Say2;
+import l2jexpress.gameserver.network.serverpackets.components.ChatType;
+//import l2jexpress.gameserver.network.serverpackets.components.CustomMessage;
 import l2jexpress.gameserver.scripts.ScriptFile;
 import l2jexpress.gameserver.utils.Location;
 import l2jexpress.gameserver.utils.ReflectionUtils;
@@ -49,6 +51,19 @@ public class EpicZone implements ScriptFile
 		
 		Zone zone8 = ReflectionUtils.getZone("[Valakas_Lair_Entrance_PvP]");
 		zone8.addListener(_zoneListener);
+		
+		Zone zone9 = ReflectionUtils.getZone("[anni01]");
+		zone9.addListener(_zoneListener);
+		
+		Zone zone10 = ReflectionUtils.getZone("[anni02]");
+		zone10.addListener(_zoneListener);
+		
+		Zone zone11 = ReflectionUtils.getZone("[monas01]");
+		zone11.addListener(_zoneListener);
+		
+		Zone zone12 = ReflectionUtils.getZone("[monas02]");
+		zone12.addListener(_zoneListener);
+		
 
 	}
 
@@ -97,6 +112,7 @@ public class EpicZone implements ScriptFile
 			if (cha.isPlayer())
 			{
 				final int maxGrade = zone.getParams().getInteger("maxGradeAllowed", -1);
+				final int minGrade = zone.getParams().getInteger("minGradeAllowed", -1);
 				if (maxGrade > 0)
 				{
 					final Player player = cha.getPlayer();
@@ -110,6 +126,17 @@ public class EpicZone implements ScriptFile
 
 						if (item.getCrystalType().ordinal() > maxGrade)
 						{
+							cha.getPlayer().sendMessage("Your armor or weapon is to high to be here!");
+							cha.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "Your armor or weapon is to high to be here!"));							
+							teleportOut(zone, cha);
+							return;
+						}
+						if (item.getCrystalType().ordinal() < minGrade)
+						{
+							//ver que le mando
+							//player.sendMessage("You need s80 grade to farm here." );
+							cha.getPlayer().sendMessage("You need better armor or weapon to be here!");
+							cha.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You need better armor or weapon to be here!"));
 							teleportOut(zone, cha);
 							return;
 						}
@@ -127,7 +154,7 @@ public class EpicZone implements ScriptFile
 
 		private void teleportOut(Zone zone, Creature cha)
 		{
-			cha.getPlayer().sendMessage(new CustomMessage("scripts.zones.epic.banishMsg", cha.getPlayer()));
+			//cha.getPlayer().sendMessage(new CustomMessage("scripts.zones.epic.banishMsg", cha.getPlayer()));
 			cha.teleToLocation(Location.parseLoc(zone.getParams().getString("tele")));
 			if (boxes.containsKey(cha.getStoredId()))
 				boxes.remove(cha.getStoredId());
@@ -135,7 +162,7 @@ public class EpicZone implements ScriptFile
 		
 		private void teleportOutEpic(Zone zone, Creature cha)
 		{
-			cha.getPlayer().sendMessage(new CustomMessage("scripts.zones.epic.dualbox", cha.getPlayer()));
+			//cha.getPlayer().sendMessage(new CustomMessage("scripts.zones.epic.dualbox", cha.getPlayer()));
 			cha.teleToLocation(Location.parseLoc(zone.getParams().getString("tele")));
 			if (boxes.containsKey(cha.getStoredId()))
 				boxes.remove(cha.getStoredId());
@@ -149,6 +176,7 @@ public class EpicZone implements ScriptFile
 
         	// l2jexpress - Added protection to only allow x grade equip to certain zones if set
 			final int maxGrade = zone.getParams().getInteger("maxGradeAllowed", -1);
+			final int minGrade = zone.getParams().getInteger("minGradeAllowed", -1);
 			if (maxGrade > 0)
 			{
 				final Player player = cha.getPlayer();
@@ -162,6 +190,17 @@ public class EpicZone implements ScriptFile
 
 					if (item.getCrystalType().ordinal() > maxGrade)
 					{
+						cha.getPlayer().sendMessage("Your armor or weapon is to high to be here!");
+						cha.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "Your armor or weapon is to high to be here!"));
+						teleportOut(zone, cha);
+						return;
+					}
+					if (item.getCrystalType().ordinal() < minGrade)
+					{
+						//ver que le mando
+						//player.sendMessage("You need s80 grade to farm here." );
+						cha.getPlayer().sendMessage("You need better armor or weapon to be here!");
+						cha.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You need better armor or weapon to be here!"));
 						teleportOut(zone, cha);
 						return;
 					}
