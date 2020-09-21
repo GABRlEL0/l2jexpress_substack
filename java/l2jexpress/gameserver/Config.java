@@ -287,6 +287,13 @@ public class Config
 		17000,
 		20000
 	};
+//Vote Reward
+    public static boolean L2JBRAZIL_ENABLED;
+    public static long L2JBRAZIL_VOTE_TIME_TO_LIVE;
+    public static String L2JBRAZIL_API_KEY;
+    public static int[] L2JBRAZIL_REWARD_ITEM_ID;
+    public static int[] L2JBRAZIL_REWARD_ITEM_COUNT;
+    public static int[] L2JBRAZIL_REWARD_CHANCE;
 
 	// GmHunter event
 	public static String[] GM_HUNTER_EVENT_REWARDS;
@@ -1058,6 +1065,7 @@ public class Config
 	public static boolean NEW_CHAR_IS_NOBLE;
 	public static boolean NEW_CHAR_IS_HERO;
 	public static boolean ANNOUNCE_SPAWN_RB;
+	public static boolean ANNOUNCE_SPAWN_RB_SPECIAL_IDs;
 	// Acc move
 	public static boolean ACC_MOVE_ENABLED;
 	public static int ACC_MOVE_ITEM;
@@ -1412,7 +1420,8 @@ public class Config
 
 	/** Karma Punishment */
 	public static boolean ALT_GAME_KARMA_PLAYER_CAN_SHOP;
-
+	public static boolean ALT_GAME_KARMA_PLAYER_CAN_TELEPORT;
+	
 	/** Chance that an item will succesfully be enchanted */
 	public static int ENCHANT_CHANCE_WEAPON;
 	public static int ENCHANT_CHANCE_ARMOR;
@@ -3399,6 +3408,7 @@ public class Config
 		AUTO_LOOT_FROM_RAIDS = altSettings.getProperty("AutoLootFromRaids", false);
 		AUTO_LOOT_PK = altSettings.getProperty("AutoLootPK", false);
 		ALT_GAME_KARMA_PLAYER_CAN_SHOP = altSettings.getProperty("AltKarmaPlayerCanShop", false);
+		ALT_GAME_KARMA_PLAYER_CAN_TELEPORT = altSettings.getProperty("AltKarmaPlayerCanTeleport", false);
 		SAVING_SPS = altSettings.getProperty("SavingSpS", false);
 		MANAHEAL_SPS_BONUS = altSettings.getProperty("ManahealSpSBonus", false);
 		CRAFT_MASTERWORK_CHANCE = altSettings.getProperty("CraftMasterworkChance", 3.);
@@ -3735,6 +3745,7 @@ public class Config
 		NEW_CHAR_IS_NOBLE = PvPmodConfig.getProperty("NewCharIsNoble", false);
 		NEW_CHAR_IS_HERO = PvPmodConfig.getProperty("NewCharIsHero", false);
 		ANNOUNCE_SPAWN_RB = PvPmodConfig.getProperty("AnnounceToSpawnRb", false);
+		ANNOUNCE_SPAWN_RB_SPECIAL_IDs = PvPmodConfig.getProperty("AnnounceToSpawnRbSpecialIds", false);
 
 		SPAWN_CHAR = PvPmodConfig.getProperty("CustomSpawn", false);
 		SPAWN_X = PvPmodConfig.getProperty("SpawnX", 1);

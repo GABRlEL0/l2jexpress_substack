@@ -117,7 +117,7 @@ public class MonsterInstance extends NpcInstance
 	@Override
 	public boolean isMovementDisabled()
 	{
-		// Ð�ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾Ñ�Ñ‚ÑŒ Ñ…Ð¾Ð´Ð¸Ñ‚ÑŒ Ð´Ð»Ñ� Ñ�Ñ‚Ð¸Ñ… Ð¼Ð¾Ð±Ð¾Ð²
+		// Ã�ï¿½Ã�ÂµÃ�Â²Ã�Â¾Ã�Â·Ã�Â¼Ã�Â¾Ã�Â¶Ã�Â½Ã�Â¾Ã‘ï¿½Ã‘â€šÃ‘Å’ Ã‘â€¦Ã�Â¾Ã�Â´Ã�Â¸Ã‘â€šÃ‘Å’ Ã�Â´Ã�Â»Ã‘ï¿½ Ã‘ï¿½Ã‘â€šÃ�Â¸Ã‘â€¦ Ã�Â¼Ã�Â¾Ã�Â±Ã�Â¾Ã�Â²
 		return getNpcId() == 18344 || getNpcId() == 18345 || super.isMovementDisabled();
 	}
 
@@ -169,7 +169,7 @@ public class MonsterInstance extends NpcInstance
 			if (Config.ALT_CHAMPION_CHANCE2 / 100. >= random)
 				setChampion(2);
 			else if ((Config.ALT_CHAMPION_CHANCE1 + Config.ALT_CHAMPION_CHANCE2) / 100. >= random)
-				setChampion(1);
+				setChampion(1); 
 			else
 				setChampion(0);
 		}
@@ -392,16 +392,16 @@ public class MonsterInstance extends NpcInstance
 		Quest[] quests = getTemplate().getEventQuests(QuestEventType.MOB_KILLED_WITH_QUEST);
 		if (quests != null && quests.length > 0)
 		{
-			List<Player> players = null; // Ð¼Ð°Ñ�Ñ�Ð¸Ð² Ñ� Ð¸Ð³Ñ€Ð¾ÐºÐ°Ð¼Ð¸, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð¼Ð¾Ð³ÑƒÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð·Ð°Ð¸Ð½Ñ‚ÐµÑ€ÐµÑ�Ð¾Ð²Ð°Ð½Ñ‹ Ð² ÐºÐ²ÐµÑ�Ñ‚Ð°Ñ…
-			if (isRaid() && Config.ALT_NO_LASTHIT) // Ð”Ð»Ñ� Ð°Ð»ÑŒÑ‚Ð° Ð½Ð° Ð»Ð°Ñ�Ñ‚Ñ…Ð¸Ñ‚ Ð±ÐµÑ€ÐµÐ¼ Ð²Ñ�ÐµÑ… Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð² Ð²Ð¾ÐºÑ€ÑƒÐ³
+			List<Player> players = null; // Ã�Â¼Ã�Â°Ã‘ï¿½Ã‘ï¿½Ã�Â¸Ã�Â² Ã‘ï¿½ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�ÂºÃ�Â°Ã�Â¼Ã�Â¸, Ã�ÂºÃ�Â¾Ã‘â€šÃ�Â¾Ã‘â‚¬Ã‘â€¹Ã�Âµ Ã�Â¼Ã�Â¾Ã�Â³Ã‘Æ’Ã‘â€š Ã�Â±Ã‘â€¹Ã‘â€šÃ‘Å’ Ã�Â·Ã�Â°Ã�Â¸Ã�Â½Ã‘â€šÃ�ÂµÃ‘â‚¬Ã�ÂµÃ‘ï¿½Ã�Â¾Ã�Â²Ã�Â°Ã�Â½Ã‘â€¹ Ã�Â² Ã�ÂºÃ�Â²Ã�ÂµÃ‘ï¿½Ã‘â€šÃ�Â°Ã‘â€¦
+			if (isRaid() && Config.ALT_NO_LASTHIT) // Ã�â€�Ã�Â»Ã‘ï¿½ Ã�Â°Ã�Â»Ã‘Å’Ã‘â€šÃ�Â° Ã�Â½Ã�Â° Ã�Â»Ã�Â°Ã‘ï¿½Ã‘â€šÃ‘â€¦Ã�Â¸Ã‘â€š Ã�Â±Ã�ÂµÃ‘â‚¬Ã�ÂµÃ�Â¼ Ã�Â²Ã‘ï¿½Ã�ÂµÃ‘â€¦ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�ÂºÃ�Â¾Ã�Â² Ã�Â²Ã�Â¾Ã�ÂºÃ‘â‚¬Ã‘Æ’Ã�Â³
 			{
 				players = new ArrayList<Player>();
 				for (Playable pl : aggroMap.keySet())
 					if (!pl.isDead() && (isInRangeZ(pl, Config.ALT_PARTY_DISTRIBUTION_RANGE) || killer.isInRangeZ(pl, Config.ALT_PARTY_DISTRIBUTION_RANGE)))
-						if (!players.contains(pl.getPlayer())) // Ð½Ðµ Ð´Ð¾Ð±Ð°Ð²Ð»Ñ�ÐµÐ¼ Ð´Ð²Ð°Ð¶Ð´Ñ‹ ÐµÑ�Ð»Ð¸ ÐµÑ�Ñ‚ÑŒ Ð¿ÐµÑ‚
+						if (!players.contains(pl.getPlayer())) // Ã�Â½Ã�Âµ Ã�Â´Ã�Â¾Ã�Â±Ã�Â°Ã�Â²Ã�Â»Ã‘ï¿½Ã�ÂµÃ�Â¼ Ã�Â´Ã�Â²Ã�Â°Ã�Â¶Ã�Â´Ã‘â€¹ Ã�ÂµÃ‘ï¿½Ã�Â»Ã�Â¸ Ã�ÂµÃ‘ï¿½Ã‘â€šÃ‘Å’ Ã�Â¿Ã�ÂµÃ‘â€š
 							players.add(pl.getPlayer());
 			}
-			else if (killer.getParty() != null) // ÐµÑ�Ð»Ð¸ Ð¿Ð°Ñ‚Ð¸ Ñ‚Ð¾ Ñ�Ð¾Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð²Ñ�ÐµÑ… ÐºÑ‚Ð¾ Ð¿Ð¾Ð´Ñ…Ð¾Ð´Ð¸Ñ‚
+			else if (killer.getParty() != null) // Ã�ÂµÃ‘ï¿½Ã�Â»Ã�Â¸ Ã�Â¿Ã�Â°Ã‘â€šÃ�Â¸ Ã‘â€šÃ�Â¾ Ã‘ï¿½Ã�Â¾Ã�Â±Ã�Â¸Ã‘â‚¬Ã�Â°Ã�ÂµÃ�Â¼ Ã�Â²Ã‘ï¿½Ã�ÂµÃ‘â€¦ Ã�ÂºÃ‘â€šÃ�Â¾ Ã�Â¿Ã�Â¾Ã�Â´Ã‘â€¦Ã�Â¾Ã�Â´Ã�Â¸Ã‘â€š
 			{
 				players = new ArrayList<Player>(killer.getParty().size());
 				for (Player pl : killer.getParty().getMembers())
@@ -413,7 +413,7 @@ public class MonsterInstance extends NpcInstance
 			{
 				Player toReward = killer;
 				if (quest.getParty() != Quest.PARTY_NONE && players != null)
-					if (isRaid() || quest.getParty() == Quest.PARTY_ALL) // ÐµÑ�Ð»Ð¸ Ñ†ÐµÐ»ÑŒ Ñ€ÐµÐ¹Ð´ Ð¸Ð»Ð¸ ÐºÐ²ÐµÑ�Ñ‚ Ð´Ð»Ñ� Ð²Ñ�ÐµÐ¹ Ð¿Ð°Ñ‚Ð¸ Ð½Ð°Ð³Ñ€Ð°Ð¶Ð´Ð°ÐµÐ¼ Ð²Ñ�ÐµÑ… ÑƒÑ‡Ð°Ñ�Ñ‚Ð½Ð¸ÐºÐ¾Ð²
+					if (isRaid() || quest.getParty() == Quest.PARTY_ALL) // Ã�ÂµÃ‘ï¿½Ã�Â»Ã�Â¸ Ã‘â€ Ã�ÂµÃ�Â»Ã‘Å’ Ã‘â‚¬Ã�ÂµÃ�Â¹Ã�Â´ Ã�Â¸Ã�Â»Ã�Â¸ Ã�ÂºÃ�Â²Ã�ÂµÃ‘ï¿½Ã‘â€š Ã�Â´Ã�Â»Ã‘ï¿½ Ã�Â²Ã‘ï¿½Ã�ÂµÃ�Â¹ Ã�Â¿Ã�Â°Ã‘â€šÃ�Â¸ Ã�Â½Ã�Â°Ã�Â³Ã‘â‚¬Ã�Â°Ã�Â¶Ã�Â´Ã�Â°Ã�ÂµÃ�Â¼ Ã�Â²Ã‘ï¿½Ã�ÂµÃ‘â€¦ Ã‘Æ’Ã‘â€¡Ã�Â°Ã‘ï¿½Ã‘â€šÃ�Â½Ã�Â¸Ã�ÂºÃ�Â¾Ã�Â²
 					{
 						for (Player pl : players)
 						{
@@ -424,12 +424,12 @@ public class MonsterInstance extends NpcInstance
 						toReward = null;
 					}
 					else
-					{ // Ð¸Ð½Ð°Ñ‡Ðµ Ð²Ñ‹Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ð¾Ð´Ð½Ð¾Ð³Ð¾
+					{ // Ã�Â¸Ã�Â½Ã�Â°Ã‘â€¡Ã�Âµ Ã�Â²Ã‘â€¹Ã�Â±Ã�Â¸Ã‘â‚¬Ã�Â°Ã�ÂµÃ�Â¼ Ã�Â¾Ã�Â´Ã�Â½Ã�Â¾Ã�Â³Ã�Â¾
 						List<Player> interested = new ArrayList<Player>(players.size());
 						for (Player pl : players)
 						{
 							QuestState qs = pl.getQuestState(quest.getName());
-							if (qs != null && !qs.isCompleted()) // Ð¸Ð· Ñ‚ÐµÑ…, Ñƒ ÐºÐ¾Ð³Ð¾ Ð²Ð·Ñ�Ñ‚ ÐºÐ²ÐµÑ�Ñ‚
+							if (qs != null && !qs.isCompleted()) // Ã�Â¸Ã�Â· Ã‘â€šÃ�ÂµÃ‘â€¦, Ã‘Æ’ Ã�ÂºÃ�Â¾Ã�Â³Ã�Â¾ Ã�Â²Ã�Â·Ã‘ï¿½Ã‘â€š Ã�ÂºÃ�Â²Ã�ÂµÃ‘ï¿½Ã‘â€š
 								interested.add(pl);
 						}
 
@@ -550,7 +550,7 @@ public class MonsterInstance extends NpcInstance
 	@Override
 	public void startRandomAnimation()
 	{
-		//Ð£ Ð¼Ð¾Ð±Ð¾Ð² Ð°Ð½Ð¸Ð¼Ð°Ñ†Ð¸Ñ� Ð¾Ð±Ñ€Ð°Ð±Ð°Ñ‚Ñ‹Ð²Ð°ÐµÑ‚Ñ�Ñ� Ð² AI
+		//Ã�Â£ Ã�Â¼Ã�Â¾Ã�Â±Ã�Â¾Ã�Â² Ã�Â°Ã�Â½Ã�Â¸Ã�Â¼Ã�Â°Ã‘â€ Ã�Â¸Ã‘ï¿½ Ã�Â¾Ã�Â±Ã‘â‚¬Ã�Â°Ã�Â±Ã�Â°Ã‘â€šÃ‘â€¹Ã�Â²Ã�Â°Ã�ÂµÃ‘â€šÃ‘ï¿½Ã‘ï¿½ Ã�Â² AI
 	}
 
 	@Override
@@ -656,7 +656,7 @@ public class MonsterInstance extends NpcInstance
 			_altSeed = altSeed;
 			_seederId = player.getObjectId();
 			_harvestItem = new RewardItem(Manor.getInstance().getCropType(seedId));
-			// ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑ�Ñ‚Ð²Ð¾ Ð²Ñ�Ñ…Ð¾Ð´Ð¾Ð² Ð¾Ñ‚ xHP Ð´Ð¾ (xHP + xHP/2)
+			// Ã�Å¡Ã�Â¾Ã�Â»Ã�Â¸Ã‘â€¡Ã�ÂµÃ‘ï¿½Ã‘â€šÃ�Â²Ã�Â¾ Ã�Â²Ã‘ï¿½Ã‘â€¦Ã�Â¾Ã�Â´Ã�Â¾Ã�Â² Ã�Â¾Ã‘â€š xHP Ã�Â´Ã�Â¾ (xHP + xHP/2)
 			if (getTemplate().rateHp > 1)
 				_harvestItem.count = Rnd.get(Math.round(getTemplate().rateHp), Math.round(1.5 * getTemplate().rateHp));
 		}
@@ -670,7 +670,7 @@ public class MonsterInstance extends NpcInstance
 
 	public boolean isSeeded(Player player)
 	{
-		//Ð·Ð°Ñ�Ð¸Ð´ÐµÐ½ Ñ�Ñ‚Ð¸Ð¼ Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð¼, Ð¸ Ñ�Ð¼ÐµÑ€Ñ‚ÑŒ Ð½Ð°Ñ�Ñ‚ÑƒÐ¿Ð¸Ð»Ð° Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 20 Ñ�ÐµÐºÑƒÐ½Ð´ Ð½Ð°Ð·Ð°Ð´
+		//Ã�Â·Ã�Â°Ã‘ï¿½Ã�Â¸Ã�Â´Ã�ÂµÃ�Â½ Ã‘ï¿½Ã‘â€šÃ�Â¸Ã�Â¼ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�ÂºÃ�Â¾Ã�Â¼, Ã�Â¸ Ã‘ï¿½Ã�Â¼Ã�ÂµÃ‘â‚¬Ã‘â€šÃ‘Å’ Ã�Â½Ã�Â°Ã‘ï¿½Ã‘â€šÃ‘Æ’Ã�Â¿Ã�Â¸Ã�Â»Ã�Â° Ã�Â½Ã�Âµ Ã�Â±Ã�Â¾Ã�Â»Ã�ÂµÃ�Âµ 20 Ã‘ï¿½Ã�ÂµÃ�ÂºÃ‘Æ’Ã�Â½Ã�Â´ Ã�Â½Ã�Â°Ã�Â·Ã�Â°Ã�Â´
 		return isSeeded() && _seederId == player.getObjectId() && getDeadTime() < 20000L;
 	}
 
@@ -690,10 +690,10 @@ public class MonsterInstance extends NpcInstance
 
 	public boolean isSpoiled(Player player)
 	{
-		if (!isSpoiled()) // ÐµÑ�Ð»Ð¸ Ð½Ðµ Ð·Ð°Ñ�Ð¿Ð¾Ð¹Ð»ÐµÐ½ Ñ‚Ð¾ false
+		if (!isSpoiled()) // Ã�ÂµÃ‘ï¿½Ã�Â»Ã�Â¸ Ã�Â½Ã�Âµ Ã�Â·Ã�Â°Ã‘ï¿½Ã�Â¿Ã�Â¾Ã�Â¹Ã�Â»Ã�ÂµÃ�Â½ Ã‘â€šÃ�Â¾ false
 			return false;
 
-		//Ð·Ð°Ñ�Ð¿Ð¾Ð¹Ð»ÐµÐ½ Ñ�Ñ‚Ð¸Ð¼ Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð¼, Ð¸ Ñ�Ð¼ÐµÑ€Ñ‚ÑŒ Ð½Ð°Ñ�Ñ‚ÑƒÐ¿Ð¸Ð»Ð° Ð½Ðµ Ð±Ð¾Ð»ÐµÐµ 20 Ñ�ÐµÐºÑƒÐ½Ð´ Ð½Ð°Ð·Ð°Ð´
+		//Ã�Â·Ã�Â°Ã‘ï¿½Ã�Â¿Ã�Â¾Ã�Â¹Ã�Â»Ã�ÂµÃ�Â½ Ã‘ï¿½Ã‘â€šÃ�Â¸Ã�Â¼ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�ÂºÃ�Â¾Ã�Â¼, Ã�Â¸ Ã‘ï¿½Ã�Â¼Ã�ÂµÃ‘â‚¬Ã‘â€šÃ‘Å’ Ã�Â½Ã�Â°Ã‘ï¿½Ã‘â€šÃ‘Æ’Ã�Â¿Ã�Â¸Ã�Â»Ã�Â° Ã�Â½Ã�Âµ Ã�Â±Ã�Â¾Ã�Â»Ã�ÂµÃ�Âµ 20 Ã‘ï¿½Ã�ÂµÃ�ÂºÃ‘Æ’Ã�Â½Ã�Â´ Ã�Â½Ã�Â°Ã�Â·Ã�Â°Ã�Â´
 		if (getDeadTime() < 15000L)
 		{
 			if (player.getObjectId() == spoilerId)
@@ -801,7 +801,7 @@ public class MonsterInstance extends NpcInstance
 			default:
 				for (RewardItem drop : rewardItems)
 				{
-					// Ð•Ñ�Ð»Ð¸ Ð² Ð¼Ð¾Ð±Ð° Ð¿Ð¾Ñ�ÐµÑ�Ð½Ð¾ Ñ�ÐµÐ¼Ñ�, Ð¿Ñ€Ð¸Ñ‡ÐµÐ¼ Ð½Ðµ Ð°Ð»ÑŒÑ‚ÐµÑ€Ð½Ð°Ñ‚Ð¸Ð²Ð½Ð¾Ðµ - Ð½Ðµ Ð´Ð°Ð²Ð°Ñ‚ÑŒ Ð½Ð¸ÐºÐ°ÐºÐ¾Ð³Ð¾ Ð´Ñ€Ð¾Ð¿Ð°, ÐºÑ€Ð¾Ð¼Ðµ Ð°Ð´ÐµÐ½Ñ‹.
+					// Ã�â€¢Ã‘ï¿½Ã�Â»Ã�Â¸ Ã�Â² Ã�Â¼Ã�Â¾Ã�Â±Ã�Â° Ã�Â¿Ã�Â¾Ã‘ï¿½Ã�ÂµÃ‘ï¿½Ã�Â½Ã�Â¾ Ã‘ï¿½Ã�ÂµÃ�Â¼Ã‘ï¿½, Ã�Â¿Ã‘â‚¬Ã�Â¸Ã‘â€¡Ã�ÂµÃ�Â¼ Ã�Â½Ã�Âµ Ã�Â°Ã�Â»Ã‘Å’Ã‘â€šÃ�ÂµÃ‘â‚¬Ã�Â½Ã�Â°Ã‘â€šÃ�Â¸Ã�Â²Ã�Â½Ã�Â¾Ã�Âµ - Ã�Â½Ã�Âµ Ã�Â´Ã�Â°Ã�Â²Ã�Â°Ã‘â€šÃ‘Å’ Ã�Â½Ã�Â¸Ã�ÂºÃ�Â°Ã�ÂºÃ�Â¾Ã�Â³Ã�Â¾ Ã�Â´Ã‘â‚¬Ã�Â¾Ã�Â¿Ã�Â°, Ã�ÂºÃ‘â‚¬Ã�Â¾Ã�Â¼Ã�Âµ Ã�Â°Ã�Â´Ã�ÂµÃ�Â½Ã‘â€¹.
 					if (isSeeded() && !_altSeed && !drop.isAdena)
 						continue;
 					dropItem(activePlayer, drop.itemId, drop.count, drop.enchantLvl);

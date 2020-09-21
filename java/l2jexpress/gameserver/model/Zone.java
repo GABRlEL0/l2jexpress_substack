@@ -482,7 +482,7 @@ public class Zone
 			if (getType() == ZoneType.buff_store_only)
 				actor.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You are now in a offline buff store area!"));
 			if (getType() == ZoneType.epic)
-				actor.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You are now in a PvP Area!"));
+				actor.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You are now in a danger zone!"));
 			if (getEnteringMessageId() != 0)
 				actor.sendPacket(new SystemMessage2(SystemMsg.valueOf(getEnteringMessageId())));
 			if (getTemplate().getEventId() != 0)
@@ -556,7 +556,7 @@ public class Zone
 			if (getType() == ZoneType.buff_store_only)
 				actor.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You have left the offline buff store area!"));
 			if (getType() == ZoneType.epic)
-				actor.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You have left the PvP area!"));
+				actor.sendPacket(new Say2(0, ChatType.BATTLEFIELD, Config.SERVER_NAME, "You have left a danger zone!"));
 			if (getLeavingMessageId() != 0 && actor.isPlayer())
 				actor.sendPacket(new SystemMessage2(SystemMsg.valueOf(getLeavingMessageId())));
 			if (getTemplate().getEventId() != 0 && actor.isPlayer())

@@ -115,7 +115,7 @@ public final class VillageMasterInstance extends NpcInstance
 			dissolveClan(player);
 		else if (command.startsWith("restore_clan"))
 			recoverClan(player);
-		else if (command.startsWith("increase_clan_level"))
+		else if (command.startsWith("increase_clan_level")) 
 			levelUpClan(player);
 		else if (command.startsWith("learn_clan_skills"))
 			showClanSkillList(player);
@@ -248,7 +248,7 @@ public final class VillageMasterInstance extends NpcInstance
 					}
 					break;
 				case 2: // Ã�Â£Ã‘ï¿½Ã‘â€šÃ�Â°Ã�Â½Ã�Â¾Ã�Â²Ã�ÂºÃ�Â° Ã‘Æ’Ã�Â¶Ã�Âµ Ã�Â²Ã�Â·Ã‘ï¿½Ã‘â€šÃ�Â¾Ã�Â³Ã�Â¾ Ã‘ï¿½Ã�Â°Ã�Â±Ã�Â° (Ã‘ï¿½Ã�Â¼ case 5)
-					content.append("Change Subclass:<br>");
+					//Editado: content.append("Change Subclass:<br>");
 
 					final int baseClassId = player.getBaseClassId();
 
@@ -277,7 +277,7 @@ public final class VillageMasterInstance extends NpcInstance
 					}
 					break;
 				case 3: // Ã�Å¾Ã‘â€šÃ�Â¼Ã�ÂµÃ�Â½Ã�Â° Ã‘ï¿½Ã�Â°Ã�Â±Ã�ÂºÃ�Â»Ã�Â°Ã‘ï¿½Ã‘ï¿½Ã�Â° - Ã‘ï¿½Ã�Â¿Ã�Â¸Ã‘ï¿½Ã�Â¾Ã�Âº Ã�Â¸Ã�Â¼Ã�ÂµÃ‘Å½Ã‘â€°Ã�Â¸Ã‘â€¦Ã‘ï¿½Ã‘ï¿½ (Ã‘ï¿½Ã�Â¼ case 6)
-					content.append("Change Subclass:<br>Which of the following sub-classes would you like to change?<br>");
+					//Editado: content.append("Change Subclass:<br>Which of the following sub-classes would you like to change?<br>");
 
 					for (SubClass sub : playerClassList.values())
 					{
@@ -1088,7 +1088,7 @@ public final class VillageMasterInstance extends NpcInstance
 			if (!availSub.isOfRace(Race.human) && !availSub.isOfRace(Race.elf))
 			{
 				if (!availSub.isOfRace(npcRace))
-					availSubs.remove(availSub);
+					availSubs.remove(availSub); 
 			}
 			else if (!availSub.isOfType(npcTeachType))
 				availSubs.remove(availSub);
@@ -1118,12 +1118,13 @@ public final class VillageMasterInstance extends NpcInstance
 		 *
 		 */
 		Set<PlayerClass> availSubs = currClass.getAvailableSubclasses();
+		
 		if (availSubs == null)
 			return Collections.emptySet();
 
 		// Remove from the list sub maine class player
 		availSubs.remove(currClass);
-
+		
 		for (PlayerClass availSub : availSubs)
 		{
 			// Remove from the list of subs already made subs and their ancestors
@@ -1161,10 +1162,11 @@ public final class VillageMasterInstance extends NpcInstance
 				if (currClass == PlayerClass.Berserker || currClass == PlayerClass.Doombringer || currClass == PlayerClass.Arbalester || currClass == PlayerClass.Trickster)
 					if (player.getSex() == 1 && availSub == PlayerClass.MaleSoulbreaker || player.getSex() == 0 && availSub == PlayerClass.FemaleSoulbreaker)
 						availSubs.remove(availSub);
+					
 
-				// Inspector Ã�Â´Ã�Â¾Ã‘ï¿½Ã‘â€šÃ‘Æ’Ã�Â¿Ã�ÂµÃ�Â½, Ã‘â€šÃ�Â¾Ã�Â»Ã‘Å’Ã�ÂºÃ�Â¾ Ã�ÂºÃ�Â¾Ã�Â³Ã�Â´Ã�Â° Ã�Â²Ã�ÂºÃ�Â°Ã‘â€¡Ã�Â°Ã�Â½Ã‘â€¹ 2 Ã�Â²Ã�Â¾Ã�Â·Ã�Â¼Ã�Â¾Ã�Â¶Ã�Â½Ã‘â€¹Ã‘â€¦ Ã�Â¿Ã�ÂµÃ‘â‚¬Ã�Â²Ã‘â€¹Ã‘â€¦ Ã‘ï¿½Ã�Â°Ã�Â±Ã�Â° Ã�ÂºÃ�Â°Ã�Â¼Ã�Â°Ã‘ï¿½Ã�Â»Ã‘Å’(+ Ã�Â¼Ã�ÂµÃ�Â¹Ã�Â½ Ã�ÂºÃ�Â»Ã�Â°Ã‘ï¿½Ã‘ï¿½)
-				if (availSub == PlayerClass.Inspector && player.getSubClasses().size() < (isNew ? 3 : 4))
-					availSubs.remove(availSub);
+				// Aca solo habilita inspe en tercera sub Inspector Ã�Â´Ã�Â¾Ã‘ï¿½Ã‘â€šÃ‘Æ’Ã�Â¿Ã�ÂµÃ�Â½, Ã‘â€šÃ�Â¾Ã�Â»Ã‘Å’Ã�ÂºÃ�Â¾ Ã�ÂºÃ�Â¾Ã�Â³Ã�Â´Ã�Â° Ã�Â²Ã�ÂºÃ�Â°Ã‘â€¡Ã�Â°Ã�Â½Ã‘â€¹ 2 Ã�Â²Ã�Â¾Ã�Â·Ã�Â¼Ã�Â¾Ã�Â¶Ã�Â½Ã‘â€¹Ã‘â€¦ Ã�Â¿Ã�ÂµÃ‘â‚¬Ã�Â²Ã‘â€¹Ã‘â€¦ Ã‘ï¿½Ã�Â°Ã�Â±Ã�Â° Ã�ÂºÃ�Â°Ã�Â¼Ã�Â°Ã‘ï¿½Ã�Â»Ã‘Å’(+ Ã�Â¼Ã�ÂµÃ�Â¹Ã�Â½ Ã�ÂºÃ�Â»Ã�Â°Ã‘ï¿½Ã‘ï¿½)
+				//if (availSub == PlayerClass.Inspector && player.getSubClasses().size() < (isNew ? 3 : 4))
+				//	availSubs.remove(availSub); 
 			}
 		}
 		return availSubs;

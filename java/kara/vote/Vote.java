@@ -88,6 +88,12 @@ public class Vote
 								return true;
 							}
 							break;
+						case L2JBRASIL:
+							if (line.contains("1"))
+							{
+								return true;
+							}
+							break;
 					}
 				}
 			}

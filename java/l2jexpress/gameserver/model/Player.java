@@ -6,6 +6,9 @@ import static l2jexpress.gameserver.network.serverpackets.ExSetCompassZoneCode.Z
 import static l2jexpress.gameserver.network.serverpackets.ExSetCompassZoneCode.ZONE_SIEGE_FLAG;
 import static l2jexpress.gameserver.network.serverpackets.ExSetCompassZoneCode.ZONE_SSQ_FLAG;
 
+//Autofarm
+import l2jexpress.gameserver.autofarm.AutofarmManager;
+
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -1111,7 +1114,8 @@ public final class Player extends Playable implements PlayerGroup
 			_connection.close(ServerClose.STATIC);
 			setNetConnection(null);
 		}
-		
+		//Autofarm
+		AutofarmManager.INSTANCE.onPlayerLogout(this);
 		prepareToLogout();
 		deleteMe();
 	}
@@ -4331,6 +4335,11 @@ public final class Player extends Playable implements PlayerGroup
 		killer.setPkKills(killer.getPkKills() + 1);
 
 	}
+	public void announce(SystemMessage sm)
+	{
+		for (Player player : GameObjectsStorage.getAllPlayersForIterate())
+			player.sendPacket(sm);
+	}
 
 	public final void doKillInPeace(Player killer) // Check if the L2Player killed haven't Karma
 	{
@@ -4344,7 +4353,9 @@ public final class Player extends Playable implements PlayerGroup
 					{
 						if (Config.SERVICES_ANNOUNCE_PK_ENABLED)
 						{
-							Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
+							//Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
+							announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has pk " + killer.getTarget().getName()));
+							
 						}
 						ItemFunctions.addItem(killer, Config.SERVICES_PK_KILL_REWARD_ITEM, Config.SERVICES_PK_KILL_REWARD_COUNT, true, "Pk");
 					}
@@ -4353,7 +4364,8 @@ public final class Player extends Playable implements PlayerGroup
 				{
 					if (Config.SERVICES_ANNOUNCE_PK_ENABLED)
 					{
-						Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
+						//Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
+						announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has pk " + killer.getTarget().getName()));
 					}
 					ItemFunctions.addItem(killer, Config.SERVICES_PK_KILL_REWARD_ITEM, Config.SERVICES_PK_KILL_REWARD_COUNT, true, "Pk");
 				}
@@ -4510,7 +4522,8 @@ public final class Player extends Playable implements PlayerGroup
 						{
 							if (Config.SERVICES_ANNOUNCE_PVP_ENABLED)
 							{
-								Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
+								//Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
+								announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has killed " + killer.getTarget().getName()));
 							}
 							ItemFunctions.addItem(pk, Config.SERVICES_PVP_KILL_REWARD_ITEM, Config.SERVICES_PVP_KILL_REWARD_COUNT, true, "PvP");
 						}
@@ -4519,7 +4532,8 @@ public final class Player extends Playable implements PlayerGroup
 					{
 						if (Config.SERVICES_ANNOUNCE_PVP_ENABLED)
 						{
-							Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
+							//Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
+							announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has killed " + killer.getTarget().getName()));
 						}
 						ItemFunctions.addItem(pk, Config.SERVICES_PVP_KILL_REWARD_ITEM, Config.SERVICES_PVP_KILL_REWARD_COUNT, true, "PvP");
 					}
@@ -9146,6 +9160,8 @@ public final class Player extends Playable implements PlayerGroup
 		unsetVar("lostexp");
 		updateEffectIcons();
 		autoShot();
+		//Autofarm
+		AutofarmManager.INSTANCE.onDeath(this);
 
 		// Prims - Block the community buffer 10 seconds so the player cannot buff when resurrected
 		_resurrectionBuffBlockedTime = System.currentTimeMillis() + 10 * 1000;

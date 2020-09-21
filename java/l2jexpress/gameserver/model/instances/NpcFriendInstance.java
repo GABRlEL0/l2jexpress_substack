@@ -61,8 +61,9 @@ public final class NpcFriendInstance extends MerchantInstance
 			player.sendActionFailed();
 			return;
 		}
+		
 
-		//С NPC нельзя разговаривать мертвым и сидя
+		//Ð¡ NPC Ð½ÐµÐ»ÑŒÐ·Ñ� Ñ€Ð°Ð·Ð³Ð¾Ð²Ð°Ñ€Ð¸Ð²Ð°Ñ‚ÑŒ Ð¼ÐµÑ€Ñ‚Ð²Ñ‹Ð¼ Ð¸ Ñ�Ð¸Ð´Ñ�
 		if (!Config.ALLOW_TALK_WHILE_SITTING && player.isSitting() || player.isAlikeDead())
 			return;
 

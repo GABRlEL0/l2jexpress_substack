@@ -122,6 +122,9 @@ import l2jexpress.gameserver.vote.RuVoteEngine;
 import l2jexpress.gameserver.vote.VoteMain;
 import masteriopack.rankpvpsystem.RPSConfig;
 import net.sf.ehcache.CacheManager;
+import GameGuard.GameGuard;
+import GameGuard.GGConfig;
+import l2jexpress.gameserver.utils.HWID;
 
 public class GameServer
 {
@@ -171,6 +174,8 @@ public class GameServer
 		}
 	}
 
+
+	
 	public static GameServer _instance;
 
 	private final SelectorThread<GameClient> _selectorThreads[];
@@ -328,6 +333,8 @@ public class GameServer
 		ItemAuctionManager.getInstance();
 		printSection("Masterio Pack");
 		RPSConfig.load();
+		//printSection("RGuard");
+		//Protection.Init();
 		printSection("Merge System Loaded");
 		DataMerge.getInstance();
 		ClanDataMerge.getInstance();
@@ -385,6 +392,9 @@ public class GameServer
 		ResidenceHolder.getInstance().callInit();
 		EventHolder.getInstance().callInit();
 		CastleManorManager.getInstance();
+		//Autofarm
+		_log.info("Loaded {} Autofarm Command.", VoicedCommandHandler.getInstance().size());
+		
 		printSection("");
 		Runtime.getRuntime().addShutdownHook(Shutdown.getInstance());
 		printSection("Auto Cleaner");
@@ -525,7 +535,14 @@ public class GameServer
 		BackupTaskManager.startThread();
 
 		VotingRewardAPI.getInstance();
-
+		/*GameGuard.Init();
+		if(GameGuard.isProtectionOn())
+		{
+			_log.info("GameGuard support enabled.");
+			if(GGConfig.PROTECT_GS_ENABLE_HWID_BANS)
+				HWID.reloadBannedHWIDs();
+		}*/
+		
 		if (Config.PHANTOM_PLAYERS_ENABLED)
 			PhantomPlayers.init();
 

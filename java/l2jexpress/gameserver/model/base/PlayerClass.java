@@ -18,8 +18,6 @@ import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.Set;
 
-import l2jexpress.gameserver.Config;
-
 public enum PlayerClass
 {
 	HumanFighter(human, Fighter, First), //0
@@ -183,7 +181,7 @@ public enum PlayerClass
 
 	private static final Set<PlayerClass> mainSubclassSet;
 	private static final Set<PlayerClass> kamaelSubclassSet;
-	private static final Set<PlayerClass> neverSubclassed = EnumSet.of(Overlord, Warsmith);
+	//private static final Set<PlayerClass> neverSubclassed = EnumSet.of(Overlord, Warsmith);
 
 	private static final Set<PlayerClass> subclasseSet1 = EnumSet.of(DarkAvenger, Paladin, TempleKnight, ShillienKnight);
 	private static final Set<PlayerClass> subclasseSet2 = EnumSet.of(TreasureHunter, AbyssWalker, Plainswalker);
@@ -201,11 +199,9 @@ public enum PlayerClass
 		kamaelSubclassSet = getSet(kamael, Third);
 
 		Set<PlayerClass> subclasses = getSet(null, Third);
-		if (!Config.ALT_ENABLE_MULTI_PROFA) {
-			subclasses.removeAll(neverSubclassed);
-			subclasses.removeAll(kamaelSubclassSet);
-		}
-		
+		//Editado: subclasses.removeAll(neverSubclassed);
+		//Editado: subclasses.removeAll(kamaelSubclassSet);
+
 		mainSubclassSet = subclasses;
 
 		subclassSetMap.put(DarkAvenger, subclasseSet1);
@@ -249,6 +245,8 @@ public enum PlayerClass
 		subclassSetMap.put(MaleSoulHound, subclasseSet6);
 		subclassSetMap.put(FemaleSoulHound, subclasseSet6);
 		subclassSetMap.put(Trickster, subclasseSet6);
+		//Editado: agregado inepector
+		subclassSetMap.put(Inspector, subclasseSet6);
 
 		subclassSetMap.put(Duelist, EnumSet.of(Gladiator));
 		subclassSetMap.put(Dreadnought, EnumSet.of(Warlord));
@@ -262,6 +260,7 @@ public enum PlayerClass
 		subclassSetMap.put(GrandKhauatari, EnumSet.of(Tyrant));
 		subclassSetMap.put(Dominator, EnumSet.of(Overlord));
 		subclassSetMap.put(Doomcryer, EnumSet.of(Warcryer));
+		subclassSetMap.put(Maestro, EnumSet.of(Warsmith));
 	}
 
 	PlayerClass(Race race, ClassType type, ClassLevel level)
@@ -273,34 +272,34 @@ public enum PlayerClass
 
 	public final Set<PlayerClass> getAvailableSubclasses()
 	{
-		if (_race == Race.kamael)
-			return EnumSet.copyOf(kamaelSubclassSet);
+		//Editado: if(_race == Race.kamael)
+		//Editado: return EnumSet.copyOf(kamaelSubclassSet);
 
 		Set<PlayerClass> subclasses = null;
 
-		if (_level == Third || _level == Fourth)
+		if(_level == Third || _level == Fourth)
 		{
 			subclasses = EnumSet.copyOf(mainSubclassSet);
-			if (!Config.ALT_ENABLE_MULTI_PROFA) {
-			subclasses.removeAll(neverSubclassed);
+
+			//subclasses.removeAll(neverSubclassed);
 			subclasses.remove(this);
-				
-			switch (_race)
+
+			switch(_race)
 			{
 				case elf:
-					subclasses.removeAll(getSet(darkelf, Third));
+					//subclasses.removeAll(getSet(darkelf, Third));
 					break;
 				case darkelf:
-					subclasses.removeAll(getSet(elf, Third));
+					//subclasses.removeAll(getSet(elf, Third));
 					break;
+			default:
+				break;
 			}
-			}
-			
+
 			Set<PlayerClass> unavailableClasses = subclassSetMap.get(this);
-			
-			
-			if (unavailableClasses != null)
-				subclasses.removeAll(unavailableClasses);
+
+			//Editado:if(unavailableClasses != null)
+			//Editado:subclasses.removeAll(unavailableClasses);
 		}
 
 		return subclasses;
@@ -310,9 +309,9 @@ public enum PlayerClass
 	{
 		EnumSet<PlayerClass> allOf = EnumSet.noneOf(PlayerClass.class);
 
-		for (PlayerClass playerClass : EnumSet.allOf(PlayerClass.class))
-			if (race == null || playerClass.isOfRace(race))
-				if (level == null || playerClass.isOfLevel(level))
+		for(PlayerClass playerClass : EnumSet.allOf(PlayerClass.class))
+			if(race == null || playerClass.isOfRace(race))
+				if(level == null || playerClass.isOfLevel(level))
 					allOf.add(playerClass);
 
 		return allOf;
@@ -334,18 +333,18 @@ public enum PlayerClass
 	}
 
 	/**
-	 * ÐŸÑ€Ð¾Ð²ÐµÑ€Ñ�ÐµÑ‚ Ð¿Ñ€Ð¸Ð½Ñ†Ð¸Ð¿Ð¸Ð°Ð»ÑŒÐ½ÑƒÑŽ Ñ�Ð¾Ð²Ð¼ÐµÑ�Ñ‚Ð¸Ð¼Ð¾Ñ�Ñ‚ÑŒ Ð´Ð²ÑƒÑ… Ñ�Ð°Ð±Ð¾Ð².
+	 * Checks fundamental compatibility of the two subs.
 	 */
 	public static boolean areClassesComportable(PlayerClass c1, PlayerClass c2)
 	{
-		if (c1.isOfRace(Race.kamael) != c2.isOfRace(Race.kamael))
-			return false; // ÐºÐ°Ð¼Ð°Ñ�Ð»Ð¸ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ñ� ÐºÐ°Ð¼Ð°Ñ�Ð»Ñ�Ð¼Ð¸
-		if (c1.isOfRace(Race.elf) && c2.isOfRace(Race.darkelf) || c1.isOfRace(Race.darkelf) && c2.isOfRace(Race.elf))
-			return false; // Ñ�Ð»ÑŒÑ„Ñ‹ Ð½ÐµÑ�Ð¾Ð²Ð¼ÐµÑ�Ñ‚Ð¸Ð¼Ñ‹ Ñ� Ñ‚ÐµÐ¼Ð½Ñ‹Ð¼Ð¸
-		if (c1 == PlayerClass.Overlord || c1 == PlayerClass.Warsmith || c2 == PlayerClass.Overlord || c2 == PlayerClass.Warsmith)
-			return false; // Ñ�Ñ‚Ð¸ Ð²Ð¾Ð¾Ð±Ñ‰Ðµ
-		if (subclassSetMap.get(c1) == subclassSetMap.get(c2))
-			return false; // Ð¾Ð´Ð½Ð¾Ñ‚Ð¸Ð¿Ð½Ñ‹Ðµ
+		//Editado: if(c1.isOfRace(Race.kamael) != c2.isOfRace(Race.kamael))
+		//Editado: return false; // Kamael Kamael only
+		//Editado:if(c1.isOfRace(Race.elf) && c2.isOfRace(Race.darkelf) || c1.isOfRace(Race.darkelf) && c2.isOfRace(Race.elf))
+		//Editado:return false; // incompatible with the dark elves
+		//Editado:if(c1 == PlayerClass.Overlord || c1 == PlayerClass.Warsmith || c2 == PlayerClass.Overlord || c2 == PlayerClass.Warsmith)
+		//Editado:return false; // these general
+		if(subclassSetMap.get(c1) == subclassSetMap.get(c2))
+			return false; // the same type
 		return true;
 	}
 }

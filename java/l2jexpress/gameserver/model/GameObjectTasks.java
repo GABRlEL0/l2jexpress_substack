@@ -38,7 +38,7 @@ public class GameObjectTasks
 		}
 	}
 
-	// ============================ Ð¢Ð°Ñ�ÐºÐ¸ Ð´Ð»Ñ� L2Player ==============================
+	// ============================ Ã�Â¢Ã�Â°Ã‘ï¿½Ã�ÂºÃ�Â¸ Ã�Â´Ã�Â»Ã‘ï¿½ L2Player ==============================
 	public static class SoulConsumeTask extends RunnableImpl
 	{
 		private final HardReference<Player> _playerRef;
@@ -101,7 +101,7 @@ public class GameObjectTasks
 			Player player = _playerRef.get();
 			if (player == null)
 				return;
-			// ÐšÐ°Ð¶Ð´Ñ‹Ð¹ Ñ‡Ð°Ñ� Ð² Ð¸Ð³Ñ€Ðµ Ð¾Ð¿Ð¾Ð²ÐµÑ‰Ð°ÐµÐ¼ Ð¿ÐµÑ€Ñ�Ð¾Ð½Ð°Ð¶Ñƒ Ñ�ÐºÐ¾Ð»ÑŒÐºÐ¾ Ñ‡Ð°Ñ�Ð¾Ð² Ð¾Ð½ Ð¸Ð³Ñ€Ð°ÐµÑ‚.
+			// Ã�Å¡Ã�Â°Ã�Â¶Ã�Â´Ã‘â€¹Ã�Â¹ Ã‘â€¡Ã�Â°Ã‘ï¿½ Ã�Â² Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Âµ Ã�Â¾Ã�Â¿Ã�Â¾Ã�Â²Ã�ÂµÃ‘â€°Ã�Â°Ã�ÂµÃ�Â¼ Ã�Â¿Ã�ÂµÃ‘â‚¬Ã‘ï¿½Ã�Â¾Ã�Â½Ã�Â°Ã�Â¶Ã‘Æ’ Ã‘ï¿½Ã�ÂºÃ�Â¾Ã�Â»Ã‘Å’Ã�ÂºÃ�Â¾ Ã‘â€¡Ã�Â°Ã‘ï¿½Ã�Â¾Ã�Â² Ã�Â¾Ã�Â½ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â°Ã�ÂµÃ‘â€š.
 			int hoursInGame = player.getHoursInGame();
 			player.sendPacket(new SystemMessage2(SystemMsg.YOU_HAVE_BEEN_PLAYING_FOR_AN_EXTENDED_PERIOD_OF_TIME_S1).addInteger(hoursInGame));
 			player.sendPacket(new SystemMessage2(SystemMsg.YOU_OBTAINED_S1_RECOMMENDS).addInteger(player.addRecomLeft()));
@@ -293,7 +293,7 @@ public class GameObjectTasks
 			}
 		}
 	}
-	// ============================ Ð¢Ð°Ñ�ÐºÐ¸ Ð´Ð»Ñ� L2Character ==============================
+	// ============================ Ã�Â¢Ã�Â°Ã‘ï¿½Ã�ÂºÃ�Â¸ Ã�Â´Ã�Â»Ã‘ï¿½ L2Character ==============================
 
 	/** AltMagicUseTask */
 	public static class AltMagicUseTask extends RunnableImpl
@@ -498,10 +498,10 @@ public class GameObjectTasks
 			{
 				
 				character.abortCast(true, false); // Retail doesnt send abort cast message.
-				System.out.println("debug5:gameobjecttask: ");
-				System.out.println("debug: Animationend: "+ character.getAnimationEndTime() + ", Currentime: "+ System.currentTimeMillis());
-				System.out.println("debug: Animationend60: "+ character.getAnimationEndTime60() + ", Currentime: "+ System.currentTimeMillis());
-				System.out.println("CHARACTER "+character.getName()+" ["+character.getObjectId()+"]");
+				//System.out.println("debug5:gameobjecttask: ");
+				//System.out.println("debug: Animationend: "+ character.getAnimationEndTime() + ", Currentime: "+ System.currentTimeMillis());
+				//System.out.println("debug: Animationend60: "+ character.getAnimationEndTime60() + ", Currentime: "+ System.currentTimeMillis());
+				//System.out.println("CHARACTER "+character.getName()+" ["+character.getObjectId()+"]");
 			}
 		}
 	}

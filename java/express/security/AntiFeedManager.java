@@ -87,8 +87,8 @@ public class AntiFeedManager
 					return false;
 			}
 
-			// Check for same hwid
-			return !attackerPlayer.getHWID().equalsIgnoreCase(targetPlayer.getHWID());
+			// Check for same IP
+			return !attackerPlayer.getIP().equalsIgnoreCase(targetPlayer.getIP());
 		}
 
 		return true;

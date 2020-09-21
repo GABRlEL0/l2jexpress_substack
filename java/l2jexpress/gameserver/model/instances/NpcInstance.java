@@ -205,13 +205,20 @@ public class NpcInstance extends Creature
 				customTitle += " *";
 			}
 		}
+		/* TOTO poner titulo superchampions a los champ rojos
+		if (this.isMonster() && Config.ALT_SHOW_MONSTERS_LVL && isChampion() && isChampion()   )
+		{
+			customTitle = "*Antibot Monster*";
+			
+		}*/
 		setTitle(customTitle);
+		
 
-		// инициализация параметров оружия
+		// Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ� Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð¾Ñ€ÑƒÐ¶Ð¸Ñ�
 		setLHandId(getTemplate().lhand);
 		setRHandId(getTemplate().rhand);
 
-		// инициализация коллизий
+		// Ð¸Ð½Ð¸Ñ†Ð¸Ð°Ð»Ð¸Ð·Ð°Ñ†Ð¸Ñ� ÐºÐ¾Ð»Ð»Ð¸Ð·Ð¸Ð¹
 		setCollisionHeight(getTemplate().collisionHeight);
 		setCollisionRadius(getTemplate().collisionRadius);
 
@@ -252,7 +259,7 @@ public class NpcInstance extends Creature
 	/**
 	 * Return the position of the spawned point.<BR>
 	 * <BR>
-	 * Может возвращать случайную точку, поэтому всегда следует кешировать результат вызова!
+	 * ÐœÐ¾Ð¶ÐµÑ‚ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°Ñ‚ÑŒ Ñ�Ð»ÑƒÑ‡Ð°Ð¹Ð½ÑƒÑŽ Ñ‚Ð¾Ñ‡ÐºÑƒ, Ð¿Ð¾Ñ�Ñ‚Ð¾Ð¼Ñƒ Ð²Ñ�ÐµÐ³Ð´Ð° Ñ�Ð»ÐµÐ´ÑƒÐµÑ‚ ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²Ñ‹Ð·Ð¾Ð²Ð°!
 	 * @return
 	 */
 	public Location getSpawnedLoc()
@@ -338,7 +345,7 @@ public class NpcInstance extends Creature
 			startDecay(8500L);
 		}
 
-		// установка параметров оружия и коллизий по умолчанию
+		// ÑƒÑ�Ñ‚Ð°Ð½Ð¾Ð²ÐºÐ° Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð² Ð¾Ñ€ÑƒÐ¶Ð¸Ñ� Ð¸ ÐºÐ¾Ð»Ð»Ð¸Ð·Ð¸Ð¹ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ
 		setLHandId(getTemplate().lhand);
 		setRHandId(getTemplate().rhand);
 		setCollisionHeight(getTemplate().collisionHeight);
@@ -571,8 +578,8 @@ public class NpcInstance extends Creature
 	}
 
 	/**
-	 * Устанавливает данному npc новый aggroRange. Если установленый aggroRange < 0, то будет братся аггрорейндж с темплейта.
-	 * @param aggroRange новый agrroRange
+	 * Ð£Ñ�Ñ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ Ð´Ð°Ð½Ð½Ð¾Ð¼Ñƒ npc Ð½Ð¾Ð²Ñ‹Ð¹ aggroRange. Ð•Ñ�Ð»Ð¸ ÑƒÑ�Ñ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ñ‹Ð¹ aggroRange < 0, Ñ‚Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð±Ñ€Ð°Ñ‚Ñ�Ñ� Ð°Ð³Ð³Ñ€Ð¾Ñ€ÐµÐ¹Ð½Ð´Ð¶ Ñ� Ñ‚ÐµÐ¼Ð¿Ð»ÐµÐ¹Ñ‚Ð°.
+	 * @param aggroRange Ð½Ð¾Ð²Ñ‹Ð¹ agrroRange
 	 */
 	public void setAggroRange(int aggroRange)
 	{
@@ -580,7 +587,7 @@ public class NpcInstance extends Creature
 	}
 
 	/**
-	 * Возвращает группу социальности
+	 * Ð’Ð¾Ð·Ð²Ñ€Ð°Ñ‰Ð°ÐµÑ‚ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ Ñ�Ð¾Ñ†Ð¸Ð°Ð»ÑŒÐ½Ð¾Ñ�Ñ‚Ð¸
 	 * @return
 	 */
 	public Faction getFaction()
@@ -680,12 +687,12 @@ public class NpcInstance extends Creature
 		}
 		else
 		{
-			deleteMe(); // Если этот моб заспавнен не через стандартный механизм спавна значит посмертие ему не положено и он умирает насовсем
+			deleteMe(); // Ð•Ñ�Ð»Ð¸ Ñ�Ñ‚Ð¾Ñ‚ Ð¼Ð¾Ð± Ð·Ð°Ñ�Ð¿Ð°Ð²Ð½ÐµÐ½ Ð½Ðµ Ñ‡ÐµÑ€ÐµÐ· Ñ�Ñ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ñ‹Ð¹ Ð¼ÐµÑ…Ð°Ð½Ð¸Ð·Ð¼ Ñ�Ð¿Ð°Ð²Ð½Ð° Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ Ð¿Ð¾Ñ�Ð¼ÐµÑ€Ñ‚Ð¸Ðµ ÐµÐ¼Ñƒ Ð½Ðµ Ð¿Ð¾Ð»Ð¾Ð¶ÐµÐ½Ð¾ Ð¸ Ð¾Ð½ ÑƒÐ¼Ð¸Ñ€Ð°ÐµÑ‚ Ð½Ð°Ñ�Ð¾Ð²Ñ�ÐµÐ¼
 		}
 	}
 
 	/**
-	 * Запустить задачу "исчезновения" после смерти
+	 * Ð—Ð°Ð¿ÑƒÑ�Ñ‚Ð¸Ñ‚ÑŒ Ð·Ð°Ð´Ð°Ñ‡Ñƒ "Ð¸Ñ�Ñ‡ÐµÐ·Ð½Ð¾Ð²ÐµÐ½Ð¸Ñ�" Ð¿Ð¾Ñ�Ð»Ðµ Ñ�Ð¼ÐµÑ€Ñ‚Ð¸
 	 * @param delay
 	 */
 	protected void startDecay(long delay)
@@ -695,7 +702,7 @@ public class NpcInstance extends Creature
 	}
 
 	/**
-	 * Отменить задачу "исчезновения" после смерти
+	 * ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð·Ð°Ð´Ð°Ñ‡Ñƒ "Ð¸Ñ�Ñ‡ÐµÐ·Ð½Ð¾Ð²ÐµÐ½Ð¸Ñ�" Ð¿Ð¾Ñ�Ð»Ðµ Ñ�Ð¼ÐµÑ€Ñ‚Ð¸
 	 */
 	public void stopDecay()
 	{
@@ -703,7 +710,7 @@ public class NpcInstance extends Creature
 	}
 
 	/**
-	 * Отменить и завершить задачу "исчезновения" после смерти
+	 * ÐžÑ‚Ð¼ÐµÐ½Ð¸Ñ‚ÑŒ Ð¸ Ð·Ð°Ð²ÐµÑ€ÑˆÐ¸Ñ‚ÑŒ Ð·Ð°Ð´Ð°Ñ‡Ñƒ "Ð¸Ñ�Ñ‡ÐµÐ·Ð½Ð¾Ð²ÐµÐ½Ð¸Ñ�" Ð¿Ð¾Ñ�Ð»Ðµ Ñ�Ð¼ÐµÑ€Ñ‚Ð¸
 	 */
 	public void endDecayTask()
 	{
@@ -1019,7 +1026,7 @@ public class NpcInstance extends Creature
 			return;
 		}
 
-		// С NPC нельзя разговаривать мертвым и сидя
+		// Ð¡ NPC Ð½ÐµÐ»ÑŒÐ·Ñ� Ñ€Ð°Ð·Ð³Ð¾Ð²Ð°Ñ€Ð¸Ð²Ð°Ñ‚ÑŒ Ð¼ÐµÑ€Ñ‚Ð²Ñ‹Ð¼ Ð¸ Ñ�Ð¸Ð´Ñ�
 		if ((!Config.ALLOW_TALK_WHILE_SITTING && player.isSitting()) || player.isAlikeDead())
 		{
 			return;
@@ -1244,9 +1251,9 @@ public class NpcInstance extends Creature
 				NpcInstance npc = GameObjectsStorage.getByNpcId(val);
 				if (npc != null)
 				{
-					// Убираем флажок на карте и стрелку на компасе
+					// Ð£Ð±Ð¸Ñ€Ð°ÐµÐ¼ Ñ„Ð»Ð°Ð¶Ð¾Ðº Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ Ð¸ Ñ�Ñ‚Ñ€ÐµÐ»ÐºÑƒ Ð½Ð° ÐºÐ¾Ð¼Ð¿Ð°Ñ�Ðµ
 					player.sendPacket(new RadarControl(2, 2, npc.getLoc()));
-					// Ставим флажок на карте и стрелку на компасе
+					// Ð¡Ñ‚Ð°Ð²Ð¸Ð¼ Ñ„Ð»Ð°Ð¶Ð¾Ðº Ð½Ð° ÐºÐ°Ñ€Ñ‚Ðµ Ð¸ Ñ�Ñ‚Ñ€ÐµÐ»ÐºÑƒ Ð½Ð° ÐºÐ¾Ð¼Ð¿Ð°Ñ�Ðµ
 					player.sendPacket(new RadarControl(0, 1, npc.getLoc()));
 				}
 			}
@@ -2013,7 +2020,7 @@ public class NpcInstance extends Creature
 	}
 
 	/**
-	 * Нужно для отображения анимации спауна, используется в пакете NpcInfo: 0=false, 1=true, 2=summoned (only works if model has a summon animation)
+	 * Ð�ÑƒÐ¶Ð½Ð¾ Ð´Ð»Ñ� Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ñ� Ð°Ð½Ð¸Ð¼Ð°Ñ†Ð¸Ð¸ Ñ�Ð¿Ð°ÑƒÐ½Ð°, Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·ÑƒÐµÑ‚Ñ�Ñ� Ð² Ð¿Ð°ÐºÐµÑ‚Ðµ NpcInfo: 0=false, 1=true, 2=summoned (only works if model has a summon animation)
 	 **/
 	public int getSpawnAnimation()
 	{

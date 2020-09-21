@@ -25,7 +25,8 @@ public enum Site
 {
 	TOPZONE("Topzone", "http://l2topzone.com/api.php?API_KEY=%API%&SERVER_ID=%ID%&IP=%IP%"),
 	HOPZONE("Hopzone", "https://api.hopzone.net/lineage2/vote?token=%API%&ip_address=%IP%"),
-	NETWORK("Network", "https://l2network.eu/index.php?a=in&u=%USER%&ipc=%IP%");
+	NETWORK("Network", "https://l2network.eu/index.php?a=in&u=%USER%&ipc=%IP%"),
+	L2JBRASIL("L2jbrasil", "https://top.l2jbrasil.com/votesystem/index.php?username=%USER%&ip=%IP%");
 	
 	String _site;
 	String _link;

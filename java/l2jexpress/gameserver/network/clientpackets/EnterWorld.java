@@ -47,6 +47,7 @@ import l2jexpress.gameserver.network.GameClient;
 import l2jexpress.gameserver.network.serverpackets.ChangeWaitType;
 import l2jexpress.gameserver.network.serverpackets.ClientSetTime;
 import l2jexpress.gameserver.network.serverpackets.ConfirmDlg;
+import l2jexpress.gameserver.network.serverpackets.CreatureSay;
 import l2jexpress.gameserver.network.serverpackets.Die;
 import l2jexpress.gameserver.network.serverpackets.EtcStatusUpdate;
 import l2jexpress.gameserver.network.serverpackets.ExAutoSoulShot;
@@ -201,7 +202,7 @@ public class EnterWorld extends L2GameClientPacket
 		}
 
 		
-		String ipPlayer = activeChar.getHWID();
+		String ipPlayer = activeChar.getIP();
 		if(Config.DEBUG_4F) System.out.println("ipPlayer " +ipPlayer);
 		if(Config.DEBUG_4F) System.out.println("Config.MAX_PLAYERS_PER_IP_WHITELIST "+Config.MAX_PLAYERS_PER_IP_WHITELIST.toString());		
 		
@@ -218,11 +219,30 @@ public class EnterWorld extends L2GameClientPacket
 			World.ipPlayers.put(ipPlayer, World.ipPlayers.get(ipPlayer)+1);
 			if(Config.DEBUG_4F) System.out.println(ipPlayer+" quedo en "+World.ipPlayers.get(ipPlayer));
 			
+			if(World.ipPlayers.get(ipPlayer) == Config.MAX_PLAYERS_PER_IP)
+					activeChar.sendPacket(new SystemMessage2(SystemMsg.S1S2).addString("Max clients per IP reached. Next client will be kicked "));
+			
 			if(World.ipPlayers.get(ipPlayer) > Config.MAX_PLAYERS_PER_IP)
 			{			
 				if(Config.DEBUG_4F) System.out.println(ipPlayer+" tiene "+World.ipPlayers.get(ipPlayer)+" eso es mas de "+Config.MAX_PLAYERS_PER_IP);
 				if(Config.DEBUG_4F) System.out.println(activeChar.getName()+", te toco irte.");
 				//TODO: importantesimo reducirle uno a esas ip cada vez que se desconecta un tipejo
+				activeChar.sendMessage("Multibox Protection, will be disconnected in 5 seconds.");
+				CreatureSay as = new CreatureSay(0, 20, activeChar.getName(), "Desconectando en 5 segundos");
+				activeChar.sendPacket(as);
+				waitSecs(1);
+				CreatureSay bs = new CreatureSay(0, 20, activeChar.getName(), "Desconectando en 4 segundos");
+				activeChar.sendPacket(bs);
+				waitSecs(1);
+				CreatureSay cs = new CreatureSay(0, 20, activeChar.getName(), "Desconectando en 3 segundos");
+				activeChar.sendPacket(cs);
+				waitSecs(1);
+				CreatureSay ds = new CreatureSay(0, 20, activeChar.getName(), "Desconectando en 2 segundos");
+				activeChar.sendPacket(ds);
+				waitSecs(1);
+				CreatureSay es = new CreatureSay(0, 20, activeChar.getName(), "Desconectando en 1 segundos");
+				activeChar.sendPacket(es);
+				waitSecs(1);
 				activeChar.kick();
 				return;
 			}			
@@ -1037,6 +1057,18 @@ public class EnterWorld extends L2GameClientPacket
 		}
 	}
 
+
+	public static void waitSecs(int i)
+	{
+		try
+		{
+			Thread.sleep(i * 1000);
+		}
+		catch (InterruptedException ie)
+		{
+			ie.printStackTrace();
+		}
+	}
 	// l2jexpress - This packet can be used while the character is blocked
 	@Override
     public boolean canBeUsedWhileBlocked()

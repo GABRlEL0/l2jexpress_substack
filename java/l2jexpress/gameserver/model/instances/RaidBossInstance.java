@@ -29,6 +29,7 @@ import l2jexpress.gameserver.model.quest.Quest;
 import l2jexpress.gameserver.model.quest.QuestState;
 import l2jexpress.gameserver.network.serverpackets.ExShowScreenMessage;
 import l2jexpress.gameserver.network.serverpackets.SystemMessage;
+import l2jexpress.gameserver.network.serverpackets.components.CustomMessage;
 import l2jexpress.gameserver.network.serverpackets.components.NpcString;
 import l2jexpress.gameserver.tables.SkillTable;
 import l2jexpress.gameserver.templates.npc.NpcTemplate;
@@ -194,7 +195,7 @@ public class RaidBossInstance extends MonsterInstance
 		super.onDeath(killer);
 	}
 
-	//FIXME [G1ta0] Ñ€Ð°Ð·Ð¾Ð±Ñ€Ð°Ñ‚ÑŒ Ñ�Ñ‚Ð¾Ñ‚ Ñ…Ð»Ð°Ð¼
+	//FIXME [G1ta0] Ã‘â‚¬Ã�Â°Ã�Â·Ã�Â¾Ã�Â±Ã‘â‚¬Ã�Â°Ã‘â€šÃ‘Å’ Ã‘ï¿½Ã‘â€šÃ�Â¾Ã‘â€š Ã‘â€¦Ã�Â»Ã�Â°Ã�Â¼
 	@SuppressWarnings("unchecked")
 	private void calcRaidPointsReward(int totalPoints)
 	{
@@ -202,7 +203,7 @@ public class RaidBossInstance extends MonsterInstance
 		Map<Object, Object[]> participants = new HashMap<Object, Object[]>();
 		double totalHp = getMaxHp();
 
-		// Ð Ð°Ð·Ð±Ð¸Ð²Ð°ÐµÐ¼ Ð¸Ð³Ñ€Ð¾ÐºÐ¾Ð² Ð¿Ð¾ Ð³Ñ€ÑƒÐ¿Ð¿Ð°Ð¼. ÐŸÐ¾ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾Ñ�Ñ‚Ð¸ Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·ÑƒÐµÐ¼ Ð½Ð°Ð¸Ð±Ð¾Ð»ÑŒÑˆÑƒÑŽ Ð¸Ð· Ð´Ð¾Ñ�Ñ‚ÑƒÐ¿Ð½Ñ‹Ñ… Ð³Ñ€ÑƒÐ¿Ð¿: Command Channel â†’ Party â†’ StandAlone (Ñ�Ð°Ð¼ Ð¿Ð»ÑŽÑ� Ð¿ÐµÑ‚ :)
+		// Ã�Â Ã�Â°Ã�Â·Ã�Â±Ã�Â¸Ã�Â²Ã�Â°Ã�ÂµÃ�Â¼ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�ÂºÃ�Â¾Ã�Â² Ã�Â¿Ã�Â¾ Ã�Â³Ã‘â‚¬Ã‘Æ’Ã�Â¿Ã�Â¿Ã�Â°Ã�Â¼. Ã�Å¸Ã�Â¾ Ã�Â²Ã�Â¾Ã�Â·Ã�Â¼Ã�Â¾Ã�Â¶Ã�Â½Ã�Â¾Ã‘ï¿½Ã‘â€šÃ�Â¸ Ã�Â¸Ã‘ï¿½Ã�Â¿Ã�Â¾Ã�Â»Ã‘Å’Ã�Â·Ã‘Æ’Ã�ÂµÃ�Â¼ Ã�Â½Ã�Â°Ã�Â¸Ã�Â±Ã�Â¾Ã�Â»Ã‘Å’Ã‘Ë†Ã‘Æ’Ã‘Å½ Ã�Â¸Ã�Â· Ã�Â´Ã�Â¾Ã‘ï¿½Ã‘â€šÃ‘Æ’Ã�Â¿Ã�Â½Ã‘â€¹Ã‘â€¦ Ã�Â³Ã‘â‚¬Ã‘Æ’Ã�Â¿Ã�Â¿: Command Channel Ã¢â€ â€™ Party Ã¢â€ â€™ StandAlone (Ã‘ï¿½Ã�Â°Ã�Â¼ Ã�Â¿Ã�Â»Ã‘Å½Ã‘ï¿½ Ã�Â¿Ã�ÂµÃ‘â€š :)
 		for (HateInfo ai : getAggroList().getPlayableMap().values())
 		{
 			Player player = ai.attacker.getPlayer();
@@ -214,8 +215,8 @@ public class RaidBossInstance extends MonsterInstance
 				participants.put(key, info);
 			}
 
-			// ÐµÑ�Ð»Ð¸ Ñ�Ñ‚Ð¾ Ð¿Ð°Ñ‚Ð¸ Ð¸Ð»Ð¸ ÐºÐ¾Ð¼Ð°Ð½Ð´Ð½Ñ‹Ð¹ ÐºÐ°Ð½Ð°Ð» Ñ‚Ð¾ Ð±ÐµÑ€ÐµÐ¼ Ð¾Ñ‚Ñ‚ÑƒÐ´Ð° Ð²ÐµÑ�ÑŒ Ñ�Ð¿Ð¸Ñ�Ð¾Ðº ÑƒÑ‡Ð°Ñ�Ñ‚Ð²ÑƒÑŽÑ‰Ð¸Ñ…, Ð´Ð°Ð¶Ðµ Ñ‚ÐµÑ… ÐºÑ‚Ð¾ Ð½Ðµ Ð² Ð°Ð³Ð³Ñ€Ð¾Ð»Ð¸Ñ�Ñ‚Ðµ
-			// Ð´ÑƒÐ±Ð»Ð¸ÐºÐ°Ñ‚Ñ‹ Ð½Ðµ Ñ�Ñ‚Ñ€Ð°ÑˆÐ½Ñ‹ - Ñ�Ñ‚Ð¾ Ñ…Ð°ÑˆÑ�ÐµÑ‚
+			// Ã�ÂµÃ‘ï¿½Ã�Â»Ã�Â¸ Ã‘ï¿½Ã‘â€šÃ�Â¾ Ã�Â¿Ã�Â°Ã‘â€šÃ�Â¸ Ã�Â¸Ã�Â»Ã�Â¸ Ã�ÂºÃ�Â¾Ã�Â¼Ã�Â°Ã�Â½Ã�Â´Ã�Â½Ã‘â€¹Ã�Â¹ Ã�ÂºÃ�Â°Ã�Â½Ã�Â°Ã�Â» Ã‘â€šÃ�Â¾ Ã�Â±Ã�ÂµÃ‘â‚¬Ã�ÂµÃ�Â¼ Ã�Â¾Ã‘â€šÃ‘â€šÃ‘Æ’Ã�Â´Ã�Â° Ã�Â²Ã�ÂµÃ‘ï¿½Ã‘Å’ Ã‘ï¿½Ã�Â¿Ã�Â¸Ã‘ï¿½Ã�Â¾Ã�Âº Ã‘Æ’Ã‘â€¡Ã�Â°Ã‘ï¿½Ã‘â€šÃ�Â²Ã‘Æ’Ã‘Å½Ã‘â€°Ã�Â¸Ã‘â€¦, Ã�Â´Ã�Â°Ã�Â¶Ã�Âµ Ã‘â€šÃ�ÂµÃ‘â€¦ Ã�ÂºÃ‘â€šÃ�Â¾ Ã�Â½Ã�Âµ Ã�Â² Ã�Â°Ã�Â³Ã�Â³Ã‘â‚¬Ã�Â¾Ã�Â»Ã�Â¸Ã‘ï¿½Ã‘â€šÃ�Âµ
+			// Ã�Â´Ã‘Æ’Ã�Â±Ã�Â»Ã�Â¸Ã�ÂºÃ�Â°Ã‘â€šÃ‘â€¹ Ã�Â½Ã�Âµ Ã‘ï¿½Ã‘â€šÃ‘â‚¬Ã�Â°Ã‘Ë†Ã�Â½Ã‘â€¹ - Ã‘ï¿½Ã‘â€šÃ�Â¾ Ã‘â€¦Ã�Â°Ã‘Ë†Ã‘ï¿½Ã�ÂµÃ‘â€š
 			if (key instanceof CommandChannel)
 			{
 				for (Player p : ((CommandChannel) key))
@@ -237,12 +238,12 @@ public class RaidBossInstance extends MonsterInstance
 		for (Object[] groupInfo : participants.values())
 		{
 			Set<Player> players = (HashSet<Player>) groupInfo[0];
-			// Ñ�Ñ‚Ð¾ Ñ‚Ð° Ñ‡Ð°Ñ�Ñ‚ÑŒ, ÐºÐ¾Ñ‚Ð¾Ñ€ÑƒÑŽ Ð¸Ð³Ñ€Ð¾Ðº Ð·Ð°Ñ�Ð»ÑƒÐ¶Ð¸Ð» Ð´Ð°Ð¼Ð°Ð³Ð¾Ð¼ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹, Ð½Ð¾ Ð½Ð° Ð½ÐµÐµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð½Ð°Ð»Ð¾Ð¶ÐµÐ½ ÑˆÑ‚Ñ€Ð°Ñ„ Ð¾Ñ‚ ÑƒÑ€Ð¾Ð²Ð½Ñ� Ð¸Ð³Ñ€Ð¾ÐºÐ°
+			// Ã‘ï¿½Ã‘â€šÃ�Â¾ Ã‘â€šÃ�Â° Ã‘â€¡Ã�Â°Ã‘ï¿½Ã‘â€šÃ‘Å’, Ã�ÂºÃ�Â¾Ã‘â€šÃ�Â¾Ã‘â‚¬Ã‘Æ’Ã‘Å½ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�Âº Ã�Â·Ã�Â°Ã‘ï¿½Ã�Â»Ã‘Æ’Ã�Â¶Ã�Â¸Ã�Â» Ã�Â´Ã�Â°Ã�Â¼Ã�Â°Ã�Â³Ã�Â¾Ã�Â¼ Ã�Â³Ã‘â‚¬Ã‘Æ’Ã�Â¿Ã�Â¿Ã‘â€¹, Ã�Â½Ã�Â¾ Ã�Â½Ã�Â° Ã�Â½Ã�ÂµÃ�Âµ Ã�Â¼Ã�Â¾Ã�Â¶Ã�ÂµÃ‘â€š Ã�Â±Ã‘â€¹Ã‘â€šÃ‘Å’ Ã�Â½Ã�Â°Ã�Â»Ã�Â¾Ã�Â¶Ã�ÂµÃ�Â½ Ã‘Ë†Ã‘â€šÃ‘â‚¬Ã�Â°Ã‘â€ž Ã�Â¾Ã‘â€š Ã‘Æ’Ã‘â‚¬Ã�Â¾Ã�Â²Ã�Â½Ã‘ï¿½ Ã�Â¸Ã�Â³Ã‘â‚¬Ã�Â¾Ã�ÂºÃ�Â°
 			int perPlayer = (int) Math.round(totalPoints * ((Long) groupInfo[1]).longValue() / (totalHp * players.size()));
 			for (Player player : players)
 			{
 				int playerReward = perPlayer;
-				// Ð¿Ñ€Ð¸Ð¼ÐµÐ½Ñ�ÐµÐ¼ ÑˆÑ‚Ñ€Ð°Ñ„ ÐµÑ�Ð»Ð¸ Ð½ÑƒÐ¶ÐµÐ½
+				// Ã�Â¿Ã‘â‚¬Ã�Â¸Ã�Â¼Ã�ÂµÃ�Â½Ã‘ï¿½Ã�ÂµÃ�Â¼ Ã‘Ë†Ã‘â€šÃ‘â‚¬Ã�Â°Ã‘â€ž Ã�ÂµÃ‘ï¿½Ã�Â»Ã�Â¸ Ã�Â½Ã‘Æ’Ã�Â¶Ã�ÂµÃ�Â½
 				playerReward = (int) Math.round(playerReward * Experience.penaltyModifier(calculateLevelDiffForDrop(player.getLevel()), 9));
 				if (playerReward == 0)
 					continue;
@@ -268,19 +269,49 @@ public class RaidBossInstance extends MonsterInstance
 		super.onSpawn();
 		addSkill(SkillTable.getInstance().getInfo(4045, 1)); // Resist Full Magic Attack
 		RaidBossSpawnManager.getInstance().onBossSpawned(this);
-		//4fun adhesión de grito  ESTOS ESTÁN VIVOS
+		//4fun adhesiÃ³n de grito  ESTOS ESTÃ�N VIVOS
 		if (this.getTemplate().getNpcId() == id_Qa)
 		{
-			Announcements.getInstance().announceToAll(" Queen ant it´s Alive!! ");
+			Announcements.getInstance().announceToAll(" Queen ant itÂ´s Alive!! ");
 		}
 		if (this.getTemplate().getNpcId() == id_Orfen)
 		{
-			Announcements.getInstance().announceToAll(" Orfen it´s Alive!! ");
+			Announcements.getInstance().announceToAll(" Orfen itÂ´s Alive!! ");
 		}
 		if (this.getTemplate().getNpcId() == id_Core)
 		{
-			Announcements.getInstance().announceToAll(" Core it´s Alive!! ");
+			Announcements.getInstance().announceToAll(" Core itÂ´s Alive!! ");
 		}
+		if (Config.ANNOUNCE_SPAWN_RB_SPECIAL_IDs)
+			if (this.getTemplate().getNpcId() == 40001)
+			{
+				Announcements.getInstance().announceToAll("Queen Ant Clone is Alive!! ");
+			}
+		
+			if (this.getTemplate().getNpcId() == 40002)
+			{
+				Announcements.getInstance().announceToAll("Antharas Clone is Alive!! ");
+			}
+			if (this.getTemplate().getNpcId() == 40003)
+			{
+				Announcements.getInstance().announceToAll("Baium Clone is Alive!! ");
+			}
+			if (this.getTemplate().getNpcId() == 40004)
+			{
+				Announcements.getInstance().announceToAll("Valakas Clone is Alive!! ");
+			}
+			if (this.getTemplate().getNpcId() == 40005)
+			{
+				Announcements.getInstance().announceToAll("Scarlet van Halisha Clone is Alive!! ");
+			}
+			if (this.getTemplate().getNpcId() == 40006)
+			{
+				Announcements.getInstance().announceToAll("Beleth Clone Alive!! ");
+			}
+			if (this.getTemplate().getNpcId() == 40007)
+			{
+				Announcements.getInstance().announceToAll("The Allmighty God Neptuno is Alive!! ");
+			}
 	}
 
 	@Override

@@ -3,6 +3,9 @@ package l2jexpress.gameserver.handler.voicecommands;
 import java.util.HashMap;
 import java.util.Map;
 
+//Autofarm
+import l2jexpress.gameserver.autofarm.AutofarmCommandHandler;
+
 import l2jexpress.commons.data.xml.AbstractHolder;
 import l2jexpress.gameserver.Config;
 import l2jexpress.gameserver.handler.voicecommands.impl.ACP;
@@ -21,6 +24,7 @@ import l2jexpress.gameserver.handler.voicecommands.impl.DressMe;
 import l2jexpress.gameserver.handler.voicecommands.impl.EasyTeleporter;
 import l2jexpress.gameserver.handler.voicecommands.impl.ExponOff;
 import l2jexpress.gameserver.handler.voicecommands.impl.FacebookVoice;
+import l2jexpress.gameserver.handler.voicecommands.impl.Cbinterface;
 import l2jexpress.gameserver.handler.voicecommands.impl.FindParty;
 import l2jexpress.gameserver.handler.voicecommands.impl.Hellbound;
 import l2jexpress.gameserver.handler.voicecommands.impl.Help;
@@ -65,6 +69,9 @@ public class VoicedCommandHandler extends AbstractHolder
 
 	private VoicedCommandHandler()
 	{
+		//Autofarm
+		registerVoicedCommandHandler(new AutofarmCommandHandler());
+		
 		registerVoicedCommandHandler(new Away());
 		registerVoicedCommandHandler(new Atod());
 		registerVoicedCommandHandler(new AntiGrief());
@@ -108,6 +115,7 @@ public class VoicedCommandHandler extends AbstractHolder
 		registerVoicedCommandHandler(new ItemLogsVoice());
 		registerVoicedCommandHandler(new StreamVoice());
 		registerVoicedCommandHandler(new FacebookVoice());
+		registerVoicedCommandHandler(new Cbinterface());		
 		registerVoicedCommandHandler(new DressMe());
 		registerVoicedCommandHandler(new VoteReward());
 		registerVoicedCommandHandler(new RuVotePanel());
