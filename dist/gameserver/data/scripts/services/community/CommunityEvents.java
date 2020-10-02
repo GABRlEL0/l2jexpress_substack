@@ -113,11 +113,11 @@ public class CommunityEvents implements ScriptFile, ICommunityBoardHandler
 			{
 				if (FightClubEventManager.getInstance().isPlayerRegistered(player))
 				{
-					register = "<button value=\"Unregister\" action=\"bypass _bbseventUnregister\" width=120 height=32 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
+					register = "<button value=\"Unregister\" action=\"bypass _bbseventUnregister\" width=120 height=32 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\">";
 				}
 				else
 				{
-					register = "<button value=\"Register\" action=\"bypass _bbseventRegister\" width=120 height=32 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
+					register = "<button value=\"Register\" action=\"bypass _bbseventRegister\" width=120 height=32 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\">";
 				}
 			}
 
