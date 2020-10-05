@@ -112,7 +112,7 @@ public class VoicedCommandHandler extends AbstractHolder
 		registerVoicedCommandHandler(new ItemLogsVoice());
 		registerVoicedCommandHandler(new StreamVoice());
 		registerVoicedCommandHandler(new FacebookVoice());
-		registerVoicedCommandHandler(new Cbinterface());		
+		//registerVoicedCommandHandler(new Cbinterface());		
 		registerVoicedCommandHandler(new DressMe());
 		registerVoicedCommandHandler(new VoteReward());
 		registerVoicedCommandHandler(new RuVotePanel());
