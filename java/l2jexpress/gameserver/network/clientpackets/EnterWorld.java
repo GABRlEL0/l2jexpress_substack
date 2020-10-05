@@ -208,6 +208,12 @@ public class EnterWorld extends L2GameClientPacket
 		
 		World.nameIp.put(activeChar, ipPlayer);
 		
+		if (activeChar.getVar("Autofarm") != null)
+		{
+			activeChar.unsetVar("Autofarm");
+			activeChar.stopAutoFarm();
+		}	
+		
 		if(Config.MAX_PLAYERS_PER_IP > 0 && !Arrays.asList(Config.MAX_PLAYERS_PER_IP_WHITELIST).contains(ipPlayer))
 		{
 			if(World.ipPlayers.get(ipPlayer) == null || World.ipPlayers.get(ipPlayer) < 0)
