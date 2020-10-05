@@ -42,7 +42,7 @@ public class BypassManager
 			if (bypassType != null && bypassType.getEncodingType() != null)
 				return bypassType.getEncodingType();
 		}
-		if (Strings.matches(bypass, "^(_mrsl|_diary|_match|manor_menu_select|_match|_olympiad).*", Pattern.DOTALL))
+		if (Strings.matches(bypass, "^(_mrsl|_diary|asfgdhsgd|_match|manor_menu_select|_match|_olympiad).*", Pattern.DOTALL))
 			return EncodingType.SIMPLE;
 
 		return EncodingType.SIMPLE_DIRECT;
