@@ -7,7 +7,7 @@ import static l2jexpress.gameserver.network.serverpackets.ExSetCompassZoneCode.Z
 import static l2jexpress.gameserver.network.serverpackets.ExSetCompassZoneCode.ZONE_SSQ_FLAG;
 
 //Autofarm
-import l2jexpress.gameserver.autofarm.AutofarmManager;
+//import l2jexpress.gameserver.autofarm.AutofarmManager;
 
 import java.awt.Color;
 import java.sql.Connection;
@@ -79,6 +79,7 @@ import l2jexpress.gameserver.data.xml.holder.ResidenceHolder;
 import l2jexpress.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2jexpress.gameserver.database.DatabaseFactory;
 import l2jexpress.gameserver.database.mysql;
+import l2jexpress.gameserver.geodata.GeoEngine;
 import l2jexpress.gameserver.handler.bbs.CommunityBoardManager;
 import l2jexpress.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2jexpress.gameserver.handler.bypass.BypassHandler;
@@ -369,7 +370,13 @@ public final class Player extends Playable implements PlayerGroup
 	public static final int DEFAULT_TITLE_COLOR = 0xFFFF77;
 	public static final int MAX_POST_FRIEND_SIZE = 100;
 	public static final int MAX_FRIEND_SIZE = 128;
-
+	
+	//Autofarm stuff
+	public Creature nearest_target = null;
+	public Character cha = null;
+	public Player activeChar = this;
+	public Location startFarmLoc = null;
+	
 	private static final Logger _log = LoggerFactory.getLogger(Player.class);
 
 	public static final String NO_TRADERS_VAR = "notraders";
@@ -1115,7 +1122,7 @@ public final class Player extends Playable implements PlayerGroup
 			setNetConnection(null);
 		}
 		//Autofarm
-		AutofarmManager.INSTANCE.onPlayerLogout(this);
+		//AutofarmManager.INSTANCE.onPlayerLogout(this);
 		prepareToLogout();
 		deleteMe();
 	}
@@ -7583,6 +7590,12 @@ public final class Player extends Playable implements PlayerGroup
 	@Override
 	public boolean onTeleported()
 	{
+		//Autofarm chequea si esta activo al teleportarse y lo desactiva
+		if (activeChar.getVar("Autofarm") != null)
+		{
+			activeChar.unsetVar("Autofarm");
+		}	
+		
 		if (!super.onTeleported())
 		{
 			return false;
@@ -9161,7 +9174,7 @@ public final class Player extends Playable implements PlayerGroup
 		updateEffectIcons();
 		autoShot();
 		//Autofarm
-		AutofarmManager.INSTANCE.onDeath(this);
+		//AutofarmManager.INSTANCE.onDeath(this);
 
 		// Prims - Block the community buffer 10 seconds so the player cannot buff when resurrected
 		_resurrectionBuffBlockedTime = System.currentTimeMillis() + 10 * 1000;
@@ -14279,6 +14292,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	// l2jexpress - Support for Automatic Potions (Toogle)
 	private final Set<Integer> _autoPotions = new CopyOnWriteArraySet<Integer>();
 	private Future<?> _autoPotionTask = null;
+	private Future<?> _autoFarmTask = null;
 
 	public void addAutoPotion(int itemId)
 	{
@@ -14306,7 +14320,115 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	{
 		return _autoPotions;
 	}
+	
+	
+	//Start Autofarm
+	public void startAutoFarm()
+	{
 
+		// A thread will handle the auto potions, each second will see if they must be used considering the player status
+		if (_autoFarmTask == null)
+			startFarmLoc = this.getLoc();
+			_autoFarmTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new AutoFarmTask(), 100, 1000);
+
+	}
+	//Stop Autofarm
+	public void stopAutoFarm()
+	{
+			if (_autoFarmTask != null)
+			{
+				_autoFarmTask.cancel(false);
+				_autoFarmTask = null;
+				
+			}
+
+	}
+
+	//Autofarm Tareas
+	private class AutoFarmTask implements Runnable
+	{
+        @Override
+        public void run()
+        {
+        	// Special conditions, cannot farm
+        	if (isOutOfControl() || isInStoreMode() || isFishing() || isInAwayingMode() || isInOlympiadMode() || isInvisible() || isInvul())
+        		return;
+        	GetTarget();
+        	//Attack Target With Custom skill
+        	if (Config.AUTOFARM_CUSTOMSKILL_ENABLED) {
+        	AttackTarget();
+        	}
+        	CheckIdle();
+        }
+
+
+	}
+	
+	private void GetTarget() {
+		
+
+		nearest_target = null; 
+		for(Creature cha : World.getAroundCharacters(activeChar, 4000, 500)) {
+			if (cha != null && !cha.isAlikeDead() && !cha.isRaid() && cha.isMonster() && !cha.isBoss() && !cha.isTreasureChest())
+			{
+				if ((nearest_target == null || activeChar.getDistance3D(cha) < activeChar.getDistance3D(nearest_target)) && cha.isAutoAttackable(activeChar))
+				{
+					nearest_target = cha;
+					cha = null; 
+				}	
+			}	
+		}	
+		if (nearest_target != null && activeChar.getTarget() != nearest_target  && GeoEngine.canSeeTarget(activeChar, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && nearest_target.isMonster())
+		{
+			activeChar.setTarget(nearest_target);
+			
+
+		}
+			
+	}
+
+	private void AttackTarget() {
+		Skill _skill = null;
+		if (activeChar.isMageClass()) 
+		{
+			_skill = this.getAvailableSkill(Config.AUTOFARM_MAGE_SKILL_ID);
+			
+		}else
+		{
+			_skill = this.getAvailableSkill(Config.AUTOFARM_WARRIOR_SKILL_ID);
+		}
+		
+		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(activeChar, nearest_target, false))
+		{
+		this.setFlyLoc(nearest_target.getLoc());
+		this.doCast(_skill, nearest_target, false);
+		}
+		if (nearest_target.isDead()){
+			activeChar.setTarget(null);
+			nearest_target = null; 
+			cha = null; 
+			}
+	}
+	
+	private void CheckIdle() {
+		
+		/*System.out.println("last monsterdamagetime" + activeChar.getLastMonsterDamageTime());
+		System.out.println("currenttime: " + System.currentTimeMillis());
+		Location currentloc = activeChar.getLoc();
+		
+		int x = (int) (currentloc.x + Math.random() * (20 - -20) + -20);
+		int y = (int) (currentloc.y + Math.random() * (20 - -20) + -20);
+		int z = currentloc.z; */
+
+		long timediff = System.currentTimeMillis() - activeChar.getLastMonsterDamageTime();
+		
+		if (timediff > 25000 && activeChar.getTarget() == null)
+		{
+			//System.out.println("Me muevo al inicio");
+			activeChar.moveToLocation(startFarmLoc, 0, true);
+		}
+	}
+	
 	private class AutoPotionTask implements Runnable
 	{
         @Override
