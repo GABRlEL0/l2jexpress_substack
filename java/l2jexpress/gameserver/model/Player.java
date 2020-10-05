@@ -375,7 +375,7 @@ public final class Player extends Playable implements PlayerGroup
 	public Creature nearest_target = null;
 	public Character cha = null;
 	public Player activeChar = this;
-	public Location startFarmLoc = null;
+
 	
 	private static final Logger _log = LoggerFactory.getLogger(Player.class);
 
@@ -7594,6 +7594,8 @@ public final class Player extends Playable implements PlayerGroup
 		if (activeChar.getVar("Autofarm") != null)
 		{
 			activeChar.unsetVar("Autofarm");
+			activeChar.sendMessage("You turned Autofarm Off");
+			activeChar.stopAutoFarm();
 		}	
 		
 		if (!super.onTeleported())
@@ -14321,7 +14323,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 		return _autoPotions;
 	}
 	
-	
+	public Location startFarmLoc = null;
 	//Start Autofarm
 	public void startAutoFarm()
 	{
@@ -14422,7 +14424,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 
 		long timediff = System.currentTimeMillis() - activeChar.getLastMonsterDamageTime();
 		
-		if (timediff > 25000 && activeChar.getTarget() == null)
+		if (timediff > 25000 && activeChar.getTarget() == null && _autoFarmTask != null)
 		{
 			//System.out.println("Me muevo al inicio");
 			activeChar.moveToLocation(startFarmLoc, 0, true);
