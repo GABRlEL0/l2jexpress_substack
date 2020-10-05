@@ -330,7 +330,7 @@ public class RequestBypassToServer extends L2GameClientPacket
 					activeChar.processQuestEvent(tutorial.getName(), bp.bypass, null);
 			}
 			// l2jexpress - Autofarm
-			else if (bp.bypass.startsWith("75sagsdg878") && Config.AUTOFARM_ENABLED)
+			else if (bp.bypass.startsWith("asfgdhsgd") && Config.AUTOFARM_ENABLED)
 			{
 				if (activeChar.getVar("Autofarm") == null)
 				{
