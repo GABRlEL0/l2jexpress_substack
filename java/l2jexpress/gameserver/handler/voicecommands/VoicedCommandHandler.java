@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //Autofarm
-import l2jexpress.gameserver.autofarm.AutofarmCommandHandler;
+//import l2jexpress.gameserver.autofarm.AutofarmCommandHandler;
 
 import l2jexpress.commons.data.xml.AbstractHolder;
 import l2jexpress.gameserver.Config;
@@ -12,6 +12,7 @@ import l2jexpress.gameserver.handler.voicecommands.impl.ACP;
 import l2jexpress.gameserver.handler.voicecommands.impl.AchievementsVoice;
 import l2jexpress.gameserver.handler.voicecommands.impl.AntiGrief;
 import l2jexpress.gameserver.handler.voicecommands.impl.Atod;
+import l2jexpress.gameserver.handler.voicecommands.impl.AutoFarm;
 import l2jexpress.gameserver.handler.voicecommands.impl.Away;
 import l2jexpress.gameserver.handler.voicecommands.impl.BuffStoreVoice;
 import l2jexpress.gameserver.handler.voicecommands.impl.CWHPrivileges;
@@ -70,7 +71,7 @@ public class VoicedCommandHandler extends AbstractHolder
 	private VoicedCommandHandler()
 	{
 		//Autofarm
-		registerVoicedCommandHandler(new AutofarmCommandHandler());
+		registerVoicedCommandHandler(new AutoFarm());
 		
 		registerVoicedCommandHandler(new Away());
 		registerVoicedCommandHandler(new Atod());
