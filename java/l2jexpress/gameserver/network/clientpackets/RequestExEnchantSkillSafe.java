@@ -55,12 +55,11 @@ public final class RequestExEnchantSkillSafe extends L2GameClientPacket
 				activeChar.sendMessage("You must have 3rd class change quest completed.");
 				return;
 			}
-		}
-		
-		if (activeChar.getLevel() < 76)
-		{
-			activeChar.sendMessage("You must be at leat level 76 in order to enchant the skills.");
-			return;
+			if (activeChar.getLevel() < 76)
+			{
+				activeChar.sendMessage("You must be at leat level 76 in order to enchant the skills.");
+				return;
+			}
 		}
 
 		// l2jexpress - If the config is enabled then enforce using the enchant skill system in peace zone
