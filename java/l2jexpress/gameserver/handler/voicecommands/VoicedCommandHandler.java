@@ -12,7 +12,6 @@ import l2jexpress.gameserver.handler.voicecommands.impl.ACP;
 import l2jexpress.gameserver.handler.voicecommands.impl.AchievementsVoice;
 import l2jexpress.gameserver.handler.voicecommands.impl.AntiGrief;
 import l2jexpress.gameserver.handler.voicecommands.impl.Atod;
-import l2jexpress.gameserver.handler.voicecommands.impl.AutoFarm;
 import l2jexpress.gameserver.handler.voicecommands.impl.Away;
 import l2jexpress.gameserver.handler.voicecommands.impl.BuffStoreVoice;
 import l2jexpress.gameserver.handler.voicecommands.impl.CWHPrivileges;
@@ -70,9 +69,6 @@ public class VoicedCommandHandler extends AbstractHolder
 
 	private VoicedCommandHandler()
 	{
-		//Autofarm
-		registerVoicedCommandHandler(new AutoFarm());
-		
 		registerVoicedCommandHandler(new Away());
 		registerVoicedCommandHandler(new Atod());
 		registerVoicedCommandHandler(new AntiGrief());
