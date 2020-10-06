@@ -329,8 +329,9 @@ public class RequestBypassToServer extends L2GameClientPacket
 				if (tutorial != null)
 					activeChar.processQuestEvent(tutorial.getName(), bp.bypass, null);
 			}
+			
 			// l2jexpress - Autofarm
-			else if (bp.bypass.startsWith("asfgdhsgd") && Config.AUTOFARM_ENABLED)
+			else if (bp.bypass.startsWith("asfgdhsgd?") && Config.AUTOFARM_ENABLED)
 			{
 				if (activeChar.getVar("Autofarm") == null)
 				{
@@ -346,6 +347,17 @@ public class RequestBypassToServer extends L2GameClientPacket
 					activeChar.stopAutoFarm();
 				}
 			}
+			// l2jexpress - Bypass services
+			else if (bp.bypass.startsWith("nsjgsdhn?"))
+			{	
+			//	activeChar.sendMessage("Hola pa");
+			playerServices(activeChar, "scripts/services/community/pages/btnservicios.htm");	
+			//openURL(activeChar, "scripts/services/community/pages/btnservicios.htm");
+		//	NpcHtmlMessage html = null;
+		//	html.setFile("scripts/services/community/pages/btnservicios.htm");
+	    //    activeChar.sendPacket(html);
+			}
+	        
 			// l2jexpress - Bypass handler
 			else
 			{
@@ -386,7 +398,13 @@ public class RequestBypassToServer extends L2GameClientPacket
 		html.setFile(path);
 		activeChar.sendPacket(html);
 	}
-
+	// l2jexpress - Open Services Panel
+	private static void playerServices(Player activeChar, String url)
+	{
+		NpcHtmlMessage html = new NpcHtmlMessage(5);
+		html.setFile(url);
+		activeChar.sendPacket(html);
+	}
 	// l2jexpress - This packet can be used while the character is blocked
 	@Override
     public boolean canBeUsedWhileBlocked()
