@@ -6635,7 +6635,7 @@ public final class Player extends Playable implements PlayerGroup
 			// Send the SQL query : SELECT skill_id,skill_level FROM character_skills WHERE char_obj_id=? to the database
 			if (Config.ALT_ENABLE_MULTI_PROFA)
 			{
-				statement = con.prepareStatement("SELECT skill_id,skill_level FROM character_skills WHERE char_obj_id=?");
+				statement = con.prepareStatement("SELECT skill_id,skill_level FROM character_skills WHERE char_obj_id=? ORDER BY skill_level ASC");
 				statement.setInt(1, getObjectId());
 			}
 			else
