@@ -18621,6 +18621,11 @@ INSERT INTO `npcbuffer_buff_list` VALUES (135, 7, 'special', 1232, 33, 3, 1, 1);
 INSERT INTO `npcbuffer_buff_list` VALUES (136, 7, 'special', 1232, 63, 3, 1, 1);
 INSERT INTO `npcbuffer_buff_list` VALUES (137, 7, 'special', 1232, 93, 3, 1, 1);
 INSERT INTO `npcbuffer_buff_list` VALUES (138, 7, 'special', 1232, 123, 3, 1, 1);
+INSERT INTO `npcbuffer_buff_list` VALUES (140, 2, 'dance', 915, 1, 0, 0, 1);
+INSERT INTO `npcbuffer_buff_list` VALUES (139, 8, 'resist', 1364, 1, 3, 0, 1);
+INSERT INTO `npcbuffer_buff_list` VALUES (141, 7, 'special', 982, 3, 2, 0, 1);
+INSERT INTO `npcbuffer_buff_list` VALUES (142, 7, 'special', 1542, 1, 3, 0, 1);
+INSERT INTO `npcbuffer_buff_list` VALUES (143, 7, 'special', 6429, 1, 0, 0, 1);
 
 -- ----------------------------
 -- Table structure for npcbuffer_scheme_contents
