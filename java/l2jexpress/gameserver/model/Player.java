@@ -6634,12 +6634,16 @@ public final class Player extends Playable implements PlayerGroup
 			// Retrieve all skills of this L2Player from the database
 			// Send the SQL query : SELECT skill_id,skill_level FROM character_skills WHERE char_obj_id=? to the database
 			if (Config.ALT_ENABLE_MULTI_PROFA)
-				statement = con.prepareStatement("SELECT skill_id,skill_level,class_index FROM character_skills WHERE char_obj_id=? ORDER BY skill_level ASC");
+			{
+				statement = con.prepareStatement("SELECT skill_id,skill_level FROM character_skills WHERE char_obj_id=? ORDER BY skill_level ASC");
+				statement.setInt(1, getObjectId());
+			}
 			else
+			{
 				statement = con.prepareStatement("SELECT skill_id,skill_level FROM character_skills WHERE char_obj_id=? AND class_index=?");
-			statement.setInt(1, getObjectId());
-			if (!Config.ALT_ENABLE_MULTI_PROFA)
+				statement.setInt(1, getObjectId());
 				statement.setInt(2, getActiveClassId());
+			}
 
 			try (ResultSet rset = statement.executeQuery())
 			{
@@ -6653,23 +6657,10 @@ public final class Player extends Playable implements PlayerGroup
 					final Skill skill = SkillTable.getInstance().getInfo(id, level);
 
 					if (skill == null)
-						continue;
-					
-					if(Config.ALT_ENABLE_MULTI_PROFA)
 					{
-						final int skillClassIndexOwner = rset.getInt("class_index");
-						
-						if (getActiveClassId() != skillClassIndexOwner)
-						{
-							if (!Config.STACK_ACTIVE_SKILLS && skill.isActive())
-								continue;
-							if (!Config.STACK_PASIVE_SKILLS && skill.isPassive())
-								continue;
-							if (Config.DONT_STACK_SKILLS)
-								if (Config.DONT_STACK_SKILLS_LIST_ID.contains(id))
-									continue;
-						}
+						continue;
 					}
+
 					
 					//if (!isGM() && !SkillAcquireHolder.getInstance().isSkillPossible(this, skill))
 					//{
