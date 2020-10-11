@@ -227,7 +227,7 @@ public class SchemeBufferInstance extends NpcInstance
 				int enchantLvl = (buffLevel - baseMaxLvl) % skill.getEnchantLevelCount();
 				enchantLvl = (enchantLvl == 0 ? skill.getEnchantLevelCount() : enchantLvl);
 
-				_buffName = skill.getName() + "+ " + enchantLvl + " " + EnchantNamesTable.getInstance().getEnchantName(buffId, enchantType);
+				_buffName = skill.getName() + " +" + enchantLvl + " " + EnchantNamesTable.getInstance().getEnchantName(buffId, enchantType);
 			}
 			else
 				_buffName = skill.getName();
@@ -382,7 +382,7 @@ public class SchemeBufferInstance extends NpcInstance
 		}
 		else if (player.isInCombat() && !Config.SCHEME_ALLOW_FLAG)
 		{
-			msg = "You cannot receive buffs while in combat.<br>Please, try again later.";
+			msg = "You cannot receive buffs while in combat. Please, try again later.";
 		}
 		// l2jexpress - Block time that the player cannot use the community buffer
 		else if (player.getResurrectionBuffBlockedTime() > System.currentTimeMillis())
