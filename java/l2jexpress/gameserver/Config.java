@@ -12,10 +12,12 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 
@@ -1707,6 +1709,10 @@ public class Config
 	public static int FOLLOW_RANGE;
 
 	public static boolean ALT_ENABLE_MULTI_PROFA;
+	public static boolean STACK_ACTIVE_SKILLS;
+	public static boolean STACK_PASIVE_SKILLS;
+	public static boolean DONT_STACK_SKILLS;
+	public static Set<Integer> DONT_STACK_SKILLS_LIST_ID = new HashSet<>();
 
 	public static boolean ALT_ITEM_AUCTION_ENABLED;
 	public static boolean ALT_ITEM_AUCTION_CAN_REBID;
@@ -3590,6 +3596,14 @@ public class Config
 		FOLLOW_RANGE = altSettings.getProperty("FollowRange", 100);
 
 		ALT_ENABLE_MULTI_PROFA = altSettings.getProperty("AltEnableMultiProfa", false);
+		STACK_ACTIVE_SKILLS = altSettings.getProperty("StackActiveSkill", true);
+		STACK_PASIVE_SKILLS = altSettings.getProperty("StackPasiveSkill", true);
+		DONT_STACK_SKILLS = altSettings.getProperty("DontStackSkills", false);
+		String substackaux = altSettings.getProperty("DontStackSkillsListID").trim();
+		for (String subAcuInfo : substackaux.split(","))
+		{
+			DONT_STACK_SKILLS_LIST_ID.add(Integer.valueOf(subAcuInfo));
+		}
 
 		ALT_ITEM_AUCTION_ENABLED = altSettings.getProperty("AltItemAuctionEnabled", true);
 		ALT_ITEM_AUCTION_CAN_REBID = altSettings.getProperty("AltItemAuctionCanRebid", false);
