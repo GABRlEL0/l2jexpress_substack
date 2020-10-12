@@ -4359,24 +4359,15 @@ public final class Player extends Playable implements PlayerGroup
 					if (getIP() != killer.getIP())
 					{
 						if (Config.SERVICES_ANNOUNCE_PK_ENABLED)
-						{
-							//Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
-							announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has pk " + killer.getTarget().getName()));
-							
-						}
+							Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
 						ItemFunctions.addItem(killer, Config.SERVICES_PK_KILL_REWARD_ITEM, Config.SERVICES_PK_KILL_REWARD_COUNT, true, "Pk");
 					}
-				}
 				else
-				{
 					if (Config.SERVICES_ANNOUNCE_PK_ENABLED)
-					{
-						//Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
-						announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has pk " + killer.getTarget().getName()));
-					}
+						Announcements.getInstance().announceToAll("Player " + killer.getName() + " has pk" + killer.getTarget().getName());
 					ItemFunctions.addItem(killer, Config.SERVICES_PK_KILL_REWARD_ITEM, Config.SERVICES_PK_KILL_REWARD_COUNT, true, "Pk");
-				}
 			}
+			announce(new SystemMessage(SystemMessage.S2_S1).addString(": " + killer.getName() + " has Pk " + killer.getTarget().getName()).addZoneName(killer.getLoc()));
 			doPurePk(killer);
 		}
 		else
@@ -4387,6 +4378,7 @@ public final class Player extends Playable implements PlayerGroup
 				killer.setPvpKills(killer.getPvpKills() + 1);
 				
 				getRPSCookie().runPvpTask(killer, this);
+				announce(new SystemMessage(SystemMessage.S2_S1).addString(": " + killer.getName() + " has Won to " + killer.getTarget().getName()).addZoneName(killer.getLoc()));
 			}
 		}
 	}
@@ -4522,29 +4514,21 @@ public final class Player extends Playable implements PlayerGroup
 			if ((_pvpFlag > 0) || (war) || (Config.SIEGE_PVP_COUNT) || (Config.ZONE_PVP_COUNT) || isInZonePvP())
 			{
 				if (Config.SERVICES_PK_PVP_KILL_ENABLE)
-				{
 					if (Config.SERVICES_PK_PVP_TIE_IF_SAME_IP)
 					{
 						if (getIP() != pk.getIP())
 						{
 							if (Config.SERVICES_ANNOUNCE_PVP_ENABLED)
-							{
-								//Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
-								announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has killed " + killer.getTarget().getName()));
-							}
+								Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
 							ItemFunctions.addItem(pk, Config.SERVICES_PVP_KILL_REWARD_ITEM, Config.SERVICES_PVP_KILL_REWARD_COUNT, true, "PvP");
 						}
 					}
 					else
 					{
 						if (Config.SERVICES_ANNOUNCE_PVP_ENABLED)
-						{
-							//Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
-							announce(new SystemMessage(SystemMessage.S2_S1).addZoneName(killer.getLoc()).addString(": " + killer.getName() + " has killed " + killer.getTarget().getName()));
-						}
+							Announcements.getInstance().announceToAll("Player " + pk.getName() + " has killed" + pk.getTarget().getName());
 						ItemFunctions.addItem(pk, Config.SERVICES_PVP_KILL_REWARD_ITEM, Config.SERVICES_PVP_KILL_REWARD_COUNT, true, "PvP");
 					}
-				}
 
 				// l2jexpress - Antifeed system
 				if (AntiFeedManager.getInstance().check(killer, this))
@@ -4556,6 +4540,7 @@ public final class Player extends Playable implements PlayerGroup
 					
 					getRPSCookie().runPvpTask(pk, this);
 				}
+				announce(new SystemMessage(SystemMessage.S2_S1).addString(": " + killer.getName() + " has won PvP to " + killer.getTarget().getName()).addZoneName(killer.getLoc()));
 			}
 			else
 			{
