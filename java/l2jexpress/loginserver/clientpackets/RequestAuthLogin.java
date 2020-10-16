@@ -72,7 +72,17 @@ public class RequestAuthLogin extends L2LoginClientPacket
 		account.restore();
 
 		String passwordHash = Config.DEFAULT_CRYPT.encrypt(password);
-
+		
+		if (Config.AUTO_CREATE_ACCOUNTS && user.matches(Config.ANAME_TEMPLATE) && password.matches(Config.APASSWD_TEMPLATE) && account.getPasswordHash() == null)
+		{
+			account.setAllowedIP("");
+			account.setAllowedHwid("");
+			account.setPasswordHash(passwordHash);
+			account.save();
+			afterConnection(account, passwordHash, password, client, user);
+			return;
+		}
+		
 		if (account.getPasswordHash() != null)
 		{
 			afterConnection(account, passwordHash, password, client, user);
@@ -94,16 +104,6 @@ public class RequestAuthLogin extends L2LoginClientPacket
 				afterConnection(mergeAccount, passwordHash, password, client, user);
 				return;
 			}
-		}
-
-		if (Config.AUTO_CREATE_ACCOUNTS && user.matches(Config.ANAME_TEMPLATE) && password.matches(Config.APASSWD_TEMPLATE) && !user.equalsIgnoreCase(password))
-		{
-			account.setAllowedIP("");
-			account.setAllowedHwid("");
-			account.setPasswordHash(password);
-			account.save();
-			afterConnection(account, passwordHash, password, client, user);
-			return;
 		}
 
 		client.close(LoginFailReason.REASON_USER_OR_PASS_WRONG);
