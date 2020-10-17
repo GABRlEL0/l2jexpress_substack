@@ -60,11 +60,11 @@ public class RequestMagicSkillUse extends L2GameClientPacket
 		}
 		if (skill != null)
 		{
-			if(_shiftPressed)
+			if(_shiftPressed && skill.isActive())
 				if(activeChar.getAutoSkills().contains(this._magicId.intValue()))
 				{
 					activeChar.removeAutoSkill(this._magicId.intValue());
-					activeChar.sendMessage("Cancel automatic " + skill.getName());
+					activeChar.sendMessage("Des-Automatic " + skill.getName());
 				}
 				else
 				{

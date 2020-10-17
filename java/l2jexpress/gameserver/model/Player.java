@@ -371,12 +371,6 @@ public final class Player extends Playable implements PlayerGroup
 	public static final int MAX_POST_FRIEND_SIZE = 100;
 	public static final int MAX_FRIEND_SIZE = 128;
 	
-	//Autofarm stuff
-	public Creature nearest_target = null;
-	public Character cha = null;
-	public Player activeChar = this;
-
-	
 	private static final Logger _log = LoggerFactory.getLogger(Player.class);
 
 	public static final String NO_TRADERS_VAR = "notraders";
@@ -4690,6 +4684,14 @@ public final class Player extends Playable implements PlayerGroup
 	protected void onDeath(Creature killer)
 	{
 		Player player = getPlayer();
+		
+		//Autofarm chequea si esta activo al teleportarse y lo desactiva
+		if (getVar("Autofarm") != null)
+		{
+			unsetVar("Autofarm");
+			sendMessage("You turned Autofarm Off");
+			stopAutoFarm();
+		}
 
 		// Check for active charm of luck for death penalty
 		if (player != null && !player.isPhantom())
@@ -14808,7 +14810,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 		nearest_target = null; 
 		for(Creature cha : World.getAroundCharacters(this, 4000, 500))
 		{
-			if (cha != null && !cha.isAlikeDead() && !cha.isRaid() && cha.isMonster() && !cha.isBoss() && !cha.isTreasureChest())
+			if (cha != null && !cha.isAlikeDead() && !cha.isRaid() && !cha.isBoss() && !cha.isTreasureChest() && cha.isMonster())
 				if ((nearest_target == null || getDistance3D(cha) < getDistance3D(nearest_target)) && cha.isAutoAttackable(this))
 				{
 					nearest_target = cha;
@@ -14824,12 +14826,27 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 		if(_autoSkills == null)
 			return;
 		
-		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false))
+		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion())
 			for(int skilllist : _autoSkills)
 			{
 				Skill skill = SkillTable.getInstance().getInfo(skilllist, getSkillLevel(skilllist));
-				getAI().Cast(skill, nearest_target);
-				getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
+				
+				if (isSkillDisabled(skill))
+					continue;
+				
+				if (!skill.isOffensive() && skill.isBuff() && getEffectList().getEffectsBySkill(skill) == null)
+					getAI().Cast(skill, this);
+				else
+					if (skill.isOffensive() && !skill.isBuff() && nearest_target.getEffectList().getEffectsBySkill(skill) == null)
+					{
+						getAI().Cast(skill, nearest_target);
+						getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
+					}
+					else
+					{
+						getAI().Cast(skill, nearest_target);
+						getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
+					}
 			}
 		
 		if (nearest_target.isDead())
