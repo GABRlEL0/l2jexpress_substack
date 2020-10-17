@@ -4509,7 +4509,6 @@ public final class Player extends Playable implements PlayerGroup
 			{
 				if (Config.SERVICES_PK_PVP_KILL_ENABLE)
 					if (Config.SERVICES_PK_PVP_TIE_IF_SAME_IP)
-					{
 						if (getIP() != pk.getIP())
 						{
 							if (Config.SERVICES_ANNOUNCE_PVP_ENABLED)
@@ -14835,18 +14834,17 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 					continue;
 				
 				if (!skill.isOffensive() && skill.isBuff() && getEffectList().getEffectsBySkill(skill) == null)
-					getAI().Cast(skill, this);
-				else
-					if (skill.isOffensive() && !skill.isBuff() && nearest_target.getEffectList().getEffectsBySkill(skill) == null)
-					{
-						getAI().Cast(skill, nearest_target);
-						getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
-					}
+				{
+					if(getEffectList().getEffectsBySkill(skill) != null)
+						continue;
 					else
-					{
-						getAI().Cast(skill, nearest_target);
-						getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
-					}
+						getAI().Cast(skill, this);
+				}
+				else if(skill.isOffensive() && !skill.isBuff())
+				{
+					getAI().Cast(skill, nearest_target);
+					getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
+				}
 			}
 		
 		if (nearest_target.isDead())
