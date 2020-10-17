@@ -290,10 +290,6 @@ public class Config
 		20000
 	};
 
-
-//Autofarm
-	public static boolean AUTOFARM_ENABLED = false;
-	public static boolean AUTOFARM_CUSTOMSKILL_ENABLED = false;
 //Vote Reward
     public static boolean L2JBRAZIL_ENABLED;
     public static long L2JBRAZIL_VOTE_TIME_TO_LIVE;
@@ -2268,15 +2264,15 @@ public class Config
 	public static boolean DEBUG_PHANTOMS;
 	public static int[] PHANTOM_CLANS;
 	
-	//4fun
-	
+	// 4fun
 	public static boolean DEBUG_4F;
 	public static int MAX_PLAYERS_PER_IP;
 	public static String[] MAX_PLAYERS_PER_IP_WHITELIST;
-	public static int AUTOFARM_WARRIOR_SKILL_ID;
-	public static int AUTOFARM_MAGE_SKILL_ID;
-	//config del auction
+	// config del auction
 	public static int MAX_AUCTIONS_PER_PLAYER;
+	// Autofarm
+	public static boolean AUTOFARM_ENABLED;
+	public static boolean AUTOFARM_CUSTOMSKILL_ENABLED;
 	
 
 	public static void loadServerConfig()
@@ -5067,10 +5063,8 @@ public class Config
 	{
 		ExProperties forfun = load(FORFUN_FILE);
 		
-		AUTOFARM_ENABLED = forfun.getProperty("AutofarmEnabled", false);
-		AUTOFARM_CUSTOMSKILL_ENABLED = forfun.getProperty("CustomSkillEnabled", false);
-		AUTOFARM_MAGE_SKILL_ID = forfun.getProperty("MageCustomSKill", 35250);
-		AUTOFARM_WARRIOR_SKILL_ID = forfun.getProperty("WarriorCustomSKill", 35251);
+		AUTOFARM_ENABLED = forfun.getProperty("AutoFarmEnabled", false);
+		AUTOFARM_CUSTOMSKILL_ENABLED = forfun.getProperty("AutoSkillListEnabled", false);
 		DEBUG_4F = forfun.getProperty("Debug", true);
 		MAX_PLAYERS_PER_IP = forfun.getProperty("MaxPlayersPerIP", 4);
 		MAX_PLAYERS_PER_IP_WHITELIST = forfun.getProperty("Whitelist", "").split(";");

@@ -5,6 +5,7 @@ import l2jexpress.gameserver.model.Player;
 import l2jexpress.gameserver.model.Skill;
 import l2jexpress.gameserver.model.items.attachment.FlagItemAttachment;
 import l2jexpress.gameserver.network.serverpackets.ActionFail;
+import l2jexpress.gameserver.network.serverpackets.ExAutoSoulShot;
 import l2jexpress.gameserver.network.serverpackets.components.SystemMsg;
 import l2jexpress.gameserver.tables.SkillTable;
 
@@ -59,6 +60,18 @@ public class RequestMagicSkillUse extends L2GameClientPacket
 		}
 		if (skill != null)
 		{
+			if(_shiftPressed)
+				if(activeChar.getAutoSkills().contains(this._magicId.intValue()))
+				{
+					activeChar.removeAutoSkill(this._magicId.intValue());
+					activeChar.sendMessage("Cancel automatic " + skill.getName());
+				}
+				else
+				{
+					activeChar.addAutoSkill(this._magicId.intValue());
+					activeChar.sendMessage("Automatic " + skill.getName());
+				}
+			
 			if ((!skill.isActive()) && (!skill.isToggle()))
 			{
 				activeChar.setMacroSkill(null);

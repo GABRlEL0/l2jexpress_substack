@@ -7585,11 +7585,11 @@ public final class Player extends Playable implements PlayerGroup
 	public boolean onTeleported()
 	{
 		//Autofarm chequea si esta activo al teleportarse y lo desactiva
-		if (activeChar.getVar("Autofarm") != null)
+		if (getVar("Autofarm") != null)
 		{
-			activeChar.unsetVar("Autofarm");
-			activeChar.sendMessage("You turned Autofarm Off");
-			activeChar.stopAutoFarm();
+			unsetVar("Autofarm");
+			sendMessage("You turned Autofarm Off");
+			stopAutoFarm();
 		}	
 		
 		if (!super.onTeleported())
@@ -14288,7 +14288,6 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	// l2jexpress - Support for Automatic Potions (Toogle)
 	private final Set<Integer> _autoPotions = new CopyOnWriteArraySet<Integer>();
 	private Future<?> _autoPotionTask = null;
-	private Future<?> _autoFarmTask = null;
 
 	public void addAutoPotion(int itemId)
 	{
@@ -14315,114 +14314,6 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	public Set<Integer> getAutoPotions()
 	{
 		return _autoPotions;
-	}
-	
-	public Location startFarmLoc = null;
-	//Start Autofarm
-	public void startAutoFarm()
-	{
-
-		// A thread will handle the auto potions, each second will see if they must be used considering the player status
-		if (_autoFarmTask == null)
-			startFarmLoc = this.getLoc();
-			_autoFarmTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new AutoFarmTask(), 100, 1000);
-
-	}
-	//Stop Autofarm
-	public void stopAutoFarm()
-	{
-			if (_autoFarmTask != null)
-			{
-				_autoFarmTask.cancel(false);
-				_autoFarmTask = null;
-				
-			}
-
-	}
-
-	//Autofarm Tareas
-	private class AutoFarmTask implements Runnable
-	{
-        @Override
-        public void run()
-        {
-        	// Special conditions, cannot farm
-        	if (isOutOfControl() || isInStoreMode() || isFishing() || isInAwayingMode() || isInOlympiadMode() || isInvisible() || isInvul())
-        		return;
-        	GetTarget();
-        	//Attack Target With Custom skill
-        	if (Config.AUTOFARM_CUSTOMSKILL_ENABLED) {
-        	AttackTarget();
-        	}
-        	CheckIdle();
-        }
-
-
-	}
-	
-	private void GetTarget() {
-		
-
-		nearest_target = null; 
-		for(Creature cha : World.getAroundCharacters(activeChar, 4000, 500)) {
-			if (cha != null && !cha.isAlikeDead() && !cha.isRaid() && cha.isMonster() && !cha.isBoss() && !cha.isTreasureChest())
-			{
-				if ((nearest_target == null || activeChar.getDistance3D(cha) < activeChar.getDistance3D(nearest_target)) && cha.isAutoAttackable(activeChar))
-				{
-					nearest_target = cha;
-					cha = null; 
-				}	
-			}	
-		}	
-		if (nearest_target != null && activeChar.getTarget() != nearest_target  && GeoEngine.canSeeTarget(activeChar, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && nearest_target.isMonster())
-		{
-			activeChar.setTarget(nearest_target);
-			
-
-		}
-			
-	}
-
-	private void AttackTarget() {
-		Skill _skill = null;
-		if (activeChar.isMageClass()) 
-		{
-			_skill = this.getAvailableSkill(Config.AUTOFARM_MAGE_SKILL_ID);
-			
-		}else
-		{
-			_skill = this.getAvailableSkill(Config.AUTOFARM_WARRIOR_SKILL_ID);
-		}
-		
-		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(activeChar, nearest_target, false))
-		{
-		this.setFlyLoc(nearest_target.getLoc());
-		this.doCast(_skill, nearest_target, false);
-		}
-		if (nearest_target.isDead()){
-			activeChar.setTarget(null);
-			nearest_target = null; 
-			cha = null; 
-			}
-	}
-	
-	private void CheckIdle() {
-		
-		/*System.out.println("last monsterdamagetime" + activeChar.getLastMonsterDamageTime());
-		System.out.println("currenttime: " + System.currentTimeMillis());
-		Location currentloc = activeChar.getLoc();
-		
-		int x = (int) (currentloc.x + Math.random() * (20 - -20) + -20);
-		int y = (int) (currentloc.y + Math.random() * (20 - -20) + -20);
-		int z = currentloc.z; */
-
-		long timediff = System.currentTimeMillis() - activeChar.getLastMonsterDamageTime();
-		
-		if (timediff > 25000 && activeChar.getTarget() == null && _autoFarmTask != null)
-		{
-			//System.out.println("Me muevo al inicio");
-			activeChar.moveToLocation(startFarmLoc, 0, true);
-		}
 	}
 	
 	private class AutoPotionTask implements Runnable
@@ -14865,4 +14756,120 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 		return _lastLocation;
 	}
 	
+	//Autofarm stuff
+	public Creature nearest_target;
+
+	private Future<?> _autoFarmTask = null;
+	public Location startFarmLoc = null;
+	
+	public Future<?> getAutoFarmTask()
+	{
+		return _autoFarmTask;
+	}
+	//Start Autofarm
+	public void startAutoFarm()
+	{
+		// A thread will handle the auto potions, each second will see if they must be used considering the player status
+		if (_autoFarmTask == null)
+			startFarmLoc = this.getLoc();
+			_autoFarmTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new AutoFarmTask(), 10, 100);
+	}
+	//Stop Autofarm
+	public void stopAutoFarm()
+	{
+		if (_autoFarmTask != null)
+		{
+			_autoFarmTask.cancel(false);
+			_autoFarmTask = null;
+			_autoSkills.clear();
+		}
+	}
+
+	//Autofarm Tareas
+	private class AutoFarmTask implements Runnable
+	{
+        @Override
+        public void run()
+        {
+        	// Special conditions, cannot farm
+        	if (isOutOfControl() || isInStoreMode() || isFishing() || isInAwayingMode() || isInOlympiadMode() || isInvisible() || isInvul())
+        		return;
+        	GetTarget();
+        	//Attack Target With Custom skill
+        	if (Config.AUTOFARM_CUSTOMSKILL_ENABLED)
+        		AttackTarget();
+        	
+        	CheckIdle();
+        }
+	}
+	
+	private void GetTarget()
+	{
+		nearest_target = null; 
+		for(Creature cha : World.getAroundCharacters(this, 4000, 500))
+		{
+			if (cha != null && !cha.isAlikeDead() && !cha.isRaid() && cha.isMonster() && !cha.isBoss() && !cha.isTreasureChest())
+				if ((nearest_target == null || getDistance3D(cha) < getDistance3D(nearest_target)) && cha.isAutoAttackable(this))
+				{
+					nearest_target = cha;
+					cha = null; 
+				}
+		}
+		if (nearest_target != null && getTarget() != nearest_target  && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && nearest_target.isMonster())
+			setObjectTarget(nearest_target);
+	}
+	
+	private void AttackTarget()
+	{
+		if(_autoSkills == null)
+			return;
+		
+		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false))
+			for(int skilllist : _autoSkills)
+			{
+				Skill skill = SkillTable.getInstance().getInfo(skilllist, getSkillLevel(skilllist));
+				getAI().Cast(skill, nearest_target);
+				getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
+			}
+		
+		if (nearest_target.isDead())
+		{
+			setObjectTarget(null);
+			nearest_target = null;
+		}
+	}
+	
+	private void CheckIdle()
+	{
+		/*System.out.println("last monsterdamagetime" + activeChar.getLastMonsterDamageTime());
+		System.out.println("currenttime: " + System.currentTimeMillis());
+		Location currentloc = activeChar.getLoc();
+		
+		int x = (int) (currentloc.x + Math.random() * (20 - -20) + -20);
+		int y = (int) (currentloc.y + Math.random() * (20 - -20) + -20);
+		int z = currentloc.z; */
+
+		long timediff = System.currentTimeMillis() - getLastMonsterDamageTime();
+		
+		if (timediff > 25000 && getTarget() == null && _autoFarmTask != null)
+			//System.out.println("Me muevo al inicio");
+			moveToLocation(startFarmLoc, 0, true);
+	}
+
+	private final Set<Integer> _autoSkills = new CopyOnWriteArraySet<Integer>();
+	
+	public Set<Integer> getAutoSkills()
+	{
+		return _autoSkills;
+	}
+
+	public void addAutoSkill(int skillId)
+	{
+		_autoSkills.add(skillId);
+	}
+
+	public void removeAutoSkill(int skillId)
+	{
+		_autoSkills.remove(skillId);
+	}
 }
