@@ -14775,10 +14775,11 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	//Start Autofarm
 	public void startAutoFarm()
 	{
-		// A thread will handle the auto potions, each second will see if they must be used considering the player status
 		if (_autoFarmTask == null)
+		{
 			startFarmLoc = this.getLoc();
 			_autoFarmTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new AutoFarmTask(), 10, 100);
+		}
 	}
 	//Stop Autofarm
 	public void stopAutoFarm()
@@ -14821,7 +14822,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 					cha = null; 
 				}
 		}
-		if (nearest_target != null && getTarget() != nearest_target  && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && nearest_target.isMonster())
+		if (nearest_target != null && getTarget() != nearest_target  && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && !nearest_target.isTreasureChest() && nearest_target.isMonster())
 			setObjectTarget(nearest_target);
 	}
 	
@@ -14830,7 +14831,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 		if(_autoSkills == null)
 			return;
 		
-		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion())
+		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && !nearest_target.isTreasureChest() && nearest_target.isMonster())
 			for(int skilllist : _autoSkills)
 			{
 				Skill skill = SkillTable.getInstance().getInfo(skilllist, getSkillLevel(skilllist));
