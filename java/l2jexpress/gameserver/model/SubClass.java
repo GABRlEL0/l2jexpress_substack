@@ -11,29 +11,16 @@ public class SubClass
 	public static final int CERTIFICATION_75 = 1 << 2;
 	public static final int CERTIFICATION_80 = 1 << 3;
 
-	private final Player _owner;
-	
 	private int _class = 0;
-	private int _index = 1;
-	
-	private int _level = 1;
-	private long _exp = 0;
-	private long _sp = 0;
-	
-	private int _maxLvl = Experience.getMaxLevel();
-	private long _minExp = 0;
-	private long _maxExp = Experience.getExpForLevel(_maxLvl + 1) - 1;
-	
+	private long _exp = Experience.LEVEL[Config.ALT_GAME_START_LEVEL_TO_SUBCLASS], minExp = Experience.LEVEL[Config.ALT_GAME_START_LEVEL_TO_SUBCLASS], maxExp = Experience.LEVEL[Experience.LEVEL.length - 1];
+	private int _sp = 0;
+	private int _level = Config.ALT_GAME_START_LEVEL_TO_SUBCLASS, _certification;
 	private double _Hp = 1, _Mp = 1, _Cp = 1;
-	private boolean _active = false, _isBase = true;
+	private boolean _active = false, _isBase = false;
 	private DeathPenalty _dp;
-	
-	private int _certification;
 
-	public SubClass(Player owner)
-	{
-		_owner = owner;
-	}
+	public SubClass()
+	{}
 
 	public int getClassId()
 	{
@@ -47,7 +34,7 @@ public class SubClass
 
 	public long getMaxExp()
 	{
-		return _maxExp;
+		return maxExp;
 	}
 
 	public void addExp(long val)
@@ -77,8 +64,8 @@ public class SubClass
 
 	public void setExp(long val)
 	{
-		val = Math.max(val, _minExp);
-		val = Math.min(val, _maxExp);
+		val = Math.max(val, minExp);
+		val = Math.min(val, maxExp);
 
 		_exp = val;
 		_level = Experience.getLevel(_exp);
@@ -132,28 +119,11 @@ public class SubClass
 		return _active;
 	}
 
-	public void setBase(final boolean isBase)
+	public void setBase(boolean base)
 	{
-		if(_isBase == isBase)
-			return;
-
-		_isBase = isBase;
-
-		if(!_isBase)
-		{
-			_maxLvl = Experience.getMaxSubLevel();
-			_minExp = Experience.getExpForLevel(Config.ALT_GAME_START_LEVEL_TO_SUBCLASS);
-			_level = Math.min(Math.max(Config.ALT_GAME_START_LEVEL_TO_SUBCLASS, _level), _maxLvl);
-		}
-		else
-		{
-			_maxLvl = Experience.getMaxLevel();
-			_minExp = 0;
-			_level = Math.min(Math.max(1, _level), _maxLvl);
-		}
-		_minExp = Math.max(0, _minExp);
-		_maxExp = Experience.getExpForLevel(_maxLvl + 1) - 1;
-		_exp = Math.min(Math.max(Experience.getExpForLevel(_level), _exp), _maxExp);
+		_isBase = base;
+		minExp = Experience.LEVEL[_isBase ? 1 : Config.ALT_GAME_START_LEVEL_TO_SUBCLASS];
+		maxExp = Experience.LEVEL[(_isBase ? Experience.getMaxLevel() : Experience.getMaxSubLevel()) + 1] - 1;
 	}
 
 	public boolean isBase()
@@ -168,9 +138,9 @@ public class SubClass
 		return _dp;
 	}
 
-	public void setDeathPenalty(int deathPenalty)
+	public void setDeathPenalty(DeathPenalty dp)
 	{
-		_dp = new DeathPenalty(_owner, deathPenalty);
+		_dp = dp;
 	}
 
 	public int getCertification()
@@ -202,20 +172,5 @@ public class SubClass
 	public String toStringCB()
 	{
 		return ClassId.VALUES[_class].toString();
-	}
-	
-	public int getMaxLevel()
-	{
-		return _maxLvl;
-	}
-	
-	public void setIndex(int i)
-	{
-		_index = i;
-	}
-
-	public int getIndex()
-	{
-		return _index;
 	}
 }

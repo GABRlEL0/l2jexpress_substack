@@ -364,7 +364,7 @@ public final class VillageMasterInstance extends NpcInstance
 						player.sendMessage("You cannot use this service right now");
 						return;
 					}
-					if(!Config.ALT_ENABLE_MULTI_PROFA)
+					if(Config.ALT_ENABLE_MULTI_PROFA)
 					{
 						player.sendMessage("The cancel Subclass is not avalible");
 						return;
