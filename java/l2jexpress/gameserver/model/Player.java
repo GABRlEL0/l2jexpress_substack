@@ -14830,7 +14830,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	private void AttackTarget()
 	{
 		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && !nearest_target.isTreasureChest() && nearest_target.isMonster())
-			if(_autoSkills == null)
+			if(_autoSkills != null)
 			{
 				for(int skilllist : _autoSkills)
 				{
