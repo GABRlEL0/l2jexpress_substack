@@ -58,6 +58,7 @@ import l2jexpress.gameserver.ThreadPoolManager;
 import l2jexpress.gameserver.ai.CtrlEvent;
 import l2jexpress.gameserver.ai.CtrlIntention;
 import l2jexpress.gameserver.ai.PhantomPlayerAI;
+import l2jexpress.gameserver.ai.PlayableAI;
 import l2jexpress.gameserver.ai.PlayableAI.nextAction;
 import l2jexpress.gameserver.ai.PlayerAI;
 import l2jexpress.gameserver.cache.Msg;
@@ -14828,30 +14829,34 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
 	
 	private void AttackTarget()
 	{
-		if(_autoSkills == null)
-			return;
-		
 		if (!nearest_target.isDead() && nearest_target != null && GeoEngine.canSeeTarget(this, nearest_target, false) && !nearest_target.isRaid() && !nearest_target.isBoss() && !nearest_target.isMinion() && !nearest_target.isTreasureChest() && nearest_target.isMonster())
-			for(int skilllist : _autoSkills)
+			if(_autoSkills == null)
 			{
-				Skill skill = SkillTable.getInstance().getInfo(skilllist, getSkillLevel(skilllist));
-				
-				if (isSkillDisabled(skill))
-					continue;
-				
-				if (!skill.isOffensive() && skill.isBuff() && getEffectList().getEffectsBySkill(skill) == null)
+				for(int skilllist : _autoSkills)
 				{
-					if(getEffectList().getEffectsBySkill(skill) != null)
+					Skill skill = SkillTable.getInstance().getInfo(skilllist, getSkillLevel(skilllist));
+					
+					if (isSkillDisabled(skill))
 						continue;
-					else
-						getAI().Cast(skill, this);
-				}
-				else if(skill.isOffensive() && !skill.isBuff())
-				{
-					getAI().Cast(skill, nearest_target);
-					getAI().setIntention(CtrlIntention.AI_INTENTION_ACTIVE, nearest_target);
+					
+					if (!skill.isOffensive() && skill.isBuff() && getEffectList().getEffectsBySkill(skill) == null)
+					{
+						if(getEffectList().getEffectsBySkill(skill) != null)
+							continue;
+						else
+							getAI().Cast(skill, this);
+					}
+					else if(skill.isOffensive() && !skill.isBuff())
+					{
+						if (isAttackingNow())
+							getAI().setNextAction(PlayableAI.nextAction.CAST, skill, nearest_target, false, false);
+						else
+							getAI().Cast(skill, nearest_target);
+					}
 				}
 			}
+			else
+				getAI().Attack(nearest_target, false, false);
 		
 		if (nearest_target.isDead())
 		{
