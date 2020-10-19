@@ -60,16 +60,16 @@ public class RequestMagicSkillUse extends L2GameClientPacket
 		}
 		if (skill != null)
 		{
-			if(_shiftPressed && skill.isActive())
+			if(_shiftPressed && activeChar.getAutoFarmTask() != null)
 				if(activeChar.getAutoSkills().contains(this._magicId.intValue()))
 				{
 					activeChar.removeAutoSkill(this._magicId.intValue());
-					activeChar.sendMessage("Des-Automatic " + skill.getName());
+					activeChar.sendMessage("[AutoFarm]: Remove Automatic " + skill.getName());
 				}
 				else
 				{
 					activeChar.addAutoSkill(this._magicId.intValue());
-					activeChar.sendMessage("Automatic " + skill.getName());
+					activeChar.sendMessage("[AutoFarm]: Add Automatic " + skill.getName());
 				}
 			
 			if ((!skill.isActive()) && (!skill.isToggle()))
