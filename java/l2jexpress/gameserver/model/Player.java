@@ -14803,10 +14803,7 @@ private final Map<Integer, Integer> _achievementLevels = new FastMap<>();
         	if (isOutOfControl() || isInStoreMode() || isFishing() || isInAwayingMode() || isInOlympiadMode() || isInvisible() || isInvul())
         		return;
         	GetTarget();
-        	//Attack Target With Custom skill
-        	if (Config.AUTOFARM_CUSTOMSKILL_ENABLED)
-        		AttackTarget();
-        	
+        	AttackTarget();
         	CheckIdle();
         }
 	}

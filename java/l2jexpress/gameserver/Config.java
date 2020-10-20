@@ -2272,7 +2272,6 @@ public class Config
 	public static int MAX_AUCTIONS_PER_PLAYER;
 	// Autofarm
 	public static boolean AUTOFARM_ENABLED;
-	public static boolean AUTOFARM_CUSTOMSKILL_ENABLED;
 	
 
 	public static void loadServerConfig()
@@ -5064,7 +5063,6 @@ public class Config
 		ExProperties forfun = load(FORFUN_FILE);
 		
 		AUTOFARM_ENABLED = forfun.getProperty("AutoFarmEnabled", false);
-		AUTOFARM_CUSTOMSKILL_ENABLED = forfun.getProperty("AutoSkillListEnabled", false);
 		DEBUG_4F = forfun.getProperty("Debug", true);
 		MAX_PLAYERS_PER_IP = forfun.getProperty("MaxPlayersPerIP", 4);
 		MAX_PLAYERS_PER_IP_WHITELIST = forfun.getProperty("Whitelist", "").split(";");
